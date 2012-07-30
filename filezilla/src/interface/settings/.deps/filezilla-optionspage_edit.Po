@@ -1,0 +1,16 @@
+settings/filezilla-optionspage_edit.o: settings/optionspage_edit.cpp \
+ settings/../Options.h settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_edit.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_edit.h:

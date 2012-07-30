@@ -1,0 +1,17 @@
+settings/filezilla-optionspage_connection_active.o: \
+ settings/optionspage_connection_active.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_connection_active.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_connection_active.h:

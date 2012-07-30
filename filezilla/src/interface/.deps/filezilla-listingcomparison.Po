@@ -1,0 +1,24 @@
+filezilla-listingcomparison.o: listingcomparison.cpp listingcomparison.h \
+ filter.h dialogex.h wrapengine.h /usr/include/wx-2.8/wx/regex.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/string.h Options.h \
+ state.h ../../src/include/local_path.h
+
+listingcomparison.h:
+
+filter.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+/usr/include/wx-2.8/wx/regex.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+Options.h:
+
+state.h:
+
+../../src/include/local_path.h:

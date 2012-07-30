@@ -1,0 +1,86 @@
+filezilla-Options.o: Options.cpp Options.h xmlfunctions.h \
+ ../tinyxml/tinyxml.h /usr/include/ctype.h /usr/include/stdio.h \
+ /usr/include/stdlib.h /usr/include/string.h /usr/include/assert.h \
+ /usr/include/features.h /usr/include/c++/4.6/string \
+ /usr/include/c++/4.6/iostream /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/istream /usr/include/c++/4.6/ostream \
+ /usr/include/c++/4.6/bits/sstream.tcc filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ /usr/include/wx-2.8/wx/tokenzr.h /usr/include/wx-2.8/wx/object.h \
+ ipcmutex.h ../../src/include/option_change_event_handler.h \
+ /usr/include/c++/4.6/set /usr/include/c++/4.6/bits/stl_tree.h \
+ /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/stl_multiset.h \
+ /usr/include/c++/4.6/bits/range_access.h /usr/include/c++/4.6/vector \
+ sizeformatting.h ../../src/include/sizeformatting_base.h
+
+Options.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+ipcmutex.h:
+
+../../src/include/option_change_event_handler.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+/usr/include/c++/4.6/vector:
+
+sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:

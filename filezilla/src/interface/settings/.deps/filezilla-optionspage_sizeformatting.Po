@@ -1,0 +1,22 @@
+settings/filezilla-optionspage_sizeformatting.o: \
+ settings/optionspage_sizeformatting.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_sizeformatting.h settings/../sizeformatting.h \
+ ../../src/include/sizeformatting_base.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_sizeformatting.h:
+
+settings/../sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:

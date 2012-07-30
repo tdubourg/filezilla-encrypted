@@ -1,0 +1,101 @@
+filezilla-filter.o: filter.cpp filter.h dialogex.h wrapengine.h \
+ /usr/include/wx-2.8/wx/regex.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h filteredit.h filter_conditions_dialog.h \
+ /usr/include/c++/4.6/set /usr/include/c++/4.6/bits/stl_tree.h \
+ /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/stl_multiset.h \
+ /usr/include/c++/4.6/bits/range_access.h ipcmutex.h filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/arrstr.h \
+ xmlfunctions.h ../tinyxml/tinyxml.h /usr/include/ctype.h \
+ /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/c++/4.6/string /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/sstream /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/bits/sstream.tcc \
+ Mainfrm.h /usr/include/wx-2.8/wx/taskbar.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/unix/taskbarx11.h \
+ Options.h inputdialog.h state.h ../../src/include/local_path.h
+
+filter.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+/usr/include/wx-2.8/wx/regex.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+filteredit.h:
+
+filter_conditions_dialog.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+ipcmutex.h:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+Mainfrm.h:
+
+/usr/include/wx-2.8/wx/taskbar.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/unix/taskbarx11.h:
+
+Options.h:
+
+inputdialog.h:
+
+state.h:
+
+../../src/include/local_path.h:

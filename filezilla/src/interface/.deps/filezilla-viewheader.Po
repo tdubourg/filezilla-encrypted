@@ -1,0 +1,23 @@
+filezilla-viewheader.o: viewheader.cpp viewheader.h state.h \
+ ../../src/include/local_path.h commandqueue.h \
+ /usr/include/wx-2.8/wx/combobox.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/textctrl.h /usr/include/wx-2.8/wx/ctrlsub.h \
+ /usr/include/wx-2.8/wx/gtk/combobox.h
+
+viewheader.h:
+
+state.h:
+
+../../src/include/local_path.h:
+
+commandqueue.h:
+
+/usr/include/wx-2.8/wx/combobox.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/textctrl.h:
+
+/usr/include/wx-2.8/wx/ctrlsub.h:
+
+/usr/include/wx-2.8/wx/gtk/combobox.h:

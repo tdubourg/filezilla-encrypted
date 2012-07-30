@@ -1,0 +1,21 @@
+libengine_a-externalipresolver.o: externalipresolver.cpp \
+ ../../src/include/externalipresolver.h ../../src/include/socket.h \
+ /usr/include/wx-2.8/wx/regex.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h ../../src/include/socket.h \
+ /usr/include/errno.h ../../src/include/misc.h
+
+../../src/include/externalipresolver.h:
+
+../../src/include/socket.h:
+
+/usr/include/wx-2.8/wx/regex.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+../../src/include/socket.h:
+
+/usr/include/errno.h:
+
+../../src/include/misc.h:

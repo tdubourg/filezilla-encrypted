@@ -1,0 +1,6 @@
+filezilla-xh_toolb_ex.o: xh_toolb_ex.cpp xh_toolb_ex.h \
+ /usr/include/wx-2.8/wx/xrc/xmlres.h
+
+xh_toolb_ex.h:
+
+/usr/include/wx-2.8/wx/xrc/xmlres.h:

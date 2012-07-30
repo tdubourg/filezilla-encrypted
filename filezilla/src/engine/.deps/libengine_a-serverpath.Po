@@ -1,0 +1,6 @@
+libengine_a-serverpath.o: serverpath.cpp ../../src/include/serverpath.h \
+ ../../src/include/string_coalescer.h
+
+../../src/include/serverpath.h:
+
+../../src/include/string_coalescer.h:

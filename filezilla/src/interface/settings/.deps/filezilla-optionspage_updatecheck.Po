@@ -1,0 +1,37 @@
+settings/filezilla-optionspage_updatecheck.o: \
+ settings/optionspage_updatecheck.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_updatecheck.h settings/../updatewizard.h \
+ /usr/include/wx-2.8/wx/wizard.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/dialog.h /usr/include/wx-2.8/wx/panel.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/bitmap.h \
+ /usr/include/wx-2.8/wx/generic/wizard.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_updatecheck.h:
+
+settings/../updatewizard.h:
+
+/usr/include/wx-2.8/wx/wizard.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/dialog.h:
+
+/usr/include/wx-2.8/wx/panel.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/generic/wizard.h:

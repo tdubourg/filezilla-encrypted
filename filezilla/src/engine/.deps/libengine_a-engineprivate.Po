@@ -1,0 +1,52 @@
+libengine_a-engineprivate.o: engineprivate.cpp ControlSocket.h \
+ ../../src/include/socket.h logging_private.h backend.h ratelimiter.h \
+ ftpcontrolsocket.h ../../src/include/externalipresolver.h \
+ ../../src/include/socket.h sftpcontrolsocket.h \
+ /usr/include/wx-2.8/wx/process.h /usr/include/wx-2.8/wx/event.h \
+ /usr/include/wx-2.8/wx/stream.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/stdio.h /usr/include/wx-2.8/wx/object.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/filefn.h \
+ /usr/include/wx-2.8/wx/utils.h directorycache.h httpcontrolsocket.h \
+ pathcache.h
+
+ControlSocket.h:
+
+../../src/include/socket.h:
+
+logging_private.h:
+
+backend.h:
+
+ratelimiter.h:
+
+ftpcontrolsocket.h:
+
+../../src/include/externalipresolver.h:
+
+../../src/include/socket.h:
+
+sftpcontrolsocket.h:
+
+/usr/include/wx-2.8/wx/process.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/stdio.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/utils.h:
+
+directorycache.h:
+
+httpcontrolsocket.h:
+
+pathcache.h:

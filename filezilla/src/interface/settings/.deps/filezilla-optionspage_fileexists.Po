@@ -1,0 +1,17 @@
+settings/filezilla-optionspage_fileexists.o: \
+ settings/optionspage_fileexists.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_fileexists.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_fileexists.h:

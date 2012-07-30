@@ -1,0 +1,66 @@
+libengine_a-transfersocket.o: transfersocket.cpp transfersocket.h \
+ iothread.h /usr/include/wx-2.8/wx/file.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/filefn.h \
+ /usr/include/wx-2.8/wx/strconv.h ../../src/include/threadex.h \
+ /usr/include/wx-2.8/wx/thread.h backend.h ratelimiter.h \
+ ../../src/include/socket.h ControlSocket.h logging_private.h \
+ ftpcontrolsocket.h ../../src/include/externalipresolver.h \
+ ../../src/include/socket.h directorylistingparser.h \
+ ../../src/include/optionsbase.h tlssocket.h /usr/include/gnutls/gnutls.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h /usr/include/time.h \
+ /usr/include/gnutls/compat.h /usr/include/errno.h proxy.h \
+ servercapabilities.h
+
+transfersocket.h:
+
+iothread.h:
+
+/usr/include/wx-2.8/wx/file.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/strconv.h:
+
+../../src/include/threadex.h:
+
+/usr/include/wx-2.8/wx/thread.h:
+
+backend.h:
+
+ratelimiter.h:
+
+../../src/include/socket.h:
+
+ControlSocket.h:
+
+logging_private.h:
+
+ftpcontrolsocket.h:
+
+../../src/include/externalipresolver.h:
+
+../../src/include/socket.h:
+
+directorylistingparser.h:
+
+../../src/include/optionsbase.h:
+
+tlssocket.h:
+
+/usr/include/gnutls/gnutls.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/gnutls/compat.h:
+
+/usr/include/errno.h:
+
+proxy.h:
+
+servercapabilities.h:

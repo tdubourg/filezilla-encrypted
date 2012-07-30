@@ -1,0 +1,8 @@
+filezilla-ipcmutex.o: ipcmutex.cpp ipcmutex.h Options.h \
+ /usr/include/errno.h
+
+ipcmutex.h:
+
+Options.h:
+
+/usr/include/errno.h:

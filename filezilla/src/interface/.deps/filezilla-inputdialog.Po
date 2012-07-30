@@ -1,0 +1,8 @@
+filezilla-inputdialog.o: inputdialog.cpp inputdialog.h dialogex.h \
+ wrapengine.h
+
+inputdialog.h:
+
+dialogex.h:
+
+wrapengine.h:

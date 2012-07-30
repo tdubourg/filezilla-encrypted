@@ -1,0 +1,49 @@
+settings/filezilla-optionspage_connection_sftp.o: \
+ settings/optionspage_connection_sftp.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_connection_sftp.h /usr/include/wx-2.8/wx/process.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/stream.h \
+ /usr/include/wx-2.8/wx/utils.h settings/../filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ settings/../inputdialog.h settings/../dialogex.h \
+ /usr/include/wx-2.8/wx/tokenzr.h /usr/include/wx-2.8/wx/object.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_connection_sftp.h:
+
+/usr/include/wx-2.8/wx/process.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/utils.h:
+
+settings/../filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+settings/../inputdialog.h:
+
+settings/../dialogex.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/object.h:

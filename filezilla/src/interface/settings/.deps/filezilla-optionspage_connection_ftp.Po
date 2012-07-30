@@ -1,0 +1,17 @@
+settings/filezilla-optionspage_connection_ftp.o: \
+ settings/optionspage_connection_ftp.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_connection_ftp.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_connection_ftp.h:

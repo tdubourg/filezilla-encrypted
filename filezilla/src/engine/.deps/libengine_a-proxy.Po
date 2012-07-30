@@ -1,0 +1,17 @@
+libengine_a-proxy.o: proxy.cpp proxy.h backend.h ratelimiter.h \
+ ../../src/include/socket.h /usr/include/errno.h ControlSocket.h \
+ logging_private.h
+
+proxy.h:
+
+backend.h:
+
+ratelimiter.h:
+
+../../src/include/socket.h:
+
+/usr/include/errno.h:
+
+ControlSocket.h:
+
+logging_private.h:

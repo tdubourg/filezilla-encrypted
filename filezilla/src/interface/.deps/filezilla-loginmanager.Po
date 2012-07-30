@@ -1,0 +1,15 @@
+filezilla-loginmanager.o: loginmanager.cpp loginmanager.h filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h
+
+loginmanager.h:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:

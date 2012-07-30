@@ -1,0 +1,78 @@
+filezilla-wrapengine.o: wrapengine.cpp wrapengine.h filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ ipcmutex.h xmlfunctions.h ../tinyxml/tinyxml.h /usr/include/ctype.h \
+ /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/c++/4.6/string /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/sstream /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/bits/sstream.tcc \
+ buildinfo.h Options.h /usr/include/wx-2.8/wx/statbox.h \
+ /usr/include/wx-2.8/wx/control.h /usr/include/wx-2.8/wx/gtk/statbox.h \
+ /usr/include/wx-2.8/wx/wizard.h /usr/include/wx-2.8/wx/dialog.h \
+ /usr/include/wx-2.8/wx/panel.h /usr/include/wx-2.8/wx/event.h \
+ /usr/include/wx-2.8/wx/bitmap.h /usr/include/wx-2.8/wx/generic/wizard.h
+
+wrapengine.h:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+ipcmutex.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+buildinfo.h:
+
+Options.h:
+
+/usr/include/wx-2.8/wx/statbox.h:
+
+/usr/include/wx-2.8/wx/control.h:
+
+/usr/include/wx-2.8/wx/gtk/statbox.h:
+
+/usr/include/wx-2.8/wx/wizard.h:
+
+/usr/include/wx-2.8/wx/dialog.h:
+
+/usr/include/wx-2.8/wx/panel.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/generic/wizard.h:

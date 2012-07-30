@@ -1,0 +1,19 @@
+filezilla-welcome_dialog.o: welcome_dialog.cpp welcome_dialog.h \
+ dialogex.h wrapengine.h buildinfo.h /usr/include/wx-2.8/wx/hyperlink.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/control.h Options.h
+
+welcome_dialog.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+buildinfo.h:
+
+/usr/include/wx-2.8/wx/hyperlink.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/control.h:
+
+Options.h:

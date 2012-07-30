@@ -1,0 +1,16 @@
+filezilla-window_state_manager.o: window_state_manager.cpp \
+ window_state_manager.h Options.h /usr/include/wx-2.8/wx/tokenzr.h \
+ /usr/include/wx-2.8/wx/object.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/arrstr.h
+
+window_state_manager.h:
+
+Options.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:

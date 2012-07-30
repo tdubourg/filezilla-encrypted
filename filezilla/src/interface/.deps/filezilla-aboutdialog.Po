@@ -1,0 +1,30 @@
+filezilla-aboutdialog.o: aboutdialog.cpp aboutdialog.h dialogex.h \
+ wrapengine.h buildinfo.h ../../src/include/misc.h \
+ /usr/include/wx-2.8/wx/hyperlink.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/control.h /usr/include/wx-2.8/wx/clipbrd.h \
+ /usr/include/wx-2.8/wx/object.h /usr/include/wx-2.8/wx/wxchar.h \
+ /usr/include/wx-2.8/wx/gtk/clipbrd.h
+
+aboutdialog.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+buildinfo.h:
+
+../../src/include/misc.h:
+
+/usr/include/wx-2.8/wx/hyperlink.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/control.h:
+
+/usr/include/wx-2.8/wx/clipbrd.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/wxchar.h:
+
+/usr/include/wx-2.8/wx/gtk/clipbrd.h:

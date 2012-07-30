@@ -1,0 +1,8 @@
+filezilla-sftp_crypt_info_dlg.o: sftp_crypt_info_dlg.cpp \
+ sftp_crypt_info_dlg.h dialogex.h wrapengine.h
+
+sftp_crypt_info_dlg.h:
+
+dialogex.h:
+
+wrapengine.h:

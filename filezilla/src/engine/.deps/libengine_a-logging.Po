@@ -1,0 +1,28 @@
+libengine_a-logging.o: logging.cpp logging_private.h \
+ /usr/include/wx-2.8/wx/log.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ /usr/include/time.h /usr/include/wx-2.8/wx/dynarray.h \
+ /usr/include/wx-2.8/wx/iosfwrap.h /usr/include/c++/4.6/iosfwd \
+ /usr/include/wx-2.8/wx/generic/logg.h /usr/include/errno.h
+
+logging_private.h:
+
+/usr/include/wx-2.8/wx/log.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+/usr/include/time.h:
+
+/usr/include/wx-2.8/wx/dynarray.h:
+
+/usr/include/wx-2.8/wx/iosfwrap.h:
+
+/usr/include/c++/4.6/iosfwd:
+
+/usr/include/wx-2.8/wx/generic/logg.h:
+
+/usr/include/errno.h:

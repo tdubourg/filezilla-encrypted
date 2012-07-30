@@ -1,0 +1,15 @@
+libengine_a-FileZillaEngine.o: FileZillaEngine.cpp ControlSocket.h \
+ ../../src/include/socket.h logging_private.h backend.h ratelimiter.h \
+ directorycache.h
+
+ControlSocket.h:
+
+../../src/include/socket.h:
+
+logging_private.h:
+
+backend.h:
+
+ratelimiter.h:
+
+directorycache.h:

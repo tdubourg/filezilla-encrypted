@@ -1,0 +1,4 @@
+libengine_a-servercapabilities.o: servercapabilities.cpp \
+ servercapabilities.h
+
+servercapabilities.h:

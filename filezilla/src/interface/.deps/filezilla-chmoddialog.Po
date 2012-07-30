@@ -1,0 +1,8 @@
+filezilla-chmoddialog.o: chmoddialog.cpp chmoddialog.h dialogex.h \
+ wrapengine.h
+
+chmoddialog.h:
+
+dialogex.h:
+
+wrapengine.h:

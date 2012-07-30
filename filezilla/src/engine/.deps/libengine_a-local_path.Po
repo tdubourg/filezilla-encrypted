@@ -1,0 +1,11 @@
+libengine_a-local_path.o: local_path.cpp ../../src/include/local_path.h \
+ ../../src/include/string_coalescer.h /usr/include/errno.h \
+ /usr/include/c++/4.6/deque
+
+../../src/include/local_path.h:
+
+../../src/include/string_coalescer.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/4.6/deque:

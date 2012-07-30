@@ -1,0 +1,42 @@
+libengine_a-local_filesys.o: local_filesys.cpp \
+ ../../src/include/local_filesys.h /usr/include/wx-2.8/wx/dir.h \
+ /usr/include/wx-2.8/wx/longlong.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/msgdlg.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/gtk/msgdlg.h /usr/include/wx-2.8/wx/dialog.h \
+ /usr/include/wx-2.8/wx/containr.h /usr/include/wx-2.8/wx/toplevel.h \
+ /usr/include/wx-2.8/wx/window.h /usr/include/wx-2.8/wx/iconbndl.h \
+ /usr/include/wx-2.8/wx/dynarray.h /usr/include/wx-2.8/wx/gdicmn.h \
+ /usr/include/wx-2.8/wx/gtk/toplevel.h \
+ /usr/include/wx-2.8/wx/gtk/dialog.h
+
+../../src/include/local_filesys.h:
+
+/usr/include/wx-2.8/wx/dir.h:
+
+/usr/include/wx-2.8/wx/longlong.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/msgdlg.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/gtk/msgdlg.h:
+
+/usr/include/wx-2.8/wx/dialog.h:
+
+/usr/include/wx-2.8/wx/containr.h:
+
+/usr/include/wx-2.8/wx/toplevel.h:
+
+/usr/include/wx-2.8/wx/window.h:
+
+/usr/include/wx-2.8/wx/iconbndl.h:
+
+/usr/include/wx-2.8/wx/dynarray.h:
+
+/usr/include/wx-2.8/wx/gdicmn.h:
+
+/usr/include/wx-2.8/wx/gtk/toplevel.h:
+
+/usr/include/wx-2.8/wx/gtk/dialog.h:

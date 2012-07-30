@@ -1,0 +1,3 @@
+filezilla-dragdropmanager.o: dragdropmanager.cpp dragdropmanager.h
+
+dragdropmanager.h:

@@ -1,0 +1,76 @@
+libengine_a-sftpcontrolsocket.o: sftpcontrolsocket.cpp directorycache.h \
+ directorylistingparser.h pathcache.h ../../src/include/local_filesys.h \
+ proxy.h backend.h ratelimiter.h ../../src/include/socket.h \
+ servercapabilities.h sftpcontrolsocket.h ControlSocket.h \
+ logging_private.h /usr/include/wx-2.8/wx/process.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/stream.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/stdio.h \
+ /usr/include/wx-2.8/wx/object.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/filefn.h /usr/include/wx-2.8/wx/utils.h \
+ ../../src/include/threadex.h /usr/include/wx-2.8/wx/thread.h \
+ /usr/include/wx-2.8/wx/filename.h /usr/include/wx-2.8/wx/arrstr.h \
+ /usr/include/wx-2.8/wx/datetime.h /usr/include/wx-2.8/wx/intl.h \
+ /usr/include/wx-2.8/wx/tokenzr.h /usr/include/wx-2.8/wx/txtstrm.h \
+ /usr/include/wx-2.8/wx/convauto.h /usr/include/wx-2.8/wx/strconv.h
+
+directorycache.h:
+
+directorylistingparser.h:
+
+pathcache.h:
+
+../../src/include/local_filesys.h:
+
+proxy.h:
+
+backend.h:
+
+ratelimiter.h:
+
+../../src/include/socket.h:
+
+servercapabilities.h:
+
+sftpcontrolsocket.h:
+
+ControlSocket.h:
+
+logging_private.h:
+
+/usr/include/wx-2.8/wx/process.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/stdio.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/utils.h:
+
+../../src/include/threadex.h:
+
+/usr/include/wx-2.8/wx/thread.h:
+
+/usr/include/wx-2.8/wx/filename.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+/usr/include/wx-2.8/wx/datetime.h:
+
+/usr/include/wx-2.8/wx/intl.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/txtstrm.h:
+
+/usr/include/wx-2.8/wx/convauto.h:
+
+/usr/include/wx-2.8/wx/strconv.h:

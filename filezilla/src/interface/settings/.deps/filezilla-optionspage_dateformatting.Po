@@ -1,0 +1,17 @@
+settings/filezilla-optionspage_dateformatting.o: \
+ settings/optionspage_dateformatting.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_dateformatting.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_dateformatting.h:

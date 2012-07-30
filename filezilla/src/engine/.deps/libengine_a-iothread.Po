@@ -1,0 +1,38 @@
+libengine_a-iothread.o: iothread.cpp iothread.h \
+ /usr/include/wx-2.8/wx/file.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/filefn.h \
+ /usr/include/wx-2.8/wx/strconv.h ../../src/include/threadex.h \
+ /usr/include/wx-2.8/wx/thread.h /usr/include/wx-2.8/wx/log.h \
+ /usr/include/wx-2.8/wx/arrstr.h /usr/include/time.h \
+ /usr/include/wx-2.8/wx/dynarray.h /usr/include/wx-2.8/wx/iosfwrap.h \
+ /usr/include/c++/4.6/iosfwd /usr/include/wx-2.8/wx/generic/logg.h
+
+iothread.h:
+
+/usr/include/wx-2.8/wx/file.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/strconv.h:
+
+../../src/include/threadex.h:
+
+/usr/include/wx-2.8/wx/thread.h:
+
+/usr/include/wx-2.8/wx/log.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+/usr/include/time.h:
+
+/usr/include/wx-2.8/wx/dynarray.h:
+
+/usr/include/wx-2.8/wx/iosfwrap.h:
+
+/usr/include/c++/4.6/iosfwd:
+
+/usr/include/wx-2.8/wx/generic/logg.h:

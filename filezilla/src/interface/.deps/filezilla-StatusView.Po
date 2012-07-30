@@ -1,0 +1,11 @@
+filezilla-StatusView.o: StatusView.cpp StatusView.h \
+ /usr/include/wx-2.8/wx/wupdlock.h /usr/include/wx-2.8/wx/window.h \
+ Options.h
+
+StatusView.h:
+
+/usr/include/wx-2.8/wx/wupdlock.h:
+
+/usr/include/wx-2.8/wx/window.h:
+
+Options.h:

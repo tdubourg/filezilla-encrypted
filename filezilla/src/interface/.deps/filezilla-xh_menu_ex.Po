@@ -1,0 +1,8 @@
+filezilla-xh_menu_ex.o: xh_menu_ex.cpp xh_menu_ex.h \
+ /usr/include/wx-2.8/wx/xrc/xmlres.h /usr/include/wx-2.8/wx/xrc/xh_menu.h
+
+xh_menu_ex.h:
+
+/usr/include/wx-2.8/wx/xrc/xmlres.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_menu.h:

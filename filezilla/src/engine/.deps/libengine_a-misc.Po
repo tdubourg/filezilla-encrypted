@@ -1,0 +1,11 @@
+libengine_a-misc.o: misc.cpp /usr/include/gnutls/gnutls.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h /usr/include/time.h \
+ /usr/include/gnutls/compat.h
+
+/usr/include/gnutls/gnutls.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/gnutls/compat.h:

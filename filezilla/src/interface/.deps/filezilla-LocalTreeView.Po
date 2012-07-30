@@ -1,0 +1,193 @@
+filezilla-LocalTreeView.o: LocalTreeView.cpp LocalTreeView.h \
+ systemimagelist.h state.h ../../src/include/local_path.h treectrlex.h \
+ queue.h aui_notebook_ex.h /usr/include/wx-2.8/wx/aui/aui.h \
+ /usr/include/wx-2.8/wx/aui/framemanager.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/dynarray.h /usr/include/wx-2.8/wx/gdicmn.h \
+ /usr/include/wx-2.8/wx/window.h /usr/include/wx-2.8/wx/timer.h \
+ /usr/include/wx-2.8/wx/sizer.h /usr/include/wx-2.8/wx/aui/dockart.h \
+ /usr/include/wx-2.8/wx/pen.h /usr/include/wx-2.8/wx/brush.h \
+ /usr/include/wx-2.8/wx/bitmap.h /usr/include/wx-2.8/wx/colour.h \
+ /usr/include/wx-2.8/wx/aui/floatpane.h /usr/include/wx-2.8/wx/frame.h \
+ /usr/include/wx-2.8/wx/minifram.h /usr/include/wx-2.8/wx/gtk/minifram.h \
+ /usr/include/wx-2.8/wx/object.h /usr/include/wx-2.8/wx/aui/auibar.h \
+ /usr/include/wx-2.8/wx/control.h /usr/include/wx-2.8/wx/aui/auibook.h \
+ /usr/include/wx-2.8/wx/aui/tabmdi.h /usr/include/wx-2.8/wx/panel.h \
+ /usr/include/wx-2.8/wx/notebook.h /usr/include/wx-2.8/wx/icon.h \
+ listctrlex.h /usr/include/wx-2.8/wx/dnd.h \
+ /usr/include/wx-2.8/wx/dataobj.h /usr/include/wx-2.8/wx/cursor.h \
+ /usr/include/wx-2.8/wx/gtk/dnd.h edithandler.h dialogex.h wrapengine.h \
+ QueueView.h dndobjects.h xmlfunctions.h ../tinyxml/tinyxml.h \
+ /usr/include/ctype.h /usr/include/stdio.h /usr/include/stdlib.h \
+ /usr/include/string.h /usr/include/assert.h /usr/include/features.h \
+ /usr/include/c++/4.6/string /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/sstream /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/bits/sstream.tcc \
+ ../../src/include/libfilezilla.h /usr/include/c++/4.6/set \
+ /usr/include/c++/4.6/bits/stl_tree.h /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/stl_multiset.h \
+ /usr/include/c++/4.6/bits/range_access.h \
+ /usr/include/wx-2.8/wx/progdlg.h \
+ /usr/include/wx-2.8/wx/generic/progdlgg.h \
+ /usr/include/wx-2.8/wx/dialog.h queue_storage.h \
+ /usr/include/c++/4.6/vector filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/arrstr.h filter.h /usr/include/wx-2.8/wx/regex.h \
+ inputdialog.h ../../src/include/local_filesys.h dragdropmanager.h
+
+LocalTreeView.h:
+
+systemimagelist.h:
+
+state.h:
+
+../../src/include/local_path.h:
+
+treectrlex.h:
+
+queue.h:
+
+aui_notebook_ex.h:
+
+/usr/include/wx-2.8/wx/aui/aui.h:
+
+/usr/include/wx-2.8/wx/aui/framemanager.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/dynarray.h:
+
+/usr/include/wx-2.8/wx/gdicmn.h:
+
+/usr/include/wx-2.8/wx/window.h:
+
+/usr/include/wx-2.8/wx/timer.h:
+
+/usr/include/wx-2.8/wx/sizer.h:
+
+/usr/include/wx-2.8/wx/aui/dockart.h:
+
+/usr/include/wx-2.8/wx/pen.h:
+
+/usr/include/wx-2.8/wx/brush.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/colour.h:
+
+/usr/include/wx-2.8/wx/aui/floatpane.h:
+
+/usr/include/wx-2.8/wx/frame.h:
+
+/usr/include/wx-2.8/wx/minifram.h:
+
+/usr/include/wx-2.8/wx/gtk/minifram.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/aui/auibar.h:
+
+/usr/include/wx-2.8/wx/control.h:
+
+/usr/include/wx-2.8/wx/aui/auibook.h:
+
+/usr/include/wx-2.8/wx/aui/tabmdi.h:
+
+/usr/include/wx-2.8/wx/panel.h:
+
+/usr/include/wx-2.8/wx/notebook.h:
+
+/usr/include/wx-2.8/wx/icon.h:
+
+listctrlex.h:
+
+/usr/include/wx-2.8/wx/dnd.h:
+
+/usr/include/wx-2.8/wx/dataobj.h:
+
+/usr/include/wx-2.8/wx/cursor.h:
+
+/usr/include/wx-2.8/wx/gtk/dnd.h:
+
+edithandler.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+QueueView.h:
+
+dndobjects.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+../../src/include/libfilezilla.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+/usr/include/wx-2.8/wx/progdlg.h:
+
+/usr/include/wx-2.8/wx/generic/progdlgg.h:
+
+/usr/include/wx-2.8/wx/dialog.h:
+
+queue_storage.h:
+
+/usr/include/c++/4.6/vector:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+filter.h:
+
+/usr/include/wx-2.8/wx/regex.h:
+
+inputdialog.h:
+
+../../src/include/local_filesys.h:
+
+dragdropmanager.h:

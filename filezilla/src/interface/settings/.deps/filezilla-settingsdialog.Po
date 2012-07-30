@@ -1,0 +1,102 @@
+settings/filezilla-settingsdialog.o: settings/settingsdialog.cpp \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/../Options.h settings/optionspage.h \
+ settings/optionspage_connection.h settings/optionspage_connection_ftp.h \
+ settings/optionspage_connection_active.h \
+ settings/optionspage_connection_passive.h \
+ settings/optionspage_ftpproxy.h settings/optionspage_connection_sftp.h \
+ /usr/include/wx-2.8/wx/process.h /usr/include/wx-2.8/wx/event.h \
+ /usr/include/wx-2.8/wx/stream.h /usr/include/wx-2.8/wx/utils.h \
+ settings/optionspage_filetype.h settings/optionspage_fileexists.h \
+ settings/optionspage_themes.h settings/optionspage_language.h \
+ settings/optionspage_transfer.h settings/optionspage_updatecheck.h \
+ settings/optionspage_logging.h settings/optionspage_debug.h \
+ settings/optionspage_interface.h settings/optionspage_dateformatting.h \
+ settings/optionspage_sizeformatting.h settings/../sizeformatting.h \
+ ../../src/include/sizeformatting_base.h settings/optionspage_edit.h \
+ settings/optionspage_edit_associations.h settings/optionspage_proxy.h \
+ settings/optionspage_filelists.h settings/../filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ settings/../Mainfrm.h /usr/include/wx-2.8/wx/taskbar.h \
+ /usr/include/wx-2.8/wx/unix/taskbarx11.h
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/../Options.h:
+
+settings/optionspage.h:
+
+settings/optionspage_connection.h:
+
+settings/optionspage_connection_ftp.h:
+
+settings/optionspage_connection_active.h:
+
+settings/optionspage_connection_passive.h:
+
+settings/optionspage_ftpproxy.h:
+
+settings/optionspage_connection_sftp.h:
+
+/usr/include/wx-2.8/wx/process.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/stream.h:
+
+/usr/include/wx-2.8/wx/utils.h:
+
+settings/optionspage_filetype.h:
+
+settings/optionspage_fileexists.h:
+
+settings/optionspage_themes.h:
+
+settings/optionspage_language.h:
+
+settings/optionspage_transfer.h:
+
+settings/optionspage_updatecheck.h:
+
+settings/optionspage_logging.h:
+
+settings/optionspage_debug.h:
+
+settings/optionspage_interface.h:
+
+settings/optionspage_dateformatting.h:
+
+settings/optionspage_sizeformatting.h:
+
+settings/../sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:
+
+settings/optionspage_edit.h:
+
+settings/optionspage_edit_associations.h:
+
+settings/optionspage_proxy.h:
+
+settings/optionspage_filelists.h:
+
+settings/../filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+settings/../Mainfrm.h:
+
+/usr/include/wx-2.8/wx/taskbar.h:
+
+/usr/include/wx-2.8/wx/unix/taskbarx11.h:

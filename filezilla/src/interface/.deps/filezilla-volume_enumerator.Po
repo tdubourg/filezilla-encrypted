@@ -1,0 +1,8 @@
+filezilla-volume_enumerator.o: volume_enumerator.cpp volume_enumerator.h \
+ ../../src/include/threadex.h /usr/include/wx-2.8/wx/thread.h
+
+volume_enumerator.h:
+
+../../src/include/threadex.h:
+
+/usr/include/wx-2.8/wx/thread.h:

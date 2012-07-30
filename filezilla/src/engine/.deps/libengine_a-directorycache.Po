@@ -1,0 +1,3 @@
+libengine_a-directorycache.o: directorycache.cpp directorycache.h
+
+directorycache.h:

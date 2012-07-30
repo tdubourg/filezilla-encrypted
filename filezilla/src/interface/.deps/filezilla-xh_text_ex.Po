@@ -1,0 +1,13 @@
+filezilla-xh_text_ex.o: xh_text_ex.cpp textctrlex.h \
+ /usr/include/wx-2.8/wx/textctrl.h xh_text_ex.h \
+ /usr/include/wx-2.8/wx/xrc/xh_text.h /usr/include/wx-2.8/wx/xrc/xmlres.h
+
+textctrlex.h:
+
+/usr/include/wx-2.8/wx/textctrl.h:
+
+xh_text_ex.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_text.h:
+
+/usr/include/wx-2.8/wx/xrc/xmlres.h:

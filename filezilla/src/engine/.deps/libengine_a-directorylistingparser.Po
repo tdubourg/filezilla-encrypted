@@ -1,0 +1,15 @@
+libengine_a-directorylistingparser.o: directorylistingparser.cpp \
+ directorylistingparser.h ControlSocket.h ../../src/include/socket.h \
+ logging_private.h backend.h ratelimiter.h
+
+directorylistingparser.h:
+
+ControlSocket.h:
+
+../../src/include/socket.h:
+
+logging_private.h:
+
+backend.h:
+
+ratelimiter.h:

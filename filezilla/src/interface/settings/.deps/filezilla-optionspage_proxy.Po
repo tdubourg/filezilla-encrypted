@@ -1,0 +1,16 @@
+settings/filezilla-optionspage_proxy.o: settings/optionspage_proxy.cpp \
+ settings/../Options.h settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_proxy.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_proxy.h:

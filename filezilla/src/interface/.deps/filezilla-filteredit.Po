@@ -1,0 +1,48 @@
+filezilla-filteredit.o: filteredit.cpp filteredit.h filter.h dialogex.h \
+ wrapengine.h /usr/include/wx-2.8/wx/regex.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/string.h \
+ filter_conditions_dialog.h /usr/include/c++/4.6/set \
+ /usr/include/c++/4.6/bits/stl_tree.h /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/stl_multiset.h \
+ /usr/include/c++/4.6/bits/range_access.h customheightlistctrl.h \
+ /usr/include/wx-2.8/wx/scrolwin.h window_state_manager.h Options.h
+
+filteredit.h:
+
+filter.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+/usr/include/wx-2.8/wx/regex.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+filter_conditions_dialog.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+customheightlistctrl.h:
+
+/usr/include/wx-2.8/wx/scrolwin.h:
+
+window_state_manager.h:
+
+Options.h:

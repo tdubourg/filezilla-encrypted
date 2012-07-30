@@ -1,0 +1,8 @@
+filezilla-sizeformatting.o: sizeformatting.cpp sizeformatting.h \
+ ../../src/include/sizeformatting_base.h Options.h
+
+sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:
+
+Options.h:

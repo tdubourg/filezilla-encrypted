@@ -1,0 +1,37 @@
+filezilla-dndobjects.o: dndobjects.cpp dndobjects.h xmlfunctions.h \
+ ../tinyxml/tinyxml.h /usr/include/ctype.h /usr/include/stdio.h \
+ /usr/include/stdlib.h /usr/include/string.h /usr/include/assert.h \
+ /usr/include/features.h /usr/include/c++/4.6/string \
+ /usr/include/c++/4.6/iostream /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/istream /usr/include/c++/4.6/ostream \
+ /usr/include/c++/4.6/bits/sstream.tcc
+
+dndobjects.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:

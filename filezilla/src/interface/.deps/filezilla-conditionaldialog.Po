@@ -1,0 +1,20 @@
+filezilla-conditionaldialog.o: conditionaldialog.cpp conditionaldialog.h \
+ filezillaapp.h /usr/include/wx-2.8/wx/debugrpt.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/arrstr.h wrapengine.h Options.h
+
+conditionaldialog.h:
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+wrapengine.h:
+
+Options.h:

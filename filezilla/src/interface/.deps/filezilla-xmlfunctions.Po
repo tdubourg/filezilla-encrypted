@@ -1,0 +1,57 @@
+filezilla-xmlfunctions.o: xmlfunctions.cpp xmlfunctions.h \
+ ../tinyxml/tinyxml.h /usr/include/ctype.h /usr/include/stdio.h \
+ /usr/include/stdlib.h /usr/include/string.h /usr/include/assert.h \
+ /usr/include/features.h /usr/include/c++/4.6/string \
+ /usr/include/c++/4.6/iostream /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/istream /usr/include/c++/4.6/ostream \
+ /usr/include/c++/4.6/bits/sstream.tcc Options.h \
+ /usr/include/wx-2.8/wx/ffile.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/filefn.h \
+ /usr/include/wx-2.8/wx/convauto.h /usr/include/wx-2.8/wx/strconv.h \
+ /usr/include/wx-2.8/wx/log.h ../../src/include/local_filesys.h
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+Options.h:
+
+/usr/include/wx-2.8/wx/ffile.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/convauto.h:
+
+/usr/include/wx-2.8/wx/strconv.h:
+
+/usr/include/wx-2.8/wx/log.h:
+
+../../src/include/local_filesys.h:

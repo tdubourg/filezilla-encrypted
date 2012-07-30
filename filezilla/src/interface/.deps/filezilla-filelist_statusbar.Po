@@ -1,0 +1,33 @@
+filezilla-filelist_statusbar.o: filelist_statusbar.cpp \
+ filelist_statusbar.h ../../src/include/option_change_event_handler.h \
+ /usr/include/c++/4.6/set /usr/include/c++/4.6/bits/stl_tree.h \
+ /usr/include/c++/4.6/bits/stl_set.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/stl_multiset.h \
+ /usr/include/c++/4.6/bits/range_access.h /usr/include/c++/4.6/vector \
+ sizeformatting.h ../../src/include/sizeformatting_base.h
+
+filelist_statusbar.h:
+
+../../src/include/option_change_event_handler.h:
+
+/usr/include/c++/4.6/set:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_set.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/stl_multiset.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+/usr/include/c++/4.6/vector:
+
+sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:

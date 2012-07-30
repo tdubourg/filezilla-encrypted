@@ -1,0 +1,10 @@
+filezilla-view.o: view.cpp view.h viewheader.h state.h \
+ ../../src/include/local_path.h
+
+view.h:
+
+viewheader.h:
+
+state.h:
+
+../../src/include/local_path.h:

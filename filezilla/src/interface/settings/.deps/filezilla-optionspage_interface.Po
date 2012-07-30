@@ -1,0 +1,37 @@
+settings/filezilla-optionspage_interface.o: \
+ settings/optionspage_interface.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_interface.h settings/../Mainfrm.h \
+ /usr/include/wx-2.8/wx/taskbar.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/unix/taskbarx11.h \
+ settings/../power_management.h settings/../state.h \
+ ../../src/include/local_path.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_interface.h:
+
+settings/../Mainfrm.h:
+
+/usr/include/wx-2.8/wx/taskbar.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/unix/taskbarx11.h:
+
+settings/../power_management.h:
+
+settings/../state.h:
+
+../../src/include/local_path.h:

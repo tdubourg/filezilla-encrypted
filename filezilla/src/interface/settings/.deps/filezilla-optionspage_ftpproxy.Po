@@ -1,0 +1,17 @@
+settings/filezilla-optionspage_ftpproxy.o: \
+ settings/optionspage_ftpproxy.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_ftpproxy.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_ftpproxy.h:

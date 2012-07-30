@@ -1,0 +1,3 @@
+filezilla-splitter.o: splitter.cpp splitter.h
+
+splitter.h:

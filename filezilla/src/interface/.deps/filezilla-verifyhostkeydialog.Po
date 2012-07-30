@@ -1,0 +1,20 @@
+filezilla-verifyhostkeydialog.o: verifyhostkeydialog.cpp \
+ verifyhostkeydialog.h /usr/include/wx-2.8/wx/tokenzr.h \
+ /usr/include/wx-2.8/wx/object.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/arrstr.h dialogex.h wrapengine.h ipcmutex.h
+
+verifyhostkeydialog.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+ipcmutex.h:

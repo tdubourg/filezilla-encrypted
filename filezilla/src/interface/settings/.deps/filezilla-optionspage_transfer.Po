@@ -1,0 +1,22 @@
+settings/filezilla-optionspage_transfer.o: \
+ settings/optionspage_transfer.cpp settings/../Options.h \
+ settings/../sizeformatting.h ../../src/include/sizeformatting_base.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_transfer.h
+
+settings/../Options.h:
+
+settings/../sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_transfer.h:

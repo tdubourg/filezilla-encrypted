@@ -1,0 +1,42 @@
+libengine_a-httpcontrolsocket.o: httpcontrolsocket.cpp ControlSocket.h \
+ ../../src/include/socket.h logging_private.h backend.h ratelimiter.h \
+ httpcontrolsocket.h tlssocket.h /usr/include/gnutls/gnutls.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h /usr/include/time.h \
+ /usr/include/gnutls/compat.h /usr/include/wx-2.8/wx/file.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/filefn.h /usr/include/wx-2.8/wx/strconv.h \
+ /usr/include/errno.h
+
+ControlSocket.h:
+
+../../src/include/socket.h:
+
+logging_private.h:
+
+backend.h:
+
+ratelimiter.h:
+
+httpcontrolsocket.h:
+
+tlssocket.h:
+
+/usr/include/gnutls/gnutls.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/gnutls/compat.h:
+
+/usr/include/wx-2.8/wx/file.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/strconv.h:
+
+/usr/include/errno.h:

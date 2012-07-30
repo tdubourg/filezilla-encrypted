@@ -1,0 +1,15 @@
+filezilla-speedlimits_dialog.o: speedlimits_dialog.cpp sizeformatting.h \
+ ../../src/include/sizeformatting_base.h speedlimits_dialog.h dialogex.h \
+ wrapengine.h Options.h
+
+sizeformatting.h:
+
+../../src/include/sizeformatting_base.h:
+
+speedlimits_dialog.h:
+
+dialogex.h:
+
+wrapengine.h:
+
+Options.h:

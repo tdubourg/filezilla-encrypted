@@ -1,0 +1,13 @@
+filezilla-cmdline.o: cmdline.cpp cmdline.h \
+ /usr/include/wx-2.8/wx/cmdline.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h
+
+cmdline.h:
+
+/usr/include/wx-2.8/wx/cmdline.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:

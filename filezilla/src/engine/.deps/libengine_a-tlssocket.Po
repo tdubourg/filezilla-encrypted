@@ -1,0 +1,30 @@
+libengine_a-tlssocket.o: tlssocket.cpp tlssocket.h \
+ /usr/include/gnutls/gnutls.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h /usr/include/time.h \
+ /usr/include/gnutls/compat.h backend.h ratelimiter.h \
+ ../../src/include/socket.h ControlSocket.h logging_private.h \
+ /usr/include/gnutls/x509.h /usr/include/errno.h
+
+tlssocket.h:
+
+/usr/include/gnutls/gnutls.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/gnutls/compat.h:
+
+backend.h:
+
+ratelimiter.h:
+
+../../src/include/socket.h:
+
+ControlSocket.h:
+
+logging_private.h:
+
+/usr/include/gnutls/x509.h:
+
+/usr/include/errno.h:

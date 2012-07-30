@@ -1,0 +1,65 @@
+libengine_a-ControlSocket.o: ControlSocket.cpp ControlSocket.h \
+ ../../src/include/socket.h logging_private.h backend.h ratelimiter.h \
+ directorycache.h ../../src/include/local_filesys.h \
+ ../../src/include/local_path.h proxy.h servercapabilities.h \
+ ../../src/include/sizeformatting_base.h /usr/include/wx-2.8/wx/file.h \
+ /usr/include/wx-2.8/wx/defs.h /usr/include/wx-2.8/wx/string.h \
+ /usr/include/wx-2.8/wx/filefn.h /usr/include/wx-2.8/wx/strconv.h \
+ /usr/include/wx-2.8/wx/filename.h /usr/include/wx-2.8/wx/arrstr.h \
+ /usr/include/wx-2.8/wx/datetime.h /usr/include/wx-2.8/wx/intl.h \
+ /usr/include/idna.h /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h \
+ /usr/include/idn-int.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stdint.h \
+ /usr/include/idn-free.h /usr/include/errno.h
+
+ControlSocket.h:
+
+../../src/include/socket.h:
+
+logging_private.h:
+
+backend.h:
+
+ratelimiter.h:
+
+directorycache.h:
+
+../../src/include/local_filesys.h:
+
+../../src/include/local_path.h:
+
+proxy.h:
+
+servercapabilities.h:
+
+../../src/include/sizeformatting_base.h:
+
+/usr/include/wx-2.8/wx/file.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/strconv.h:
+
+/usr/include/wx-2.8/wx/filename.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+/usr/include/wx-2.8/wx/datetime.h:
+
+/usr/include/wx-2.8/wx/intl.h:
+
+/usr/include/idna.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/idn-int.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stdint.h:
+
+/usr/include/idn-free.h:
+
+/usr/include/errno.h:

@@ -1,0 +1,16 @@
+settings/filezilla-optionspage_debug.o: settings/optionspage_debug.cpp \
+ settings/../Options.h settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_debug.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_debug.h:

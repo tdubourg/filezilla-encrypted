@@ -1,0 +1,142 @@
+filezilla-FileZilla.o: FileZilla.cpp filezillaapp.h \
+ /usr/include/wx-2.8/wx/debugrpt.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/arrstr.h \
+ Mainfrm.h /usr/include/wx-2.8/wx/taskbar.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/unix/taskbarx11.h \
+ Options.h wrapengine.h buildinfo.h /usr/include/wx-2.8/wx/tokenzr.h \
+ /usr/include/wx-2.8/wx/object.h cmdline.h \
+ /usr/include/wx-2.8/wx/cmdline.h welcome_dialog.h dialogex.h \
+ /usr/include/wx-2.8/wx/xrc/xh_bmpbt.h \
+ /usr/include/wx-2.8/wx/xrc/xmlres.h /usr/include/wx-2.8/wx/xrc/xh_bttn.h \
+ /usr/include/wx-2.8/wx/xrc/xh_chckb.h \
+ /usr/include/wx-2.8/wx/xrc/xh_chckl.h \
+ /usr/include/wx-2.8/wx/xrc/xh_choic.h \
+ /usr/include/wx-2.8/wx/xrc/xh_dlg.h \
+ /usr/include/wx-2.8/wx/xrc/xh_gauge.h \
+ /usr/include/wx-2.8/wx/xrc/xh_listb.h \
+ /usr/include/wx-2.8/wx/xrc/xh_listc.h \
+ /usr/include/wx-2.8/wx/xrc/xh_menu.h \
+ /usr/include/wx-2.8/wx/xrc/xh_notbk.h \
+ /usr/include/wx-2.8/wx/xrc/xh_panel.h \
+ /usr/include/wx-2.8/wx/xrc/xh_radbt.h \
+ /usr/include/wx-2.8/wx/xrc/xh_scwin.h \
+ /usr/include/wx-2.8/wx/xrc/xh_sizer.h /usr/include/wx-2.8/wx/sizer.h \
+ /usr/include/wx-2.8/wx/gbsizer.h /usr/include/wx-2.8/wx/xrc/xh_spin.h \
+ /usr/include/wx-2.8/wx/xrc/xh_stbmp.h \
+ /usr/include/wx-2.8/wx/xrc/xh_stbox.h \
+ /usr/include/wx-2.8/wx/xrc/xh_stlin.h \
+ /usr/include/wx-2.8/wx/xrc/xh_sttxt.h xh_text_ex.h \
+ /usr/include/wx-2.8/wx/xrc/xh_text.h \
+ /usr/include/wx-2.8/wx/xrc/xh_tree.h \
+ /usr/include/wx-2.8/wx/xrc/xh_hyperlink.h xh_toolb_ex.h xh_menu_ex.h \
+ ../dbus/session_manager.h /usr/include/wx-2.8/wx/stdpaths.h \
+ /usr/include/wx-2.8/wx/filefn.h /usr/include/wx-2.8/wx/unix/stdpaths.h \
+ locale_initializer.h /usr/include/c++/4.6/string prefix.h
+
+filezillaapp.h:
+
+/usr/include/wx-2.8/wx/debugrpt.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/arrstr.h:
+
+Mainfrm.h:
+
+/usr/include/wx-2.8/wx/taskbar.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/unix/taskbarx11.h:
+
+Options.h:
+
+wrapengine.h:
+
+buildinfo.h:
+
+/usr/include/wx-2.8/wx/tokenzr.h:
+
+/usr/include/wx-2.8/wx/object.h:
+
+cmdline.h:
+
+/usr/include/wx-2.8/wx/cmdline.h:
+
+welcome_dialog.h:
+
+dialogex.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_bmpbt.h:
+
+/usr/include/wx-2.8/wx/xrc/xmlres.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_bttn.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_chckb.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_chckl.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_choic.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_dlg.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_gauge.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_listb.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_listc.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_menu.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_notbk.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_panel.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_radbt.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_scwin.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_sizer.h:
+
+/usr/include/wx-2.8/wx/sizer.h:
+
+/usr/include/wx-2.8/wx/gbsizer.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_spin.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_stbmp.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_stbox.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_stlin.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_sttxt.h:
+
+xh_text_ex.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_text.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_tree.h:
+
+/usr/include/wx-2.8/wx/xrc/xh_hyperlink.h:
+
+xh_toolb_ex.h:
+
+xh_menu_ex.h:
+
+../dbus/session_manager.h:
+
+/usr/include/wx-2.8/wx/stdpaths.h:
+
+/usr/include/wx-2.8/wx/filefn.h:
+
+/usr/include/wx-2.8/wx/unix/stdpaths.h:
+
+locale_initializer.h:
+
+/usr/include/c++/4.6/string:
+
+prefix.h:

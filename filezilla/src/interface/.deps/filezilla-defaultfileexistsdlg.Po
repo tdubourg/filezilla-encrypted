@@ -1,0 +1,8 @@
+filezilla-defaultfileexistsdlg.o: defaultfileexistsdlg.cpp \
+ defaultfileexistsdlg.h dialogex.h wrapengine.h
+
+defaultfileexistsdlg.h:
+
+dialogex.h:
+
+wrapengine.h:

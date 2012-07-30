@@ -1,0 +1,113 @@
+settings/filezilla-optionspage_connection.o: \
+ settings/optionspage_connection.cpp settings/../Options.h \
+ settings/settingsdialog.h settings/../dialogex.h \
+ settings/../wrapengine.h settings/optionspage.h \
+ settings/optionspage_connection.h settings/../netconfwizard.h \
+ /usr/include/wx-2.8/wx/wizard.h /usr/include/wx-2.8/wx/defs.h \
+ /usr/include/wx-2.8/wx/dialog.h /usr/include/wx-2.8/wx/panel.h \
+ /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/bitmap.h \
+ /usr/include/wx-2.8/wx/generic/wizard.h \
+ ../../src/include/externalipresolver.h ../../src/include/socket.h \
+ /usr/include/wx-2.8/wx/socket.h /usr/include/wx-2.8/wx/sckaddr.h \
+ /usr/include/wx-2.8/wx/string.h /usr/include/wx-2.8/wx/gsocket.h \
+ /usr/include/wx-2.8/wx/dlimpexp.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h \
+ /usr/include/i386-linux-gnu/sys/types.h \
+ /usr/include/wx-2.8/wx/unix/gsockunx.h \
+ /usr/lib/wx/include/gtk2-unicode-release-2.8/wx/setup.h \
+ /usr/include/i386-linux-gnu/sys/socket.h /usr/include/features.h \
+ /usr/include/i386-linux-gnu/sys/uio.h \
+ /usr/include/i386-linux-gnu/bits/uio.h \
+ /usr/include/i386-linux-gnu/bits/sigset.h \
+ /usr/include/i386-linux-gnu/bits/socket.h \
+ /usr/include/i386-linux-gnu/bits/sockaddr.h \
+ /usr/include/i386-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/i386-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/i386-linux-gnu/bits/socket2.h \
+ /usr/include/i386-linux-gnu/sys/un.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h /usr/include/string.h \
+ /usr/include/wx-2.8/wx/list.h
+
+settings/../Options.h:
+
+settings/settingsdialog.h:
+
+settings/../dialogex.h:
+
+settings/../wrapengine.h:
+
+settings/optionspage.h:
+
+settings/optionspage_connection.h:
+
+settings/../netconfwizard.h:
+
+/usr/include/wx-2.8/wx/wizard.h:
+
+/usr/include/wx-2.8/wx/defs.h:
+
+/usr/include/wx-2.8/wx/dialog.h:
+
+/usr/include/wx-2.8/wx/panel.h:
+
+/usr/include/wx-2.8/wx/event.h:
+
+/usr/include/wx-2.8/wx/bitmap.h:
+
+/usr/include/wx-2.8/wx/generic/wizard.h:
+
+../../src/include/externalipresolver.h:
+
+../../src/include/socket.h:
+
+/usr/include/wx-2.8/wx/socket.h:
+
+/usr/include/wx-2.8/wx/sckaddr.h:
+
+/usr/include/wx-2.8/wx/string.h:
+
+/usr/include/wx-2.8/wx/gsocket.h:
+
+/usr/include/wx-2.8/wx/dlimpexp.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h:
+
+/usr/include/i386-linux-gnu/sys/types.h:
+
+/usr/include/wx-2.8/wx/unix/gsockunx.h:
+
+/usr/lib/wx/include/gtk2-unicode-release-2.8/wx/setup.h:
+
+/usr/include/i386-linux-gnu/sys/socket.h:
+
+/usr/include/features.h:
+
+/usr/include/i386-linux-gnu/sys/uio.h:
+
+/usr/include/i386-linux-gnu/bits/uio.h:
+
+/usr/include/i386-linux-gnu/bits/sigset.h:
+
+/usr/include/i386-linux-gnu/bits/socket.h:
+
+/usr/include/i386-linux-gnu/bits/sockaddr.h:
+
+/usr/include/i386-linux-gnu/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/i386-linux-gnu/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/i386-linux-gnu/bits/socket2.h:
+
+/usr/include/i386-linux-gnu/sys/un.h:
+
+/usr/include/i386-linux-gnu/sys/cdefs.h:
+
+/usr/include/string.h:
+
+/usr/include/wx-2.8/wx/list.h:

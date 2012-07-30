@@ -1,0 +1,8 @@
+filezilla-auto_ascii_files.o: auto_ascii_files.cpp auto_ascii_files.h \
+ Options.h ../../src/include/local_filesys.h
+
+auto_ascii_files.h:
+
+Options.h:
+
+../../src/include/local_filesys.h:
