@@ -78,7 +78,7 @@ public:
 	unsigned int GetPort() const;
 	enum LogonType GetLogonType() const;
 	wxString GetUser() const;
-	wxString GetPass() const;
+	wxString GetPass(bool decrypt=true) const;
 	wxString GetAccount() const;
 	int GetTimezoneOffset() const;
 	enum PasvMode GetPasvMode() const;

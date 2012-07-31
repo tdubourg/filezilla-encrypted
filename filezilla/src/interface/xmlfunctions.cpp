@@ -697,7 +697,7 @@ void SetServer(TiXmlElement *node, const CServer& server)
 				logonType = ASK;
 			else
 			{
-				AddTextElement(node, "Pass", server.GetPass());
+				AddTextElement(node, "Pass", server.GetPass(false));
 
 				if (server.GetLogonType() == ACCOUNT)
 					AddTextElement(node, "Account", server.GetAccount());

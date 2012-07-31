@@ -292,12 +292,12 @@ wxString CServer::GetUser() const
 	return m_user;
 }
 
-wxString CServer::GetPass() const
+wxString CServer::GetPass(bool decrypt/*=true*/) const
 {
 	if (m_logonType == ANONYMOUS)
 		return _T("anon@localhost");
 
-	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS)) { // @td
+	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
 		using namespace std;
 		using namespace CryptoPP;
 		string ciphertext = string(m_pass.mb_str());
