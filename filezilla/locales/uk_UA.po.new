@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Igor Chomko <igorchomko@gmail.com>\n"
 "Language-Team: Ihor Chomko <igorchomko@gmail.com>\n"
@@ -1339,8 +1339,8 @@ msgstr "Поновити списки файлу та папки"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Акаунт"
 
@@ -1517,7 +1517,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Анонімний"
 
@@ -1581,8 +1581,8 @@ msgstr "Переключає відображення черги передач�
 msgid "Ask for action"
 msgstr "&Запитувати перед виконанням"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Запит на пароль"
 
@@ -2700,7 +2700,7 @@ msgstr "Введіть пароль"
 msgid "D&ouble-click action on directories:"
 msgstr ""
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "DOS- подібний з віртуальними шляхами"
 
@@ -2749,7 +2749,7 @@ msgstr "Установки відлагодження"
 msgid "Default &local directory:"
 msgstr "Локальна &директорія по замовчуванню:"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "По замовчуванню (Автовизначення)"
 
@@ -3277,7 +3277,7 @@ msgstr "Помилка завантаження файлу xml "
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3380,11 +3380,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3413,11 +3413,11 @@ msgstr ""
 "Для передачі даних FTP використовує вторинне з'єднання. Такі додаткові "
 "з'єднання можна встановити двома шляхами."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP через визначений TLS/SSL"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP через не явний TLS/SSL"
 
@@ -3898,7 +3898,7 @@ msgid "For reliability you should specify a range of at least 10 ports."
 msgstr ""
 "Задля надійності вам необхідно вказати діапазон ,щонайменше, 10 портів."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 #, fuzzy
 msgid ""
 "For this session the default settings will be used. Any changes to the "
@@ -3976,7 +3976,7 @@ msgstr "Дозволи для груп"
 msgid "H&igh"
 msgstr "Ви&сокий"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 #, fuzzy
 msgid "HTTPS - HTTP over TLS"
 msgstr "FTPS - FTP через не явний TLS/SSL"
@@ -4020,7 +4020,7 @@ msgstr "Головний ключ шифрування хосту:"
 msgid "Host key mismatch"
 msgstr "Ключ хоста не співпадає"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Хост стартує з '[',однак заключної дужки не знайдено."
 
@@ -4305,8 +4305,8 @@ msgstr "Ініціалазація TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Інтерактивний"
 
@@ -4355,7 +4355,7 @@ msgstr "Недійсні дані"
 msgid "Invalid filename"
 msgstr "Недійсне ім'я файлу"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Недійсний хост.Після заключної дужки може слідувати лише кома або "
@@ -4365,13 +4365,13 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Недійсне введення"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 "Недійсний заданий порт. Значення порту повинно становити від 1 до 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4420,7 +4420,7 @@ msgstr "Недійсний шлях до сайту"
 msgid "Invalid size in condition"
 msgstr "Недійсний розмір в умовах"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Подано недійсне ім'я користувача."
 
@@ -4829,8 +4829,8 @@ msgstr "Ніякі файли зараз не редагуються."
 msgid "No filter name given"
 msgstr "Не задано імені фільтру"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Не вказаний хост,введіть ім'я хосту,будь-ласка."
 
@@ -4886,8 +4886,8 @@ msgstr "Нічого не вибрано"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Звичайний"
 
@@ -7657,7 +7657,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

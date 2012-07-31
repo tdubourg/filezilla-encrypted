@@ -1,4 +1,5 @@
 #include <filezilla.h>
+#include "../interface/Options.h"
 // Start of @td
 #include <string>
 
@@ -300,8 +301,9 @@ wxString CServer::GetPass() const
 		using namespace std;
 		using namespace CryptoPP;
 		string ciphertext = string(m_pass.mb_str());
+		string password = "herpityderp12345!";// @TODO change that to fetch it from the XML File and decrypt it...
 		
-		int iterations = atoi(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS));
+		int iterations = COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS);
 		iterations = (iterations > 0) ? iterations : 1;
 		
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
@@ -310,10 +312,13 @@ wxString CServer::GetPass() const
 		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
 		
 		SecByteBlock recoveredkey(AES::DEFAULT_KEYLENGTH);
-		cout << "Re-deriving encryption key based on encoded values above." << endl;
+
+		PKCS5_PBKDF2_HMAC<SHA256> pbkdf;
+
+		
 		pbkdf.DeriveKey(recoveredkey, recoveredkey.size(), 0x00, (byte *) password.data(), password.size(),
 			recoveredsalt, recoveredsalt.size(), iterations);
-		cout << "Done." << endl;
+		
 		
 		CBC_Mode<AES>::Decryption aesdecryption(recoveredkey, recoveredkey.size(), recoverediv);
 		string recoveredtext;
@@ -321,7 +326,7 @@ wxString CServer::GetPass() const
 			new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
 			));
 		
-		wxString result = wxString(recoveredtext.c_str())
+		wxString result = wxString(recoveredtext.c_str(), wxConvUTF8);
 		return result;
 	}
 	return m_pass;
@@ -612,7 +617,7 @@ bool CServer::SetHost(wxString host, unsigned int port)
 	return true;
 }
 
-bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/)
+bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bool alreadyEncrypted/* = false*/) // @td
 {
 	if (m_logonType == ANONYMOUS)
 		return true;
@@ -622,12 +627,13 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/)
 		if (m_logonType != ASK && m_logonType != INTERACTIVE)
 			return false;
 		m_pass = _T("");
-	} else if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS)) { // start of @td
+	} else if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { // start of @td
 		using namespace std;
 		using namespace CryptoPP;
+		string password = "herpityderp12345!";// @TODO change that to fetch it from the XML File and decrypt it...
 		string message = string(m_pass.mb_str());
 		
-		int iterations = atoi(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS));
+		int iterations = COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS);
 		iterations = (iterations > 0) ? iterations : 1;
 		
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
@@ -635,7 +641,6 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/)
 		SecByteBlock recoverediv(AES::BLOCKSIZE);
 		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
 		
-
 		SecByteBlock derivedkey(AES::DEFAULT_KEYLENGTH);
 
 		PKCS5_PBKDF2_HMAC<SHA256> pbkdf;
@@ -662,7 +667,7 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/)
 			new StreamTransformationFilter(aesencryption, new HexEncoder( new StringSink(ciphertext)))
 			);
 
-		m_pass = wxString(recoveredtext.c_str(), wxConvUTF8)
+		m_pass = wxString(ciphertext.c_str(), wxConvUTF8);
 		return true;
 	} else {// end of @td
 		m_pass = pass;

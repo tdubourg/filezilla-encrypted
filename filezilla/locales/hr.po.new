@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: filezilla 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2009-07-28 08:40+0100\n"
 "Last-Translator: Zdenko Rupčić <zrupcic@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -1329,8 +1329,8 @@ msgstr "Iznad spiska datoteka"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Račun"
 
@@ -1495,7 +1495,7 @@ msgstr "Na odredišnom mjestu već postoji stavka s istim nazivom."
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Anonimna"
 
@@ -1558,8 +1558,8 @@ msgstr "Kao kartica u prikazu reda čekanja prijenosa"
 msgid "Ask for action"
 msgstr "&Upitati za postupak"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Pitati za lozinku"
 
@@ -2677,7 +2677,7 @@ msgstr "Unesite lozinku"
 msgid "D&ouble-click action on directories:"
 msgstr "Postupak s mapama po d&vokliku:"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "Kao DOS s prividnim putanjama"
 
@@ -2726,7 +2726,7 @@ msgstr "Postavke postupka debugging"
 msgid "Default &local directory:"
 msgstr "Početna &mjesna mapa:"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "Početno (Samoprepoznavanje)"
 
@@ -3253,7 +3253,7 @@ msgstr "Pogreška pri učitavanju XML-datoteke"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3356,11 +3356,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3390,11 +3390,11 @@ msgstr ""
 "FTP za prijenos podataka koristi sekundarne veze. Te dodatne veze mogu biti "
 "uspostavljene na dva načina."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP putem izričitog TLS-a/SSL-a"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP putem bezuvjetnog TLS-a/SSL-a"
 
@@ -3876,7 +3876,7 @@ msgstr ""
 "Za postizanje pouzdanosti veza i prijenosa podataka bi ste trebali zadati "
 "raspon od barem 10 portova."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3952,7 +3952,7 @@ msgstr "Dopuštenja skupine:"
 msgid "H&igh"
 msgstr "v&isoko"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 #, fuzzy
 msgid "HTTPS - HTTP over TLS"
 msgstr "FTPS - FTP putem bezuvjetnog TLS-a/SSL-a"
@@ -3997,7 +3997,7 @@ msgstr "Otisak prsta poslužiteljskog ključa:"
 msgid "Host key mismatch"
 msgstr "Poslužiteljski ključ nije shodan"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Poslužitelj započinje s '[' ali nije pronađena zatvarajuća zagrada."
 
@@ -4287,8 +4287,8 @@ msgstr "Inicijaliziranje TLS-a..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Interaktivna"
 
@@ -4337,7 +4337,7 @@ msgstr "Nevažeći nadnevak"
 msgid "Invalid filename"
 msgstr "Nevažeći naziv datoteke"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Nevažeći poslužitelj: Nakon zatvaranja zagrade smiju slijediti samo dvotočka "
@@ -4347,12 +4347,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Nevažeći unos"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Navedeni port je nevažeći. Port mora biti vrijednost od 1 do 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4400,7 +4400,7 @@ msgstr "Putanja mrežnog mjesta nije valjana"
 msgid "Invalid size in condition"
 msgstr "U uvjetu je nevažeća veličina"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Navedeno je nevažeće korisničko ime."
 
@@ -4809,8 +4809,8 @@ msgstr "Trenutno se ne uređuje ni jedna datoteka."
 msgid "No filter name given"
 msgstr "Navedite molim naziv filtra."
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Naziv poslužitelja nije naveden. Molim unesite ga."
 
@@ -4867,8 +4867,8 @@ msgstr "Još ni jedan nije odabran"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Uobičajena"
 
@@ -7643,7 +7643,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2011-11-03 20:45+0200\n"
 "Last-Translator: Стоян Димтиров <stoyanster от гмаил>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -1300,8 +1300,8 @@ msgstr "Над панела с файлове и папки"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Регистрация"
 
@@ -1469,7 +1469,7 @@ msgstr "Елемент със същото име като влачения ве
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Анонимно"
 
@@ -1532,8 +1532,8 @@ msgstr "Като раздел в панела на опашката"
 msgid "Ask for action"
 msgstr "Питане за действие"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Парола"
 
@@ -2655,7 +2655,7 @@ msgstr "Да &не бъдат запазвани пароли"
 msgid "D&ouble-click action on directories:"
 msgstr "При двойно натискане върху &папки:"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "DOS-подобни виртуални пътища"
 
@@ -2704,7 +2704,7 @@ msgstr "Настройки на трасирането"
 msgid "Default &local directory:"
 msgstr "&Местна папка:"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "По подразбиране (автоматично)"
 
@@ -3216,7 +3216,7 @@ msgstr "Грешка при зареждане на опашката"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3315,11 +3315,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Протокол за пренос на файлове"
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Протокол за пренос на файлове с криптиране по желание"
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Несигурен протокол за пренос на файлове"
 
@@ -3348,11 +3348,11 @@ msgstr ""
 "Протоколът FTP използва вторични връзки за прехвърляне на данни. Тези "
 "допълнителни връзки могат да се установят по два начина."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP през явен TLS/SSL"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPES - FTP през скрит TLS/SSL"
 
@@ -3818,7 +3818,7 @@ msgid "For reliability you should specify a range of at least 10 ports."
 msgstr ""
 "За по-голяма надеждност трябва да укажете обхват от най-малко 10 порта."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3891,7 +3891,7 @@ msgstr "Права за групата"
 msgid "H&igh"
 msgstr "&Висок"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP върху TLS"
 
@@ -3935,7 +3935,7 @@ msgstr "Ключов отпечатък на хоста:"
 msgid "Host key mismatch"
 msgstr "Несъответствие на хост-ключа"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Хостът започва с \"[\", но липсва затварящата скоба."
 
@@ -4224,8 +4224,8 @@ msgstr "Инициализация на TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Несигурен сървър, неподдържащ FTP през TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Интерактивно"
 
@@ -4275,7 +4275,7 @@ msgstr "Невалидна дата"
 msgid "Invalid filename"
 msgstr "Невалидно име на файл"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Невалидно име на хост - затварящата скоба може да бъде последвана само от "
@@ -4285,12 +4285,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Невалидни данни"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Невалиден порт. Портът е число между 1 и 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4338,7 +4338,7 @@ msgstr "Грешен път до връзка"
 msgid "Invalid size in condition"
 msgstr "Невалиден размер в условие"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Невалидно потребителско име."
 
@@ -4742,8 +4742,8 @@ msgstr "В момента няма отворени за редакция фай
 msgid "No filter name given"
 msgstr "Филтърът няма име"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Не е указан хост. Моля, укажете хост."
 
@@ -4798,8 +4798,8 @@ msgstr "Няма избрани"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Нормално"
 
@@ -7512,7 +7512,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr "Винаги можете отново да отворите този прозорец от менюто за помощ."
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 "Може да оставите полето за порт празно, за да бъде използван този по "

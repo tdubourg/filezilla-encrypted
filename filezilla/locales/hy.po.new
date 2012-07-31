@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Հայերեն թարգմանություն\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2011-08-29 18:10+0400\n"
 "Last-Translator: Hrant Ohanyan <hrantohanyan@mail.am>\n"
 "Language-Team: Hrant Ohanyan <hrantohanyan@mail.am>\n"
@@ -1288,8 +1288,8 @@ msgstr "Ֆայլերի ցանկից վեր"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Գործածողի հաշվեկշիռ"
 
@@ -1455,7 +1455,7 @@ msgstr "Այս անունով ֆայլ արդեն կա։"
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Անանուն"
 
@@ -1514,8 +1514,8 @@ msgstr "Պատուհանի տեսքով առաջադրանքի տողում"
 msgid "Ask for action"
 msgstr "Հարցնել գործողության մասին"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Գաղտնաբառի հարցում"
 
@@ -2612,7 +2612,7 @@ msgstr "Նշեք գաղտնաբառը"
 msgid "D&ouble-click action on directories:"
 msgstr "Գ&ործողություն մկնիկի կրկնակի սեղմամբ."
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "DOS-ի տեսքով՝վիրտուալ ճանապարհով"
 
@@ -2661,7 +2661,7 @@ msgstr "Վրիպազերծման կարգավորումներ"
 msgid "Default &local directory:"
 msgstr "Համակարգչային հիմնական &թղթապանակը."
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "Ըստ լռելյայնի (Ինքնորոշում)"
 
@@ -3158,7 +3158,7 @@ msgstr "Հերթի բացման սխալ"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3255,11 +3255,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Ֆայլերի փոխանցման արձանագրություն"
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Ֆայլերի փոխանցման արձանագրություն՝ լրացուցիչ կոդավորմամբ"
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Ֆայլերի փոխանցման արձանագրությունը վստահելի չէ"
 
@@ -3288,11 +3288,11 @@ msgstr ""
 "FTP-ն փոխանցման համար օգտագործում է երկրորդական կապուղիներ։ Այս կապումները "
 "կարող են իրականացվել երկու ճանապարհով։"
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP՝ ակնհայտ TLS/SSL-ով"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP՝ անորոշ TLS/SSL-ով"
 
@@ -3747,7 +3747,7 @@ msgstr ""
 "Ապահովության համար դարպասների միջև տարբերությունը պետք է լինի ոչ պակաս քան "
 "10։"
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3819,7 +3819,7 @@ msgstr "Խմբի լիազորությունները"
 msgid "H&igh"
 msgstr "Բ&արձր"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP TLS-ի միջոցով"
 
@@ -3862,7 +3862,7 @@ msgstr "Հոսթի բանալու հանրագումարը."
 msgid "Host key mismatch"
 msgstr "Հոսթի բանալին չի համընկնում"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Հոսթը սկսվում է '['-ով, բայց չկա փակագիծը վերջում։"
 
@@ -4132,8 +4132,8 @@ msgstr "Որոշվում է TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Սպասարկիչը անվտանգ չէ, այն չի աջակցում FTP-ն TLS-ով։"
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Ինտերակտիվ"
 
@@ -4182,7 +4182,7 @@ msgstr "Սխալ ամսաթիվ"
 msgid "Invalid filename"
 msgstr "Ֆայլի սխալ անուն"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "Սխալ հոսթ, նշանից հետո պետք է լինի կետ և դարպասը։"
 
@@ -4190,12 +4190,12 @@ msgstr "Սխալ հոսթ, նշանից հետո պետք է լինի կետ և 
 msgid "Invalid input"
 msgstr "Սխալ տվյալներ"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Դարպասի սխալ թիվ։ Պետք է լինի 1-ից 65535"
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4241,7 +4241,7 @@ msgstr "Կայքի սխալ ճանապարհ"
 msgid "Invalid size in condition"
 msgstr "Սխալ չափ"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Օգտվողի սխալ անուն։"
 
@@ -4634,8 +4634,8 @@ msgstr "Ոչ մի ֆայլ չի խմբագրվում։"
 msgid "No filter name given"
 msgstr "Նշված չէ ֆիլտրի անունը"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Նշեք հոսթը։"
 
@@ -4690,8 +4690,8 @@ msgstr "Ոչինչ չի ընտրված"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Նոր"
 
@@ -7332,7 +7332,7 @@ msgstr "Դուք օգտագործում եք FileZilla-ի վերջին տարբ�
 msgid "You can always open this dialog again through the help menu."
 msgstr "Կարող եք բացել այս պատուհանը Օգնություն ընտրացանկից։"
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr "Թողեք դաշտը դատարկ՝ ծրագրային կարգավորումը օգտագործելու համար։"
 

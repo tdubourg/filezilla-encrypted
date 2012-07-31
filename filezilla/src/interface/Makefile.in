@@ -202,7 +202,7 @@ filezilla_OBJECTS = $(am_filezilla_OBJECTS)
 filezilla_LDADD = $(LDADD)
 filezilla_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(filezilla_CXXFLAGS) \
-	$(CXXFLAGS) $(filezilla_LDFLAGS) $(LDFLAGS) -o $@
+	$(CXXFLAGS) $(filezilla_LDFLAGS) $(LDFLAGS) -lcryptopp -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/src/include
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
 am__depfiles_maybe = depfiles
@@ -734,6 +734,7 @@ settings/filezilla-settingsdialog.$(OBJEXT): settings/$(am__dirstamp) \
 	settings/$(DEPDIR)/$(am__dirstamp)
 filezilla$(EXEEXT): $(filezilla_OBJECTS) $(filezilla_DEPENDENCIES) 
 	@rm -f filezilla$(EXEEXT)
+	echo "Pouet2"
 	$(filezilla_LINK) $(filezilla_OBJECTS) $(filezilla_LDADD) $(LIBS)
 
 mostlyclean-compile:

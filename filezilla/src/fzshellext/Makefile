@@ -79,6 +79,7 @@ LTLIBRARIES = $(lib_LTLIBRARIES)
 libfzshellext_la_LIBADD =
 am_libfzshellext_la_OBJECTS = shellext.lo
 libfzshellext_la_OBJECTS = $(am_libfzshellext_la_OBJECTS)
+LIBTOOLFLAGS = -lcryptopp
 libfzshellext_la_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(libfzshellext_la_LDFLAGS) $(LDFLAGS) -o $@

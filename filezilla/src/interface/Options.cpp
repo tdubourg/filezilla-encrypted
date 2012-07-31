@@ -177,6 +177,12 @@ static const t_Option options[OPTIONS_NUM] =
 	{ "Toolbar hidden", number, _T("0"), normal },
 	{ "Strip VMS revisions", number, _T("0"), normal },
 	{ "Show Site Manager on startup", number, _T("0"), normal },
+	
+	// Start of @td
+	{ "Show Site Manager on startup", number, _T("0"), normal },
+	{ "Show Site Manager on startup", string, _T(""), normal },
+	{ "Show Site Manager on startup", number, _T("0"), normal },
+	// End of @td
 
 	// Default/internal options
 	{ "Config Location", string, _T(""), default_only },

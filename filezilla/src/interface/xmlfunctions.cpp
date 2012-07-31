@@ -594,7 +594,7 @@ bool GetServer(TiXmlElement *node, CServer& server)
 		if ((long)NORMAL == logonType || (long)ACCOUNT == logonType)
 			pass = GetTextElement(node, "Pass");
 
-		if (!server.SetUser(user, pass))
+		if (!server.SetUser(user, pass, true)) // @td
 			return false;
 
 		if ((long)ACCOUNT == logonType)

@@ -486,6 +486,7 @@ uninstall-am: uninstall-dist_desktopentryDATA
 @MAKENSISSCRIPT_TRUE@	rm -f $@
 @MAKENSISSCRIPT_TRUE@	touch test_libtool_exedir.c
 @MAKENSISSCRIPT_TRUE@	$(CC) -c -o test_libtool_exedir.o test_libtool_exedir.c
+@MAKENSISSCRIPT_TRUE@	echo "Pouet1"
 @MAKENSISSCRIPT_TRUE@	exedir=`$(LIBTOOL) -n --mode=link $(CC) -o test_libtool_exedir$(EXEEXT) test_libtool_exedir.o`; \
 @MAKENSISSCRIPT_TRUE@	if echo "$$exedir" | grep -- '-o \.libs' > /dev/null; then \
 @MAKENSISSCRIPT_TRUE@	  echo "!define LT_EXEDIR \".libs\\\"" > libtoolexecutablesubdir.nsh; \

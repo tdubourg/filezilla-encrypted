@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2011-11-03 01:31+0800\n"
 "Last-Translator: Kene Lin <kenelin@gmail.com>\n"
 "Language-Team: milo <milo.tw@gmail.com>\n"
@@ -1267,8 +1267,8 @@ msgstr "在檔案列表的上方"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "帳號"
 
@@ -1428,7 +1428,7 @@ msgstr "目標位置已存在與拖曳來源相同名稱的項目."
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "匿名"
 
@@ -1484,8 +1484,8 @@ msgstr "傳輸佇列的一個頁籤"
 msgid "Ask for action"
 msgstr "詢問動作"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "詢問密碼"
 
@@ -2574,7 +2574,7 @@ msgstr "不儲存密碼(&O)"
 msgid "D&ouble-click action on directories:"
 msgstr "對目錄的雙擊動作(&O):"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "DOS 類型包含虛擬路徑"
 
@@ -2623,7 +2623,7 @@ msgstr "偵錯設定"
 msgid "Default &local directory:"
 msgstr "預設本地目錄(&L):"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "預設(自動偵測)"
 
@@ -3116,7 +3116,7 @@ msgstr "載入佇列錯誤"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3213,11 +3213,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - 檔案傳輸協定"
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - 輔以選用式加密的檔案傳輸協定"
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - 不安全的檔案傳輸協定"
 
@@ -3244,11 +3244,11 @@ msgid ""
 "connections can be established in two ways."
 msgstr "FTP 使用第二個連線來提供資料傳輸. 這些額外的連線可由兩種方法建立."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - 透過外顯式 TLS/SSL 的 FTP"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - 透過隱含式 TLS/SSL 的 FTP"
 
@@ -3694,7 +3694,7 @@ msgstr "想知道更多關於這些選項的詳細資訊, 請執行網路組態�
 msgid "For reliability you should specify a range of at least 10 ports."
 msgstr "為了穩定性您必須指定最少十個的連接埠範圍."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3764,7 +3764,7 @@ msgstr "群組權限"
 msgid "H&igh"
 msgstr "高(&I)"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - 透過 TLS 的 HTTP"
 
@@ -3806,7 +3806,7 @@ msgstr "主機金鑰指紋:"
 msgid "Host key mismatch"
 msgstr "主機金鑰不吻合"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "主機以 '[' 起始, 卻沒有找到對應的結束括弧."
 
@@ -4056,8 +4056,8 @@ msgstr "初始 TLS 加密中..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "不安全的伺服器, 它不支援透過 TLS 的 FTP."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "交談式"
 
@@ -4106,7 +4106,7 @@ msgstr "無效的日期"
 msgid "Invalid filename"
 msgstr "無效的檔名"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "無效的主機, 在結尾括弧後只能接冒號和連接埠號碼."
 
@@ -4114,12 +4114,12 @@ msgstr "無效的主機, 在結尾括弧後只能接冒號和連接埠號碼."
 msgid "Invalid input"
 msgstr "無效的輸入"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "無效的連接埠. 連接埠應介於 1 到 65535 之間."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4165,7 +4165,7 @@ msgstr "無效的站台路徑"
 msgid "Invalid size in condition"
 msgstr "無效的檔案篩選大小"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "無效的使用者名稱."
 
@@ -4557,8 +4557,8 @@ msgstr "未有正在編輯的檔案."
 msgid "No filter name given"
 msgstr "沒有給定篩選器的名稱"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "未填入主機, 請輸入主機名稱."
 
@@ -4613,8 +4613,8 @@ msgstr "尚未選取"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "一般"
 
@@ -7186,7 +7186,7 @@ msgstr "您已在使用最近版本的 FileZilla. 請於未來再次檢查."
 msgid "You can always open this dialog again through the help menu."
 msgstr "您總是能透過工具列說明選單開啟這個對話框."
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr "您可以不輸入連接埠欄位來使用預設的連接埠."
 

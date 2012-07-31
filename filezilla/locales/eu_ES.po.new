@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Filezilla 3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2005-10-18 09:10+0200\n"
 "Last-Translator: xOneca <xoneca+fz@gmail.com>\n"
 "Language-Team: \n"
@@ -1342,8 +1342,8 @@ msgstr "Freskatu fitxategi eta karpeten zerrendak"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Kontua"
 
@@ -1517,7 +1517,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Anonimoa"
 
@@ -1581,8 +1581,8 @@ msgstr "Transferentzia-ilararen bistaratzea aktibatu/desaktibatu"
 msgid "Ask for action"
 msgstr "Galdetu zer egin"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Eskatu pasahitza"
 
@@ -2740,7 +2740,7 @@ msgstr "Sartu pasahitza"
 msgid "D&ouble-click action on directories:"
 msgstr ""
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr ""
 
@@ -2791,7 +2791,7 @@ msgstr ""
 msgid "Default &local directory:"
 msgstr "Direktorio &lokal lehenetsia"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 #, fuzzy
 msgid "Default (Autodetect)"
 msgstr "&Autodetektatu"
@@ -3324,7 +3324,7 @@ msgstr "Errorea xml fitxategia kargatzean"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3428,11 +3428,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3460,11 +3460,11 @@ msgid ""
 "connections can be established in two ways."
 msgstr ""
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr ""
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr ""
 
@@ -3954,7 +3954,7 @@ msgstr ""
 msgid "For reliability you should specify a range of at least 10 ports."
 msgstr ""
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 #, fuzzy
 msgid ""
 "For this session the default settings will be used. Any changes to the "
@@ -4031,7 +4031,7 @@ msgstr "Talde-baimenak"
 msgid "H&igh"
 msgstr "H&andia"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr ""
 
@@ -4080,7 +4080,7 @@ msgstr "Hatz-marka"
 msgid "Host key mismatch"
 msgstr "Gunearen gakoa ez dator bat"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 
@@ -4318,8 +4318,8 @@ msgstr ""
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Elkarreragilea"
 
@@ -4369,7 +4369,7 @@ msgstr "Baliogabeko Fitxategi-izena"
 msgid "Invalid filename"
 msgstr "Baliogabeko Fitxategi-izena"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 
@@ -4378,13 +4378,13 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Baliogabeko Fitxategi-izena"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 "Baliogabeko ataka. Atakak 1 eta 65535 bitarteko zenbaki bat izan behar du."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4427,7 +4427,7 @@ msgstr "Baliogabeko Fitxategi-izena"
 msgid "Invalid size in condition"
 msgstr "Baliogabeko tamaina baldintzan"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Baliogabeko erabiltzaile-izena."
 
@@ -4841,8 +4841,8 @@ msgstr "Honako fitxategi-motak Ascii fitxategien eran erabili:"
 msgid "No filter name given"
 msgstr "Iragazkiaren izena sartu behar da"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Ostalaria edo gunea sartu mesedez."
 
@@ -4902,8 +4902,8 @@ msgstr "Kendu hautatutakoa"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Normala"
 
@@ -7547,7 +7547,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

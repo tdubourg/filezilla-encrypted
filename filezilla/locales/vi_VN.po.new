@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: filezilla-3.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2011-11-12 07:11+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Trần Ngọc Quân <vnwildman@gmail.com>\n"
@@ -1300,8 +1300,8 @@ msgstr "Trên danh sách tệp"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Tài khoản"
 
@@ -1469,7 +1469,7 @@ msgstr "Một mục cùng tên với mục kéo thả đã tồn tại trong v�
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Nặc danh"
 
@@ -1528,8 +1528,8 @@ msgstr "Như một tab trong bảng điều khiển của hàng đợi truyền"
 msgid "Ask for action"
 msgstr "Hỏi hành động"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Hỏi mật khẩu"
 
@@ -2635,7 +2635,7 @@ msgstr "&Không lưu mật khẩu"
 msgid "D&ouble-click action on directories:"
 msgstr "Hành động khi kích đúp chuột trên thư &mục:"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "Tương tự DOS với kiểu đường dẫn ảo"
 
@@ -2684,7 +2684,7 @@ msgstr "Cài đặt gỡ lỗi"
 msgid "Default &local directory:"
 msgstr "Thư mục mặc định trên máy nội &bộ:"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "Mặc định (Tự dò tìm)"
 
@@ -3188,7 +3188,7 @@ msgstr "Lỗi khi tải hàng đợi"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3287,11 +3287,11 @@ msgstr "Giao thức FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Giao Thức Truyền Tệp Tin"
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Giao Thức Truyền Tệp Tin có mã hóa"
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Giao Thức Truyền Tệp Tin Không An Toàn"
 
@@ -3320,11 +3320,11 @@ msgstr ""
 "Giao thức FTP sử dụng kết nối thứ cấp cho việc truyền dữ liệu. Các kết nối "
 "thêm này có thể được thiết lập bằng hai cách."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "Giao thức FTPES - FTP thông qua TLS/SSL"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "Giao thức FTPES - FTP ngầm thông qua TLS/SSL"
 
@@ -3776,7 +3776,7 @@ msgstr ""
 msgid "For reliability you should specify a range of at least 10 ports."
 msgstr "Để chắc chắn hơn bạn có thể ghi rõ một vùng ít nhất là 10 cổng."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3852,7 +3852,7 @@ msgstr "Quyền của nhóm"
 msgid "H&igh"
 msgstr "C&ao"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP thông qua TLS"
 
@@ -3895,7 +3895,7 @@ msgstr "Dấu Khóa nóng:"
 msgid "Host key mismatch"
 msgstr "Khóa nóng không khớp"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Máy chủ bắt đầu với '[' nhưng không đóng bằng dấu ngoặc."
 
@@ -4184,8 +4184,8 @@ msgstr "Đang khởi tạo TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Máy chủ không an toàn, không hỗ trợ FTP thông qua TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Tính tương tác"
 
@@ -4234,7 +4234,7 @@ msgstr "Ngày tháng không hợp lệ"
 msgid "Invalid filename"
 msgstr "Tên không hợp lệ"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Máy chủ không hợp lệ, sau khi đóng dấu ngoặc đơn chỉ có một dấu hai chấm và "
@@ -4244,12 +4244,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Nguồn vào không hợp lệ"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Giá trị cổng sai. Cổng phải có giá trị từ 1 đến 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4297,7 +4297,7 @@ msgstr "Đường dẫn địa chỉ không hợp lệ"
 msgid "Invalid size in condition"
 msgstr "Kích thước không hợp lệ trong điều kiện"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Tên người dùng đã cho không hợp lệ."
 
@@ -4700,8 +4700,8 @@ msgstr "Không có tệp tin nào hiện thời đang được biên tập."
 msgid "No filter name given"
 msgstr "Tên bộ lọc không được chỉ rõ"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "Không có máy chủ được chỉ rõ, hãy nhập tên máy chủ."
 
@@ -4758,8 +4758,8 @@ msgstr "Chưa có gì được chọn"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Bình thường"
 
@@ -7452,7 +7452,7 @@ msgstr "Bạn đã sử dụng bản mới nhất của FileZilla. Hãy kiểm t
 msgid "You can always open this dialog again through the help menu."
 msgstr "Bạn có thể thường xuyên mở hộp thoại này thông qua trình đơn trợ giúp."
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr "Bạn có thể để ô ghi cổng rỗng để sử dụng giá trị cổng mặc định."
 

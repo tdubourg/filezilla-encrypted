@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Filezilla\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 22:43+0200\n"
+"POT-Creation-Date: 2012-07-31 03:35+0200\n"
 "PO-Revision-Date: 2011-05-23 11:13+0200\n"
 "Last-Translator: Alexandru Bogdan Munteanu <muntealb@gmail.com>\n"
 "Language-Team: MunteAlb, Laurențiu Anisie <muntealb@gmail.com>\n"
@@ -1299,8 +1299,8 @@ msgstr "Deasupra listelor de file și dosare"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:858
-#: ../src/engine/server.cpp:877
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
+#: ../src/engine/server.cpp:967
 msgid "Account"
 msgstr "Cont"
 
@@ -1471,7 +1471,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:879
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
 msgid "Anonymous"
 msgstr "Anonim"
 
@@ -1530,8 +1530,8 @@ msgstr "Ca tab în panoul cozii de transfer"
 msgid "Ask for action"
 msgstr "Întreabă utilizatorul ce acțiune dorește"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:854
-#: ../src/engine/server.cpp:873
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
+#: ../src/engine/server.cpp:963
 msgid "Ask for password"
 msgstr "Cu parolă"
 
@@ -2640,7 +2640,7 @@ msgstr "Nu salva par&olele"
 msgid "D&ouble-click action on directories:"
 msgstr "Acțiune la dublu-clic pe d&osar:"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:50
 msgid "DOS-like with virtual paths"
 msgstr "Similar cu DOS, cu căi virtuale"
 
@@ -2689,7 +2689,7 @@ msgstr "Setări de Debugare"
 msgid "Default &local directory:"
 msgstr "Dosarul &Local Implicit:"
 
-#: ../src/engine/server.cpp:26
+#: ../src/engine/server.cpp:42
 msgid "Default (Autodetect)"
 msgstr "Implicit (Autodetectare)"
 
@@ -3209,7 +3209,7 @@ msgstr "Eroare la încărcarea cozii de așteptare"
 #: ../src/interface/sitemanager.cpp:250 ../src/interface/sitemanager.cpp:448
 #: ../src/interface/sitemanager.cpp:544 ../src/interface/sitemanager.cpp:603
 #: ../src/interface/sitemanager.cpp:723 ../src/interface/sitemanager.cpp:810
-#: ../src/interface/Options.cpp:215 ../src/interface/QueueView.cpp:1965
+#: ../src/interface/Options.cpp:221 ../src/interface/QueueView.cpp:1965
 #: ../src/interface/bookmarks_dialog.cpp:172
 #: ../src/interface/bookmarks_dialog.cpp:299
 #: ../src/interface/bookmarks_dialog.cpp:731
@@ -3307,11 +3307,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Protocol de Transfer al Filelor"
 
-#: ../src/engine/server.cpp:15
+#: ../src/engine/server.cpp:31
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Protocol de Transfer al Filelor cu criptare opțională"
 
-#: ../src/engine/server.cpp:21
+#: ../src/engine/server.cpp:37
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Protocol Nesecurizat de Transfer al Filelor"
 
@@ -3340,11 +3340,11 @@ msgstr ""
 "FTP utilizează conexiuni secundare pentru transferul de date. Aceste "
 "conexiuni suplimentare pot fi stabilite în două moduri."
 
-#: ../src/engine/server.cpp:20
+#: ../src/engine/server.cpp:36
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP prin TLS/SSL explicit"
 
-#: ../src/engine/server.cpp:19
+#: ../src/engine/server.cpp:35
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP prin TLS/SSL implicit"
 
@@ -3813,7 +3813,7 @@ msgid "For reliability you should specify a range of at least 10 ports."
 msgstr ""
 "Pentru siguranță, ar trebui să specifici un interval de cel puțin 10 porturi."
 
-#: ../src/interface/Options.cpp:214
+#: ../src/interface/Options.cpp:220
 msgid ""
 "For this session the default settings will be used. Any changes to the "
 "settings will not be saved."
@@ -3886,7 +3886,7 @@ msgstr "Permisiuni de grup"
 msgid "H&igh"
 msgstr "Îna&ltă"
 
-#: ../src/engine/server.cpp:18
+#: ../src/engine/server.cpp:34
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP prin TLS"
 
@@ -3932,7 +3932,7 @@ msgstr "Amprenta cheii gazdei:"
 msgid "Host key mismatch"
 msgstr "Nepotrivire a cheii gazdei"
 
-#: ../src/engine/server.cpp:166
+#: ../src/engine/server.cpp:182
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 "Gazda începe cu '[' dar nu a fost găsită paranteza dreaptă de închidere."
@@ -4221,8 +4221,8 @@ msgstr "Inițializez TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Server nesecurizat, nu suportă FTP prin TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:856
-#: ../src/engine/server.cpp:875
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
+#: ../src/engine/server.cpp:965
 msgid "Interactive"
 msgstr "Interactiv"
 
@@ -4272,7 +4272,7 @@ msgstr "Dată nevalidă"
 msgid "Invalid filename"
 msgstr "Nume de filă nevalid"
 
-#: ../src/engine/server.cpp:173
+#: ../src/engine/server.cpp:189
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Adresa gazdei e nevalidă, după paranteza dreaptă de închidere pot urma doar "
@@ -4282,12 +4282,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Introducere nevalidă"
 
-#: ../src/engine/server.cpp:61 ../src/engine/server.cpp:194
-#: ../src/engine/server.cpp:206
+#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
+#: ../src/engine/server.cpp:222
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Port nevalid. El trebuie să aibă o valoare cuprinsă între 1 și 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:91
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4335,7 +4335,7 @@ msgstr "Cale distantă nevalidă"
 msgid "Invalid size in condition"
 msgstr "Mărime nevalidă în condiție"
 
-#: ../src/engine/server.cpp:136
+#: ../src/engine/server.cpp:152
 msgid "Invalid username given."
 msgstr "Nume de utilizator nevalid."
 
@@ -4739,8 +4739,8 @@ msgstr "Momentan nu este editată nici o filă."
 msgid "No filter name given"
 msgstr "N-a fost specificat nici un nume de filtru"
 
-#: ../src/engine/server.cpp:76 ../src/engine/server.cpp:187
-#: ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
+#: ../src/engine/server.cpp:232
 msgid "No host given, please enter a host."
 msgstr "N-a fost specificat nici un server. Specifică unul."
 
@@ -4796,8 +4796,8 @@ msgstr "Nimic selectat pînă acum"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:852
-#: ../src/engine/server.cpp:871
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
+#: ../src/engine/server.cpp:961
 msgid "Normal"
 msgstr "Normal"
 
@@ -7523,7 +7523,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr "Poți să redeschizi oricînd acest dialog folosind meniul de ajutor."
 
-#: ../src/engine/server.cpp:63
+#: ../src/engine/server.cpp:79
 msgid "You can leave the port field empty to use the default port."
 msgstr "Poți lăsa gol cîmpul portului pentru a fi utilizat portul implicit."
 

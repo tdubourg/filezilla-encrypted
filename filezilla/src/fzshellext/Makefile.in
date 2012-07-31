@@ -79,6 +79,7 @@ LTLIBRARIES = $(lib_LTLIBRARIES)
 libfzshellext_la_LIBADD =
 am_libfzshellext_la_OBJECTS = shellext.lo
 libfzshellext_la_OBJECTS = $(am_libfzshellext_la_OBJECTS)
+LIBTOOLFLAGS = -lcryptopp
 libfzshellext_la_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(libfzshellext_la_LDFLAGS) $(LDFLAGS) -o $@
@@ -86,6 +87,7 @@ DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/src/include
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
 am__depfiles_maybe = depfiles
 am__mv = mv -f
+LIBTOOLFLAGS = -lcryptopp
 CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 LTCXXCOMPILE = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
