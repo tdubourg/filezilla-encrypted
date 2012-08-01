@@ -734,7 +734,7 @@ settings/filezilla-settingsdialog.$(OBJEXT): settings/$(am__dirstamp) \
 	settings/$(DEPDIR)/$(am__dirstamp)
 filezilla$(EXEEXT): $(filezilla_OBJECTS) $(filezilla_DEPENDENCIES) 
 	@rm -f filezilla$(EXEEXT)
-	echo "Pouet2"
+	echo "Pouet4"
 	$(filezilla_LINK) $(filezilla_OBJECTS) $(filezilla_LDADD) $(LIBS)
 
 mostlyclean-compile:

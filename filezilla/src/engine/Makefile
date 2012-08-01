@@ -84,7 +84,10 @@ am_libengine_a_OBJECTS = libengine_a-backend.$(OBJEXT) \
 	libengine_a-string_coalescer.$(OBJEXT) \
 	libengine_a-tlssocket.$(OBJEXT) libengine_a-threadex.$(OBJEXT) \
 	libengine_a-timeex.$(OBJEXT) \
-	libengine_a-transfersocket.$(OBJEXT)
+	libengine_a-transfersocket.$(OBJEXT) \
+	libengine_a-transfersocket.$(OBJEXT) \
+	libengine_a-crypto.$(OBJEXT)
+
 libengine_a_OBJECTS = $(am_libengine_a_OBJECTS)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)/src/include
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
@@ -267,7 +270,7 @@ top_srcdir = ../..
 xdgopen = /usr/bin/xdg-open
 xgettext = /usr/bin/xgettext
 noinst_LIBRARIES = libengine.a
-INCLUDES = -I$(srcdir)/../include -I$(srcdir)/../../../cryptopp
+INCLUDES = -I$(srcdir)/../include -I$(top_builddir)/../cryptopp
 libengine_a_CPPFLAGS = $(LIBGNUTLS_CFLAGS) $(WX_CPPFLAGS)
 libengine_a_CXXFLAGS = $(WX_CXXFLAGS_ONLY)
 libengine_a_CFLAGS = $(WX_CFLAGS_ONLY)
@@ -301,7 +304,8 @@ libengine_a_SOURCES = \
 		tlssocket.cpp \
 		threadex.cpp \
 		timeex.cpp \
-		transfersocket.cpp
+		transfersocket.cpp \
+		crypto.cpp
 
 noinst_HEADERS = backend.h \
 		ControlSocket.h \
@@ -317,7 +321,8 @@ noinst_HEADERS = backend.h \
 		servercapabilities.h \
 		sftpcontrolsocket.h \
 		tlssocket.h \
-		transfersocket.h
+		transfersocket.h \
+		crypto.h
 
 dist_noinst_DATA = engine.vcproj
 CLEANFILES = filezilla.h.gch
@@ -872,6 +877,21 @@ libengine_a-transfersocket.obj: transfersocket.cpp
 #	source='transfersocket.cpp' object='libengine_a-transfersocket.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-transfersocket.obj `if test -f 'transfersocket.cpp'; then $(CYGPATH_W) 'transfersocket.cpp'; else $(CYGPATH_W) '$(srcdir)/transfersocket.cpp'; fi`
+
+libengine_a-crypto.o: crypto.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -MT libengine_a-crypto.o -MD -MP -MF $(DEPDIR)/libengine_a-crypto.Tpo -c -o libengine_a-crypto.o `test -f 'crypto.cpp' || echo '$(srcdir)/'`crypto.cpp
+	$(am__mv) $(DEPDIR)/libengine_a-crypto.Tpo $(DEPDIR)/libengine_a-crypto.Po
+#	source='crypto.cpp' object='libengine_a-crypto.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-crypto.o `test -f 'crypto.cpp' || echo '$(srcdir)/'`crypto.cpp
+
+libengine_a-crypto.obj: crypto.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -MT libengine_a-crypto.obj -MD -MP -MF $(DEPDIR)/libengine_a-crypto.Tpo -c -o libengine_a-crypto.obj `if test -f 'crypto.cpp'; then $(CYGPATH_W) 'crypto.cpp'; else $(CYGPATH_W) '$(srcdir)/crypto.cpp'; fi`
+	$(am__mv) $(DEPDIR)/libengine_a-crypto.Tpo $(DEPDIR)/libengine_a-crypto.Po
+#	source='crypto.cpp' object='libengine_a-crypto.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-crypto.obj `if test -f 'crypto.cpp'; then $(CYGPATH_W) 'crypto.cpp'; else $(CYGPATH_W) '$(srcdir)/crypto.cpp'; fi`
+
 
 mostlyclean-libtool:
 	-rm -f *.lo

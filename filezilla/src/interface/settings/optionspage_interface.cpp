@@ -8,6 +8,7 @@
 
 // Start of @td
 #define DEFAULTVALUE "***********"
+#include "../engine/crypto.h"
 // End of @td
 
 BEGIN_EVENT_TABLE(COptionsPageInterface, COptionsPage)
@@ -80,9 +81,11 @@ bool COptionsPageInterface::SavePage()
 	
 	// Start of @td
 	SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
-	if ( != DEFAULTVALUE)
+	wxString defaultval = wxString(DEFAULTVALUE, wxConvUTF8);
+	if(GetText(XRCID("ID_MASTER_PASSWORD")) != defaultval)
 	{
-		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, CCryto::Encrypt(GetText(XRCID("ID_MASTER_PASSWORD")));
+		wxString passwd = wxString(CCrypto::Encrypt(GetText(XRCID("ID_MASTER_PASSWORD"))).c_str(), wxConvUTF8);
+		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, passwd);
 	}
 	
 	// End of @td

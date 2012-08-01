@@ -1,4 +1,5 @@
 #include <filezilla.h>
+#include "crypto.h"
 
 #include "../interface/Options.h"
 
@@ -26,6 +27,9 @@ std::ofstream F_LOG("/tmp/FZ.log");
 
 const std::string CCrypto::HEXSALT = "E5579A8EC1FB90310103718E4DF80495";
 const std::string CCrypto::HEXIV = "B56E5AC5D1F2E4873E7F408C51F4ED52";
+wxString CCrypto::masterPassword;
+
+using namespace std;
 
 wxString CCrypto::GetMasterPassword() {
 	return wxString("tralala", wxConvUTF8);// @TODO remove that
@@ -108,6 +112,7 @@ string CCrypto::Decrypt(wxString m_pass) {
 			recoveredtext = "";
 		}
 		LOG("Pouet15");
+		return recoveredtext;
 	}
 	
 string CCrypto::Encrypt(wxString m_pass) {
@@ -137,13 +142,13 @@ string CCrypto::Encrypt(wxString m_pass) {
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
 		
 		LOG("Tralala8");
-		StringSource saltDecoder(crypto::HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
+		StringSource saltDecoder(HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
 		
 		LOG("Tralala9");
 		SecByteBlock recoverediv(AES::BLOCKSIZE);
 		
 		LOG("Tralala10");
-		StringSource ivDecoder(crypto::HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
+		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
 		
 		LOG("Tralala11");
 		
@@ -188,7 +193,6 @@ string CCrypto::Encrypt(wxString m_pass) {
 		} catch(Exception e) {
 			LOG(e.what());
 			ciphertext = "";
-			return false;
 		}
 
 		LOG("Tralala17.5");

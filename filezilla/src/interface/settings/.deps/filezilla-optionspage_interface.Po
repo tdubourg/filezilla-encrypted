@@ -6,7 +6,8 @@ settings/filezilla-optionspage_interface.o: \
  /usr/include/wx-2.8/wx/taskbar.h /usr/include/wx-2.8/wx/defs.h \
  /usr/include/wx-2.8/wx/event.h /usr/include/wx-2.8/wx/unix/taskbarx11.h \
  settings/../power_management.h settings/../state.h \
- ../../src/include/local_path.h
+ ../../src/include/local_path.h ../engine/crypto.h \
+ /usr/include/c++/4.6/string
 
 settings/../Options.h:
 
@@ -35,3 +36,7 @@ settings/../power_management.h:
 settings/../state.h:
 
 ../../src/include/local_path.h:
+
+../engine/crypto.h:
+
+/usr/include/c++/4.6/string:

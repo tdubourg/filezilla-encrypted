@@ -877,6 +877,20 @@ libengine_a-transfersocket.obj: transfersocket.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-transfersocket.obj `if test -f 'transfersocket.cpp'; then $(CYGPATH_W) 'transfersocket.cpp'; else $(CYGPATH_W) '$(srcdir)/transfersocket.cpp'; fi`
 
+libengine_a-crypto.o: crypto.cpp
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -MT libengine_a-crypto.o -MD -MP -MF $(DEPDIR)/libengine_a-crypto.Tpo -c -o libengine_a-crypto.o `test -f 'crypto.cpp' || echo '$(srcdir)/'`crypto.cpp
+@am__fastdepCXX_TRUE@	$(am__mv) $(DEPDIR)/libengine_a-crypto.Tpo $(DEPDIR)/libengine_a-crypto.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='crypto.cpp' object='libengine_a-crypto.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-crypto.o `test -f 'crypto.cpp' || echo '$(srcdir)/'`crypto.cpp
+
+libengine_a-crypto.obj: crypto.cpp
+@am__fastdepCXX_TRUE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -MT libengine_a-crypto.obj -MD -MP -MF $(DEPDIR)/libengine_a-crypto.Tpo -c -o libengine_a-crypto.obj `if test -f 'crypto.cpp'; then $(CYGPATH_W) 'crypto.cpp'; else $(CYGPATH_W) '$(srcdir)/crypto.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(am__mv) $(DEPDIR)/libengine_a-crypto.Tpo $(DEPDIR)/libengine_a-crypto.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='crypto.cpp' object='libengine_a-crypto.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libengine_a_CPPFLAGS) $(CPPFLAGS) $(libengine_a_CXXFLAGS) $(CXXFLAGS) -c -o libengine_a-crypto.obj `if test -f 'crypto.cpp'; then $(CYGPATH_W) 'crypto.cpp'; else $(CYGPATH_W) '$(srcdir)/crypto.cpp'; fi`
+
 mostlyclean-libtool:
 	-rm -f *.lo
 

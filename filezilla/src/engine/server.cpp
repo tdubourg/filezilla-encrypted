@@ -1,4 +1,6 @@
 #include <filezilla.h>
+#include "server.h"
+
 // Start of @td
 #include "../interface/Options.h"
 #include "crypto.h"
@@ -591,7 +593,7 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 		m_pass = _T("");
 	} else if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { // start of @td
 	
-		m_pass = wxString(CCrypto::Encrypt(pass)).c_str(), wxConvUTF8);
+		m_pass = wxString(CCrypto::Encrypt(pass).c_str(), wxConvUTF8);
 		
 		return true;
 	} else {// end of @td

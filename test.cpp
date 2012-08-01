@@ -31,7 +31,7 @@ int main(int argc, char * argv[])
 {
 	using namespace std;
 	using namespace CryptoPP;
-	string password = "herpityderp12345!";
+	string password = "tralala";
 	unsigned int iterations = 1;
 
 	// AutoSeededX917RNG<AES> rng;
@@ -100,7 +100,7 @@ int main(int argc, char * argv[])
 	
 	CBC_Mode<AES>::Decryption aesdecryption(recoveredkey, recoveredkey.size(), recoverediv);
 	string recoveredtext;
-	ciphertext = "D8E3166B58E6FD2C83878D920AE20D21";
+	ciphertext = "135430577003B026274DC365426C9FBA";
 	try {
 		StringSource decryptor(ciphertext, true, new HexDecoder(
 			new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
