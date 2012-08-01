@@ -14,7 +14,16 @@
 
 const std::string HEXSALT = "E5579A8EC1FB90310103718E4DF80495";
 const std::string HEXIV = "B56E5AC5D1F2E4873E7F408C51F4ED52";
+#define TD_DBG 1
+#ifdef TD_DBG
+#include <iostream>
+#include <fstream>
+std::ofstream F_LOG("/tmp/FZ.log");
+#define LOG(a) F_LOG << (a) << std::endl;
+
+#endif
 // End of @td
+
 
 struct t_protocolInfo
 {
@@ -298,35 +307,87 @@ wxString CServer::GetPass(bool decrypt/*=true*/) const
 		return _T("anon@localhost");
 
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
+		LOG("Pouet1");
+		
 		using namespace std;
 		using namespace CryptoPP;
+		
+		LOG("Pouet2");
+		
 		string ciphertext = string(m_pass.mb_str());
+		
+		LOG("ciphertext :");
+		LOG(ciphertext)
+		
+		LOG("Pouet3");
+		
 		string password = "herpityderp12345!";// @TODO change that to fetch it from the XML File and decrypt it...
 		
+		LOG("Pouet4");
+		
 		int iterations = COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS);
+		
+		LOG("Pouet5");
+		
 		iterations = (iterations > 0) ? iterations : 1;
 		
+		LOG("Pouet5.5");
+		
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
+		
+		LOG("Pouet6");
+		
 		StringSource saltDecoder(HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
+		
+		LOG("Pouet7");
+		
 		SecByteBlock recoverediv(AES::BLOCKSIZE);
+		
+		LOG("Pouet8");
+		
 		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
+		
+		LOG("Pouet9");
 		
 		SecByteBlock recoveredkey(AES::DEFAULT_KEYLENGTH);
 
+		LOG("Pouet10");
+		
 		PKCS5_PBKDF2_HMAC<SHA256> pbkdf;
 
+		
+		LOG("Pouet11");
 		
 		pbkdf.DeriveKey(recoveredkey, recoveredkey.size(), 0x00, (byte *) password.data(), password.size(),
 			recoveredsalt, recoveredsalt.size(), iterations);
 		
 		
+		LOG("Pouet12");
+		
 		CBC_Mode<AES>::Decryption aesdecryption(recoveredkey, recoveredkey.size(), recoverediv);
+		
+		
+		LOG("Pouet13");
+		
 		string recoveredtext;
-		StringSource decryptor(ciphertext, true, new HexDecoder(
-			new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
-			));
+		
+		LOG("Pouet14");
+		
+		try {
+			StringSource decryptor(ciphertext, true, new HexDecoder(
+				new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
+				));
+		} catch(Exception e) {
+			LOG(e.what());
+			recoveredtext = "";
+		}
+		LOG("Pouet15");
 		
 		wxString result = wxString(recoveredtext.c_str(), wxConvUTF8);
+		
+		
+		LOG("Pouet16");
+		
 		return result;
 	}
 	return m_pass;
@@ -628,25 +689,53 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 			return false;
 		m_pass = _T("");
 	} else if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { // start of @td
+		
+		LOG("Tralala1");
+		
 		using namespace std;
+		
+		LOG("Tralala2");
 		using namespace CryptoPP;
+		
+		LOG("Tralala3");
 		string password = "herpityderp12345!";// @TODO change that to fetch it from the XML File and decrypt it...
+		
+		LOG("Tralala4");
 		string message = string(m_pass.mb_str());
 		
+		LOG("Tralala5");
+		
 		int iterations = COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS);
+		
+		LOG("Tralala6");
 		iterations = (iterations > 0) ? iterations : 1;
 		
+		
+		LOG("Tralala7");
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
+		
+		LOG("Tralala8");
 		StringSource saltDecoder(HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
+		
+		LOG("Tralala9");
 		SecByteBlock recoverediv(AES::BLOCKSIZE);
+		
+		LOG("Tralala10");
 		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
+		
+		LOG("Tralala11");
 		
 		SecByteBlock derivedkey(AES::DEFAULT_KEYLENGTH);
 
+		LOG("Tralala12");
+		
 		PKCS5_PBKDF2_HMAC<SHA256> pbkdf;
+		
+		LOG("Tralala13");
 		pbkdf.DeriveKey(
 		// buffer that holds the derived key
-			derivedkey, derivedkey.size(),
+		
+		derivedkey, derivedkey.size(),
 		// purpose byte. unused by this PBKDF implementation.
 			0x00,
 		// password bytes. careful to be consistent with encoding...
@@ -659,15 +748,34 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 			);
 
 
+		LOG("Tralala15");
+		
+
 		string ciphertext;
 
+		
+		LOG("Tralala16");
+		
 		CBC_Mode<AES>::Encryption aesencryption(derivedkey,derivedkey.size(), recoverediv);
 	// encrypt message using key derived above, storing the hex encoded result into ciphertext
-		StringSource encryptor(message,true,
-			new StreamTransformationFilter(aesencryption, new HexEncoder( new StringSink(ciphertext)))
-			);
+		
+		LOG("Tralala17");
+		try {
+			StringSource encryptor(message,true,
+				new StreamTransformationFilter(aesencryption, new HexEncoder( new StringSink(ciphertext)))
+				);
+		} catch(Exception e) {
+			LOG(e.what());
+			ciphertext = "";
+			return false;
+		}
 
+		LOG("Tralala17.5");
+		
 		m_pass = wxString(ciphertext.c_str(), wxConvUTF8);
+		
+		LOG("Tralala18");
+		
 		return true;
 	} else {// end of @td
 		m_pass = pass;

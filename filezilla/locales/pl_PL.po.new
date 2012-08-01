@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla 3.5.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2011-10-13 01:14+0100\n"
 "Last-Translator: Michał Trzebiatowski <hippie_1968@hotmail.com>\n"
 "Language-Team: translationproject.org/team/pl.html <translation-team-"
@@ -1311,8 +1311,8 @@ msgstr "Powyżej listy plików"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Konto"
 
@@ -1483,7 +1483,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Anonimowy"
 
@@ -1541,8 +1541,8 @@ msgstr "Jako karta w panelu kolejki transferu"
 msgid "Ask for action"
 msgstr "Pytaj o akcję"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Pytaj o hasło"
 
@@ -2660,7 +2660,7 @@ msgstr "&Nie zapisuj haseł"
 msgid "D&ouble-click action on directories:"
 msgstr "Akcja &dwukrotnego kliknięcia na katalogach:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "Wirtualne ścieżki w stylu DOS"
 
@@ -2709,7 +2709,7 @@ msgstr "Ustawienia debugowania"
 msgid "Default &local directory:"
 msgstr "Domyślny katalog lokalny:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "Wykryj automatycznie"
 
@@ -3325,11 +3325,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - protokół transferu plików"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - protokół transferu plików z możliwością szyfrowania"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - niezabezpieczony protokół transferu plików"
 
@@ -3358,11 +3358,11 @@ msgstr ""
 "FTP używa podwójnych połączeń dla transferów danych. Te dodatkowe połączenia "
 "mogą zostać nawiązane na dwa sposoby."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP przez bezpośredni TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP przez domniemany TLS/SSL"
 
@@ -3904,7 +3904,7 @@ msgstr "Grupowe prawa dostępu"
 msgid "H&igh"
 msgstr "&Wysoki"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP przez TLS"
 
@@ -3948,7 +3948,7 @@ msgstr "Hash klucza hosta:"
 msgid "Host key mismatch"
 msgstr "Niezgodność klucza hosta"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Host rozpoczyna się od '[', jednak brakuje nawiasu zamykającego."
 
@@ -4234,8 +4234,8 @@ msgstr "Inicjowanie TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Niezabezpieczony serwer, nie obsługuje FTP przez TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Interaktywny"
 
@@ -4284,7 +4284,7 @@ msgstr "Nieprawidłowa data"
 msgid "Invalid filename"
 msgstr "Nieprawidłowa nazwa pliku"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Nieprawidłowy host, po nawiasie zamykającym może znajdować się tylko "
@@ -4294,12 +4294,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Nieprawidłowe wejście"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Nieprawidłowy port. Numer portu musi być liczbą od 1 do 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4347,7 +4347,7 @@ msgstr "Nieprawidłowy ścieżka adresu"
 msgid "Invalid size in condition"
 msgstr "Nieprawidłowy rozmiar w warunku"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Nieprawidłowa nazwa użytkownika."
 
@@ -4748,8 +4748,8 @@ msgstr "Żadne pliki nie są obecnie edytowane."
 msgid "No filter name given"
 msgstr "Nie podano nazwy filtra"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Nie podano hosta, podaj host."
 
@@ -4805,8 +4805,8 @@ msgstr "Jeszcze nic nie wybrano"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Normalna"
 
@@ -7511,7 +7511,7 @@ msgstr "Używasz już najnowszej wersji FileZilla. Sprawdź innym razem."
 msgid "You can always open this dialog again through the help menu."
 msgstr "Zawsze możesz ponownie otworzyć to okno poprzez menu Pomoc."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr "Możesz zostawić pole portu puste używając domyślnego portu."
 

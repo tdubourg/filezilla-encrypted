@@ -100,9 +100,14 @@ int main(int argc, char * argv[])
 	
 	CBC_Mode<AES>::Decryption aesdecryption(recoveredkey, recoveredkey.size(), recoverediv);
 	string recoveredtext;
-	StringSource decryptor(ciphertext, true, new HexDecoder(
-		new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
-		));
+	ciphertext = "D8E3166B58E6FD2C83878D920AE20D21";
+	try {
+		StringSource decryptor(ciphertext, true, new HexDecoder(
+			new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))
+			));
+	} catch(Exception e) {
+		cerr << "\nException raised: " << e.what() << endl;
+	}
 	cout << "Recovered plaintext value: " << recoveredtext << endl;
 
 	return 0;

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Русский перевод\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2010-08-06 00:04+0400\n"
 "Last-Translator: boobaloo <koptev.oleg@gmail.com>\n"
 "Language-Team: Oleg Koptev\n"
@@ -1308,8 +1308,8 @@ msgstr "Поверх списка файлов"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Учетная запись"
 
@@ -1470,7 +1470,7 @@ msgstr "Объект с таким именем уже существует в �
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Анонимный"
 
@@ -1529,8 +1529,8 @@ msgstr "В виде закладки в панели заданий"
 msgid "Ask for action"
 msgstr "Спросить о действии"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Запросить пароль"
 
@@ -2636,7 +2636,7 @@ msgstr "Введите пароль"
 msgid "D&ouble-click action on directories:"
 msgstr "Д&ействие по двойному клику на каталогах:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "В виде DOS с виртуальными путями"
 
@@ -2685,7 +2685,7 @@ msgstr "Настройки отладки"
 msgid "Default &local directory:"
 msgstr "Локальный &каталог по умолчанию:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "По умолчанию (автоопределение)"
 
@@ -3289,11 +3289,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3322,11 +3322,11 @@ msgstr ""
 "FTP использует вторичные соединения для передачи. Эти соединения могут быть "
 "установлены двумя путями:"
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP через явный TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP через неявный TLS/SSL"
 
@@ -3854,7 +3854,7 @@ msgstr "Групповые права"
 msgid "H&igh"
 msgstr "В&ысокий"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP через TLS"
 
@@ -3896,7 +3896,7 @@ msgstr "Контрольная сумма ключа хоста:"
 msgid "Host key mismatch"
 msgstr "Ключ хоста не совпадает"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Хост начинается с '[', но отсутствует кавычка в конце."
 
@@ -4178,8 +4178,8 @@ msgstr "Инициализирую TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Интерактивный"
 
@@ -4228,7 +4228,7 @@ msgstr "Неправильная дата"
 msgid "Invalid filename"
 msgstr "Неправильное имя файла"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "Неверный хост, после кавычки может стоять только точка и порт."
 
@@ -4236,12 +4236,12 @@ msgstr "Неверный хост, после кавычки может стоя
 msgid "Invalid input"
 msgstr "Неверные данные"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Неправильный номер порта. Задайте номер в диапазоне от 1 до 65535"
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4287,7 +4287,7 @@ msgstr "Неверный путь сайта"
 msgid "Invalid size in condition"
 msgstr "Неверный размер"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Неверное имя пользователя."
 
@@ -4685,8 +4685,8 @@ msgstr "Ни один файл сейчас не редактируется."
 msgid "No filter name given"
 msgstr "Не указано имя фильтра"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Пожалуйста, укажите хост."
 
@@ -4741,8 +4741,8 @@ msgstr "Ничего не выбрано"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Нормальный"
 
@@ -7454,7 +7454,7 @@ msgstr "У вас самая последняя версия FileZilla. Пров
 msgid "You can always open this dialog again through the help menu."
 msgstr "Вы всегда можете открыть это окно снова из меню."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 "Вы можете оставить поле порта пустым, чтобы использовать порт по умолчанию."

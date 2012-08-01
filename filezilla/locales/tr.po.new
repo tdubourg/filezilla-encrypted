@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Filezilla 3 Turkish PO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2011-10-26 07:17+0200\n"
 "Last-Translator: Kaya Zeren <kaya.zeren@zeron.net>\n"
 "Language-Team: Zeron <kaya.zeren@zeron.net>\n"
@@ -1285,8 +1285,8 @@ msgstr "Yerel ve uzak dosya gezginlerinin üzerinde"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Hesap"
 
@@ -1449,7 +1449,7 @@ msgstr "Hedefte sürüklediğiniz nesne ile aynı adı taşıyan bir nesne var."
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Anonim"
 
@@ -1508,8 +1508,8 @@ msgstr "Aktarım kuyruğu bölümünde sekme olarak"
 msgid "Ask for action"
 msgstr "Ne yapılacağını sor"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Parola sor"
 
@@ -2613,7 +2613,7 @@ msgstr "Par&olaları kaydetme"
 msgid "D&ouble-click action on directories:"
 msgstr "Klasörlerlere çift &tıklayınca ne olsun:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "DOS benzeri sanal yollar"
 
@@ -2662,7 +2662,7 @@ msgstr "Hata ayıklama ayarları"
 msgid "Default &local directory:"
 msgstr "Varsayılan yere&l klasör:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "Varsayılan (Kendiliğinden algıla)"
 
@@ -3268,11 +3268,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Dosya aktarımı iletişim kuralı"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - İsteğe bağlı şifreleme ile dosya aktarımı iletişim kuralı"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Güvenliksiz dosya aktarımı iletişim kuralı"
 
@@ -3301,11 +3301,11 @@ msgstr ""
 "FTP, veri aktarımı için ikincil bağlantılar kullanır. Bu ek bağlantılar iki "
 "şekilde sağlanabilir."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP üzerinden açık TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP üzerinden kapalı TLS/SSL"
 
@@ -3835,7 +3835,7 @@ msgstr "Grup izinleri"
 msgid "H&igh"
 msgstr "&Yüksek"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP üzerinden TLS"
 
@@ -3879,7 +3879,7 @@ msgstr "Sunucu anahtarı parmak izi:"
 msgid "Host key mismatch"
 msgstr "Sunucu anahtarı uyuşmazlığı"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Sunucu '[' ile başlıyor ama kapatma parantezi bulunamadı."
 
@@ -4167,8 +4167,8 @@ msgstr "TLS başlatılıyor..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Güvenliksiz sunucu, TLS üzerinden FTP desteklenmiyor."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Etkileşimli"
 
@@ -4218,7 +4218,7 @@ msgstr "Tarih geçersiz"
 msgid "Invalid filename"
 msgstr "Dosya adı geçersiz"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Sunucu geçersiz. Parantezi kapattıktan sonra yalnızca iki nokta üstüste ve "
@@ -4228,12 +4228,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Geçersiz giriş"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Yazılan port yanlış. Port değeri 1 ile 65535 arasında olmalıdır."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4281,7 +4281,7 @@ msgstr "Geçersiz site yolu"
 msgid "Invalid size in condition"
 msgstr "Kısıttaki boyut geçersiz"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Kullanıcı adı geçersiz."
 
@@ -4682,8 +4682,8 @@ msgstr "Şu an düzenlenen bir dosya yok."
 msgid "No filter name given"
 msgstr "Süzgeç adı verilmemiş"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Sunucu belirtilmemiş. Lütfen sunucuyu yazın."
 
@@ -4739,8 +4739,8 @@ msgstr "Henüz seçilmemiş"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Normal"
 
@@ -7428,7 +7428,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr "Bu pencereyi yardım menüsünden açabilirsiniz"
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr "Varsayılan portu kullanmak için Port alanını boş bırakın."
 

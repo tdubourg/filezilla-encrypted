@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: filezilla\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2011-11-02 17:20+0100\n"
 "Last-Translator: Yngve Spjeld Landro <l10n@landro.net>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -1294,8 +1294,8 @@ msgstr "Over fillistene"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Konto"
 
@@ -1462,7 +1462,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Anonym"
 
@@ -1519,8 +1519,8 @@ msgstr "Som fane i overføringskøvindauget"
 msgid "Ask for action"
 msgstr "Spør etter handling"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Spør etter passord"
 
@@ -2636,7 +2636,7 @@ msgstr "Lagra &ikkje passorda"
 msgid "D&ouble-click action on directories:"
 msgstr "For &katalogar:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "DOS-liknande med virtuelle baner"
 
@@ -2685,7 +2685,7 @@ msgstr "Feilsøkingsinnstillingar"
 msgid "Default &local directory:"
 msgstr "Standard lokalkatalo&g"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "Standard (auto-oppdaging)"
 
@@ -3299,11 +3299,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - filoverføringsprotokoll"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - filoverføringsprotokoll med valfri kryptering"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - utrygg filoverføringsprotokoll"
 
@@ -3332,11 +3332,11 @@ msgstr ""
 "FTP bruker sekundærsamband for dataoverførringar. Desse tilleggssambanda kan "
 "lagast på to forskjellige måtar."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP over eksplisitt TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP over implisitt TLS/SSL"
 
@@ -3863,7 +3863,7 @@ msgstr "Grupperettar"
 msgid "H&igh"
 msgstr "H&øg"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP over TLS"
 
@@ -3908,7 +3908,7 @@ msgid "Host key mismatch"
 msgstr "Vertsnøkkelen samsvarte ikkje"
 
 # ?
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Verten startar med '[', men manglar avsluttande parentes."
 
@@ -4189,8 +4189,8 @@ msgstr "Starta TLS…"
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Utrygg tenar - han kan ikkje nytta FTP over TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Interaktiv"
 
@@ -4239,7 +4239,7 @@ msgstr "Ugyldig dato"
 msgid "Invalid filename"
 msgstr "Ugyldig filnamn"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "Ugyldig vert - berre kolon og port kan følgja etter sluttparentes."
 
@@ -4247,12 +4247,12 @@ msgstr "Ugyldig vert - berre kolon og port kan følgja etter sluttparentes."
 msgid "Invalid input"
 msgstr "Ugyldige inndata"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Ugyldig port - portnummeret må vera mellom 1 og 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4298,7 +4298,7 @@ msgstr "Ugyldig nettstadbane"
 msgid "Invalid size in condition"
 msgstr "Ugyldig storleik på føresetnaden"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Brukarnamnet er ugyldig."
 
@@ -4701,8 +4701,8 @@ msgstr "Ingen filer blir endra no."
 msgid "No filter name given"
 msgstr "Er ikkje oppgjeve noko filternamn"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Manglar vertsnamnet - skriv det inn."
 
@@ -4757,8 +4757,8 @@ msgstr "Ingen er enno valde"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Normal"
 
@@ -7463,7 +7463,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr "Du kan alltid opna dette vindauget igjen frå hjelpemenyen."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr "Standardporten blir nytta om du lèt portfeltet vera tomt."
 

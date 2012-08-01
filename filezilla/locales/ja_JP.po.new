@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2010-11-03 12:13+0900\n"
 "Last-Translator: Tadashi Jokagi <elf@elf.no-ip.org>\n"
 "Language-Team: Tadashi Jokagi <elf@elf.no-ip.org>\n"
@@ -1296,8 +1296,8 @@ msgstr "ファイル一覧の上"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "アカウント"
 
@@ -1460,7 +1460,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "匿名"
 
@@ -1523,8 +1523,8 @@ msgstr "転送キューのタブとして表示"
 msgid "Ask for action"
 msgstr "操作を尋ねる"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "パスワードを尋ねる"
 
@@ -2632,7 +2632,7 @@ msgstr "パスワードの入力"
 msgid "D&ouble-click action on directories:"
 msgstr "ディレクトリーのダブルクリック(&O):"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "DOS形式の仮想パス"
 
@@ -2681,7 +2681,7 @@ msgstr "デバッグの設定"
 msgid "Default &local directory:"
 msgstr "標準のローカル ディレクトリー(&L):"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "標準 - 自動判別(&A)"
 
@@ -3284,11 +3284,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3317,11 +3317,11 @@ msgstr ""
 "FTPはデータ転送において２次的に使われます。この付加的接続は２通りで確立するこ"
 "とができます。"
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - 明示的なTLS/SSL上のFTP"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - 暗黙のTLS/SSL上のFTP"
 
@@ -3851,7 +3851,7 @@ msgstr "グループ パーミッション"
 msgid "H&igh"
 msgstr "高い(&I)"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP over TLS"
 
@@ -3896,7 +3896,7 @@ msgstr "ホスト鍵の指紋:"
 msgid "Host key mismatch"
 msgstr "ホスト鍵が一致しません"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "ホスト名が '[' で始まっていますが閉じられていません。"
 
@@ -4173,8 +4173,8 @@ msgstr "TLS を初期化しています..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "インタラクティブ"
 
@@ -4223,7 +4223,7 @@ msgstr "不適切な日付"
 msgid "Invalid filename"
 msgstr "ファイル名が適切ではありません"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "不正なホスト, 閉じ括弧の後は ':' とポート番号が続きます。"
 
@@ -4231,14 +4231,14 @@ msgstr "不正なホスト, 閉じ括弧の後は ':' とポート番号が続�
 msgid "Invalid input"
 msgstr "不正な入力"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 "不適切なポートが与えられました。ポートは1から65535の間の値でなくてはいけませ"
 "ん."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4284,7 +4284,7 @@ msgstr "サイト パスが正しくありません"
 msgid "Invalid size in condition"
 msgstr "サイズの条件が正しくありません"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "指定のユーザー名は正しくありません。"
 
@@ -4684,8 +4684,8 @@ msgstr "現在編集中のファイルはありません"
 msgid "No filter name given"
 msgstr "フィルター名が入力されていません"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "ホストが与えられませんでした。ホストを入力してください。"
 
@@ -4740,8 +4740,8 @@ msgstr "何も選択されていません"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "通常"
 
@@ -7435,7 +7435,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

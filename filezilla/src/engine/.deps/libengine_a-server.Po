@@ -58,7 +58,31 @@ libengine_a-server.o: server.cpp ../interface/Options.h \
  ../../../cryptopp/integer.h ../../../cryptopp/pwdbased.h \
  ../../../cryptopp/hmac.h ../../../cryptopp/hrtimer.h \
  ../../../cryptopp/integer.h ../../../cryptopp/modes.h \
- ../../../cryptopp/strciphr.h
+ ../../../cryptopp/strciphr.h /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
+ /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/c++/4.6/bits/localefwd.h \
+ /usr/include/c++/4.6/bits/ios_base.h \
+ /usr/include/c++/4.6/bits/locale_classes.h \
+ /usr/include/c++/4.6/bits/locale_classes.tcc \
+ /usr/include/c++/4.6/streambuf /usr/include/c++/4.6/bits/streambuf.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.h \
+ /usr/include/c++/4.6/bits/locale_facets.h /usr/include/c++/4.6/cwctype \
+ /usr/include/wctype.h /usr/include/c++/4.6/cctype /usr/include/ctype.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h \
+ /usr/include/c++/4.6/ext/numeric_traits.h \
+ /usr/include/c++/4.6/bits/streambuf_iterator.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h \
+ /usr/include/c++/4.6/bits/locale_facets.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.tcc \
+ /usr/include/c++/4.6/bits/ostream_insert.h \
+ /usr/include/c++/4.6/bits/ostream.tcc \
+ /usr/include/c++/4.6/bits/cxxabi_forced.h /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/bits/istream.tcc /usr/include/c++/4.6/fstream \
+ /usr/include/c++/4.6/bits/codecvt.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h \
+ /usr/include/c++/4.6/bits/fstream.tcc
 
 ../interface/Options.h:
 
@@ -253,3 +277,67 @@ libengine_a-server.o: server.cpp ../interface/Options.h \
 ../../../cryptopp/modes.h:
 
 ../../../cryptopp/strciphr.h:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/ios:
+
+/usr/include/c++/4.6/bits/char_traits.h:
+
+/usr/include/c++/4.6/bits/localefwd.h:
+
+/usr/include/c++/4.6/bits/ios_base.h:
+
+/usr/include/c++/4.6/bits/locale_classes.h:
+
+/usr/include/c++/4.6/bits/locale_classes.tcc:
+
+/usr/include/c++/4.6/streambuf:
+
+/usr/include/c++/4.6/bits/streambuf.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.h:
+
+/usr/include/c++/4.6/bits/locale_facets.h:
+
+/usr/include/c++/4.6/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.6/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h:
+
+/usr/include/c++/4.6/ext/numeric_traits.h:
+
+/usr/include/c++/4.6/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h:
+
+/usr/include/c++/4.6/bits/locale_facets.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.tcc:
+
+/usr/include/c++/4.6/bits/ostream_insert.h:
+
+/usr/include/c++/4.6/bits/ostream.tcc:
+
+/usr/include/c++/4.6/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/bits/istream.tcc:
+
+/usr/include/c++/4.6/fstream:
+
+/usr/include/c++/4.6/bits/codecvt.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h:
+
+/usr/include/c++/4.6/bits/fstream.tcc:

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2009-02-06 21:17+0100\n"
 "Last-Translator: Tim Kosse <tim.kosse@filezilla-project.org>\n"
 "Language-Team: Kay Urbach <Kay.Urbach@gmx.de>\n"
@@ -1312,8 +1312,8 @@ msgstr "Über den Dateilisten"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Konto"
 
@@ -1487,7 +1487,7 @@ msgstr "Am Zielort ist bereits ein Eintrag mit diesem Namen vorhanden."
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Anonym"
 
@@ -1549,8 +1549,8 @@ msgstr "Als Tab in der Warteschlangenansicht"
 msgid "Ask for action"
 msgstr "Aktion erfragen"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Nach Passwort fragen"
 
@@ -2680,7 +2680,7 @@ msgstr "&Passwörter nicht speichern"
 msgid "D&ouble-click action on directories:"
 msgstr "D&oppelklick-Aktion für Verzeichnisse:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "DOS-ähnlich mit virtuellen Pfaden"
 
@@ -2729,7 +2729,7 @@ msgstr "Debug-Einstellungen"
 msgid "Default &local directory:"
 msgstr "Lokales Standard-Verzeic&hnis:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "Standard (Automatische Erkennung)"
 
@@ -3353,11 +3353,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - File Transfer Protocol"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - File Transfer Protocol mit optionaler Verschlüsselung"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Unsicheres File Transfer Protocol"
 
@@ -3386,11 +3386,11 @@ msgstr ""
 "Das FTP-Protokoll verwendet sekundäre Verbindungen für den Datentransfer. "
 "Diese zusätzlichen Verbindungen können auf zwei Arten aufgebaut werden."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP über explizites TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP über implizites TLS/SSL"
 
@@ -3944,7 +3944,7 @@ msgstr "Gruppen-Berechtigungen"
 msgid "H&igh"
 msgstr "H&och"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP über TLS"
 
@@ -3989,7 +3989,7 @@ msgstr "Fingerabdruck des Server-Schlüssels:"
 msgid "Host key mismatch"
 msgstr "Server-Schlüssel stimmen nicht überein"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 "Host fängt mit '[' an, es wurde aber keine schließende Klammer gefunden."
@@ -4287,8 +4287,8 @@ msgstr "Initialisiere TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Unsicherer Server; er unterstützt kein FTP über TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Interaktiv"
 
@@ -4337,7 +4337,7 @@ msgstr "Ungültiges Datum"
 msgid "Invalid filename"
 msgstr "Ungültiger Dateiname"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Ungültiger Host; nach der schließenden Klammer dürfen nur Doppelpunkt und "
@@ -4347,12 +4347,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Ungültige Eingabe"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "Ungültiger Port angegeben. Der Port muss zwischen 1 und 65535 liegen."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4400,7 +4400,7 @@ msgstr "Ungültiger Pfad für Servereintrag"
 msgid "Invalid size in condition"
 msgstr "Ungültige Größe in Bedingung"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Ungültiger Benutzername angegeben."
 
@@ -4803,8 +4803,8 @@ msgstr "Es werden derzeit keine Dateien bearbeitet."
 msgid "No filter name given"
 msgstr "Bitte einen Filternamen angeben"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Kein Server angegeben, bitte Server eingeben."
 
@@ -4861,8 +4861,8 @@ msgstr "Noch keiner ausgewählt"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Normal"
 
@@ -7655,7 +7655,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr "Sie können diesen Dialog auch über das Hilfe-Menü öffnen."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 "Sie können das Port-Feld leer lassen, um den Standard-Port zu verwenden."

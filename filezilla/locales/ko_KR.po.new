@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2009-01-26 21:43+0900\n"
 "Last-Translator: DylanYi <dylan.abc@gmail.com>\n"
 "Language-Team: \n"
@@ -1274,8 +1274,8 @@ msgstr "파일 목록 위"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "계정"
 
@@ -1435,7 +1435,7 @@ msgstr "끌어다 놓은 항목과 이름이 같은 항목이 이미 대상 위�
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "익명"
 
@@ -1492,8 +1492,8 @@ msgstr "전송 대기열 난의 탭"
 msgid "Ask for action"
 msgstr "동작 물어보기"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "비밀번호 묻기"
 
@@ -2588,7 +2588,7 @@ msgstr "비밀번호 저장 안함(&o)"
 msgid "D&ouble-click action on directories:"
 msgstr "디렉터리 더블 클릭시 동작(&o):"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "DOS 형식의 가상 경로"
 
@@ -2637,7 +2637,7 @@ msgstr "디버깅 설정"
 msgid "Default &local directory:"
 msgstr "기본 로컬 디렉터리(&L):"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "기본 (자동 감지)"
 
@@ -3233,11 +3233,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - 파일 전송 프로토콜"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - 암호화가 가능한 파일 전송 프로토콜"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - 보안되지 않은 파일 전송 프로토콜"
 
@@ -3266,11 +3266,11 @@ msgstr ""
 "FTP는 데이터 전송을 위해 부가적인 연결이 필요합니다. 이러한 연결에는 두 가지 "
 "방법이 있습니다."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - 명시적 TLS/SSL을 통한 FTP"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - 묵시적 TLS/SSL을 통한 FTP"
 
@@ -3788,7 +3788,7 @@ msgstr "그룹 권한"
 msgid "H&igh"
 msgstr "높음(&I)"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - TLS를 통한 HTTP"
 
@@ -3830,7 +3830,7 @@ msgstr "호스트 키 지문:"
 msgid "Host key mismatch"
 msgstr "호스트 키 불일치"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "호스트가 '['로 시작하는데 닫는 괄호가 없습니다."
 
@@ -4100,8 +4100,8 @@ msgstr "TLS 초기화..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "보안되지 않은 서버입니다. TLS를 통한 FTP를 지원하지 않습니다."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "인터랙티브"
 
@@ -4150,7 +4150,7 @@ msgstr "날짜 이상"
 msgid "Invalid filename"
 msgstr "파일명 이상"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr "호스트 지정 이상. 닫는 괄호 후에는 콜론 및 포트만 올 수 있습니다."
 
@@ -4158,12 +4158,12 @@ msgstr "호스트 지정 이상. 닫는 괄호 후에는 콜론 및 포트만 �
 msgid "Invalid input"
 msgstr "입력 이상"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "부적합한 포트 지정. 포트 번호는 1 ~ 65535 사이 값이어야 합니다."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4209,7 +4209,7 @@ msgstr "사이트 경로 이상"
 msgid "Invalid size in condition"
 msgstr "조건 크기 이상"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "잘못된 사용자명 지정."
 
@@ -4605,8 +4605,8 @@ msgstr "현재 편집 중인 파일이 없습니다."
 msgid "No filter name given"
 msgstr "필터에 이름이 없음"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "호스트가 없습니다. 호스트를 입력하십시오."
 
@@ -4661,8 +4661,8 @@ msgstr "아직 선택 안됨"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "일반"
 
@@ -7298,7 +7298,7 @@ msgstr "사용 중인 FileZilla는 이미 최신 버전입니다. 다음에 다�
 msgid "You can always open this dialog again through the help menu."
 msgstr "이 대화 창은 도움말 메뉴에서 다시 열 수 있습니다."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr "포트 필드를 비워두면 기본 포트를 사용합니다."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla Client 3.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2011-11-02 07:07+0200\n"
 "Last-Translator: Stamatis H. Stamatellos <ydatografida@gmail.com>\n"
 "Language-Team: Ydatografida <ydatografida@gmail.com>\n"
@@ -1312,8 +1312,8 @@ msgstr "Πιο πάνω από τις λίστες αρχείων"
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "Λογαριασμός"
 
@@ -1481,7 +1481,7 @@ msgstr "Ένα αντικείμενο με το ίδιο όνομα υπάρχε
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "Anonymous"
 
@@ -1543,8 +1543,8 @@ msgstr "Ως ετικέττα στο πλακίδιο της λίστας ανα
 msgid "Ask for action"
 msgstr "Ερώτηση για ενέργεια"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "Αίτημα για κωδικό πρόσβασης"
 
@@ -2671,7 +2671,7 @@ msgstr "Ν&α μην αποθηκεύονται οι κωδικοί πρόσβα
 msgid "D&ouble-click action on directories:"
 msgstr "Ενέργεια δι&πλό-κλικ στους φακέλους:"
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr "Σαν DOS με εικονικές διαδρομές"
 
@@ -2720,7 +2720,7 @@ msgstr "Ρυμίσεις αποσφαλμάτωσης"
 msgid "Default &local directory:"
 msgstr "Προκαθορισμένος &τοπικός φάκελος:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 msgid "Default (Autodetect)"
 msgstr "Προεπιλογή (Αυτόματος εντοπισμός)"
 
@@ -3340,11 +3340,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr "FTP - Πρωτόκολλο Μεταφοράς Αρχείων"
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Πρωτόκολλο Μεταφοράς Αρχείων με προαιρετική κρυπτογράφηση"
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Επισφαλές Πρωτόκολλο Μεταφοράς Αρχείων"
 
@@ -3374,11 +3374,11 @@ msgstr ""
 "δεδομένων. Αυτές οι επιπρόσθετες συνδέσεις μπορούν να εδραιωθούν με δύο "
 "τρόπους."
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr "FTPES - FTP over explicit TLS/SSL"
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr "FTPS - FTP over implicit TLS/SSL"
 
@@ -3924,7 +3924,7 @@ msgstr "Δικαιώματα ομάδας"
 msgid "H&igh"
 msgstr "Υ&ψηλή"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr "HTTPS - HTTP over TLS"
 
@@ -3968,7 +3968,7 @@ msgstr "Αποτύπωμα κλειδιών Διακομιστή:"
 msgid "Host key mismatch"
 msgstr "Το κλειδί του κόμβου δεν ταιριάζει"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr "Ο κόμβος ξεκινάει με '[' αλλά η αγκύλη κλεισίματος δε βρέθηκε."
 
@@ -4267,8 +4267,8 @@ msgstr "Αρχικοποίηση TLS..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr "Επισφαλής εξυπηρετητής, δεν υποστηρίζει FTP με TLS."
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "Διαδραστικός"
 
@@ -4317,7 +4317,7 @@ msgstr "Λανθασμένη ημερομηνία"
 msgid "Invalid filename"
 msgstr "Λανθασμένο όνομα αρχείου"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 "Μη έγκυρος κόμβος. Μετά τον εγκιβωτισμό (κλείνει η αγκύλη) πρέπει να "
@@ -4327,13 +4327,13 @@ msgstr ""
 msgid "Invalid input"
 msgstr "Μη έγκυρη εισαγωγή"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 "Δόθηκε λανθασμένος αριθμός θύρας. Η θύρα πρέπει να έχει τιμή από 1 εως 65535."
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4384,7 +4384,7 @@ msgstr "Μη έγκυρη διαδρομή"
 msgid "Invalid size in condition"
 msgstr "Μη έγκυρο μέγεθος στην συνθήκη"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "Δόθηκε μη έγκυρο όνομα χρήστη."
 
@@ -4793,8 +4793,8 @@ msgstr "Δε μπορείτε να επεξεργαστείτε κανένα α�
 msgid "No filter name given"
 msgstr "Δε δόθηκε όνομα φίλτρου"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "Δε δόθηκε κόμβος, παρακαλώ καταχωρίστε ένα κόμβο."
 
@@ -4851,8 +4851,8 @@ msgstr "Τίποτε δεν έχει επιλεχθεί ακόμα"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "Κανονική"
 
@@ -7628,7 +7628,7 @@ msgid "You can always open this dialog again through the help menu."
 msgstr ""
 "Μπορείτε να ανοίξετε τον εν λόγω διάλογο επιλογών και μέσα από τη βοήθεια."
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 "Μπορείτε να αφήσετε το πεδίο θύρας κενό για να χρησιμοποιηθεί η "

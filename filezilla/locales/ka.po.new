@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FileZilla3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2006-12-15 09:59+0400\n"
 "Last-Translator: Giasher <giasher@gmail.com>\n"
 "Language-Team: Georgian <www.gia.ge>\n"
@@ -1336,8 +1336,8 @@ msgstr "ფაილებისა და დასტების სიის
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "ანგარიში"
 
@@ -1494,7 +1494,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "ანონიმური"
 
@@ -1552,8 +1552,8 @@ msgstr "შერჩეული ფაილებისა და დასტ
 msgid "Ask for action"
 msgstr "ქმედების &მოთხოვნა"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "პაროლის მოთხოვნა"
 
@@ -2684,7 +2684,7 @@ msgstr "პაროლის მითითება"
 msgid "D&ouble-click action on directories:"
 msgstr ""
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr ""
 
@@ -2734,7 +2734,7 @@ msgstr "გამართვის პარამეტრები"
 msgid "Default &local directory:"
 msgstr "ნაგულისხმები &ადგილობრივი დასტა:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 #, fuzzy
 msgid "Default (Autodetect)"
 msgstr "&თვითამოცნობა"
@@ -3353,11 +3353,11 @@ msgstr "FTP"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3385,11 +3385,11 @@ msgid ""
 "connections can be established in two ways."
 msgstr ""
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr ""
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr ""
 
@@ -3929,7 +3929,7 @@ msgstr "ჯგუფის უფლებები"
 msgid "H&igh"
 msgstr "მა&ღალი"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr ""
 
@@ -3973,7 +3973,7 @@ msgstr "ანაბეჭდი:"
 msgid "Host key mismatch"
 msgstr ""
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 
@@ -4203,8 +4203,8 @@ msgstr "TLS ინიციალიზება..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "ინტერაქტიული"
 
@@ -4252,7 +4252,7 @@ msgstr "მცდარი თარიღი"
 msgid "Invalid filename"
 msgstr "ფაილის მცდარი სახელი"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 
@@ -4261,12 +4261,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "მცდარი თარიღი"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4307,7 +4307,7 @@ msgstr "მცდარი თარიღი"
 msgid "Invalid size in condition"
 msgstr ""
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr ""
 
@@ -4714,8 +4714,8 @@ msgstr ""
 msgid "No filter name given"
 msgstr "ფილტრის სახელის მითითება"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr ""
 
@@ -4776,8 +4776,8 @@ msgstr "&მონიშნულის ამოღება"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "ჩვეულებრივი"
 
@@ -7388,7 +7388,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

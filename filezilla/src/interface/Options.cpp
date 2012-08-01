@@ -179,9 +179,9 @@ static const t_Option options[OPTIONS_NUM] =
 	{ "Show Site Manager on startup", number, _T("0"), normal },
 	
 	// Start of @td
-	{ "Show Site Manager on startup", number, _T("0"), normal },
-	{ "Show Site Manager on startup", string, _T(""), normal },
-	{ "Show Site Manager on startup", number, _T("0"), normal },
+	{ "Use password encryption", number, _T("0"), normal },
+	{ "Master password", string, _T(""), normal },
+	{ "Encryption iterations", number, _T("0"), normal },
 	// End of @td
 
 	// Default/internal options

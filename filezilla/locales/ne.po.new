@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ne\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-31 03:59+0200\n"
+"POT-Creation-Date: 2012-08-01 02:20+0200\n"
 "PO-Revision-Date: 2006-11-18 04:11+0545\n"
 "Last-Translator: shyam krishna ball <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1350,8 +1350,8 @@ msgstr "फाइल र फोल्डर सूची ताजा गर्�
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:948
-#: ../src/engine/server.cpp:967
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Account"
 msgstr "खाता"
 
@@ -1515,7 +1515,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:969
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
 msgid "Anonymous"
 msgstr "बेनामी"
 
@@ -1575,8 +1575,8 @@ msgstr "स्थानान्तरण लामको प्रदर्श�
 msgid "Ask for action"
 msgstr "कार्यका लागि सोध्नुहोस्"
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:944
-#: ../src/engine/server.cpp:963
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
+#: ../src/engine/server.cpp:1071
 msgid "Ask for password"
 msgstr "पासवर्डका लागि सोध्नुहोस्"
 
@@ -2720,7 +2720,7 @@ msgstr "पासवर्ड प्रविष्ट गर्नुहोस�
 msgid "D&ouble-click action on directories:"
 msgstr ""
 
-#: ../src/engine/server.cpp:50
+#: ../src/engine/server.cpp:59
 msgid "DOS-like with virtual paths"
 msgstr ""
 
@@ -2770,7 +2770,7 @@ msgstr "त्रुटि सच्च्याउने सेटिङ"
 msgid "Default &local directory:"
 msgstr "पूर्वानिर्धारित स्थानिय डाइरेक्टरी:"
 
-#: ../src/engine/server.cpp:42
+#: ../src/engine/server.cpp:51
 #, fuzzy
 msgid "Default (Autodetect)"
 msgstr "स्वत:पत्ता लगाउने"
@@ -3402,11 +3402,11 @@ msgstr "एफ टी पी"
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:31
+#: ../src/engine/server.cpp:40
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:37
+#: ../src/engine/server.cpp:46
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3436,11 +3436,11 @@ msgstr ""
 "एफ टी पी ले डेटा स्थानान्तरणका लागि गौण जडानहरू प्रयोग गर्दछ । यी थप जडानहरू दुई "
 "तरिकले स्थापना गर्न सकिन्छ ।"
 
-#: ../src/engine/server.cpp:36
+#: ../src/engine/server.cpp:45
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr ""
 
-#: ../src/engine/server.cpp:35
+#: ../src/engine/server.cpp:44
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr ""
 
@@ -3991,7 +3991,7 @@ msgstr "समूह अनुमति"
 msgid "H&igh"
 msgstr "उच्च"
 
-#: ../src/engine/server.cpp:34
+#: ../src/engine/server.cpp:43
 msgid "HTTPS - HTTP over TLS"
 msgstr ""
 
@@ -4036,7 +4036,7 @@ msgstr "फिंगरप्रिन्ट:"
 msgid "Host key mismatch"
 msgstr "होस्ट कुञ्जी मिलेन"
 
-#: ../src/engine/server.cpp:182
+#: ../src/engine/server.cpp:191
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 
@@ -4317,8 +4317,8 @@ msgstr "टी एल एस सुरुआत गरिँदैछ..."
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:946
-#: ../src/engine/server.cpp:965
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Interactive"
 msgstr "अन्तरक्रियात्मक"
 
@@ -4368,7 +4368,7 @@ msgstr "अवैध मिति"
 msgid "Invalid filename"
 msgstr "अवैध फाइलनाम"
 
-#: ../src/engine/server.cpp:189
+#: ../src/engine/server.cpp:198
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 
@@ -4377,12 +4377,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr "अवैध मिति"
 
-#: ../src/engine/server.cpp:77 ../src/engine/server.cpp:210
-#: ../src/engine/server.cpp:222
+#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
+#: ../src/engine/server.cpp:231
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr "अवैध पोर्ट दिएको छ । पोर्ट १ देखि ६५५३५ सम्मको मानमा हुनुपर्छ ।"
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:107
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4429,7 +4429,7 @@ msgstr "अवैध मिति"
 msgid "Invalid size in condition"
 msgstr "सही स्थितिमा अवैध साइज"
 
-#: ../src/engine/server.cpp:152
+#: ../src/engine/server.cpp:161
 msgid "Invalid username given."
 msgstr "दिएको अवैध प्रयोगकर्ता नाम ।"
 
@@ -4843,8 +4843,8 @@ msgstr ""
 msgid "No filter name given"
 msgstr "फिल्टर नाम प्रविष्ट गर्नुहोस्"
 
-#: ../src/engine/server.cpp:92 ../src/engine/server.cpp:203
-#: ../src/engine/server.cpp:232
+#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
+#: ../src/engine/server.cpp:241
 msgid "No host given, please enter a host."
 msgstr "कुनै होस्ट दिएको छैन, कृपया होस्ट प्रविष्ट गर्नुहोस् ।"
 
@@ -4905,8 +4905,8 @@ msgstr "चयन गरिएको हटाउनुहोस्"
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:942
-#: ../src/engine/server.cpp:961
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
+#: ../src/engine/server.cpp:1069
 msgid "Normal"
 msgstr "सामान्य"
 
@@ -7627,7 +7627,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:79
+#: ../src/engine/server.cpp:88
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 
