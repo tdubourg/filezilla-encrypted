@@ -5,3 +5,5 @@ test
 *.a
 *.svn
 *.svn*
+filezilla/locales/*.mo
+filezilla/locales/*.po.new

@@ -12,15 +12,19 @@
 #include "pwdbased.h"
 #include "modes.h"
 
-const std::string HEXSALT = "E5579A8EC1FB90310103718E4DF80495";
-const std::string HEXIV = "B56E5AC5D1F2E4873E7F408C51F4ED52";
+namespace crypto {
+	const std::string HEXSALT = "E5579A8EC1FB90310103718E4DF80495";
+	const std::string HEXIV = "B56E5AC5D1F2E4873E7F408C51F4ED52";
+}
 #define TD_DBG 1
+
 #ifdef TD_DBG
 #include <iostream>
 #include <fstream>
 std::ofstream F_LOG("/tmp/FZ.log");
 #define LOG(a) F_LOG << (a) << std::endl;
-
+#else
+#define LOG(a)  
 #endif
 // End of @td
 
@@ -337,7 +341,7 @@ wxString CServer::GetPass(bool decrypt/*=true*/) const
 		
 		LOG("Pouet6");
 		
-		StringSource saltDecoder(HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
+		StringSource saltDecoder(crypto::HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
 		
 		LOG("Pouet7");
 		
@@ -345,7 +349,7 @@ wxString CServer::GetPass(bool decrypt/*=true*/) const
 		
 		LOG("Pouet8");
 		
-		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
+		StringSource ivDecoder(crypto::HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
 		
 		LOG("Pouet9");
 		
@@ -715,13 +719,13 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 		SecByteBlock recoveredsalt(AES::DEFAULT_KEYLENGTH);
 		
 		LOG("Tralala8");
-		StringSource saltDecoder(HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
+		StringSource saltDecoder(crypto::HEXSALT,true,new HexDecoder(new ArraySink(recoveredsalt, recoveredsalt.size())));
 		
 		LOG("Tralala9");
 		SecByteBlock recoverediv(AES::BLOCKSIZE);
 		
 		LOG("Tralala10");
-		StringSource ivDecoder(HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
+		StringSource ivDecoder(crypto::HEXIV,true,new HexDecoder(new ArraySink(recoverediv, recoverediv.size())));
 		
 		LOG("Tralala11");
 		

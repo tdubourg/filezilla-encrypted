@@ -870,6 +870,7 @@ _("As tab in the transfer queue pane");
 _("Message log position");
 _("Behaviour");
 _("D&o not save passwords");
+_("&Encrypt passwords");
 _("&Minimize to tray");
 _("P&revent system from entering idle sleep during transfers and other operations");
 _("S&how the Site Manager on startup");

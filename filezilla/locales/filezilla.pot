@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-01 02:20+0200\n"
+"POT-Creation-Date: 2012-08-01 03:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,7 +245,7 @@ msgstr ""
 msgid "&Always trust this host, add this key to the cache"
 msgstr ""
 
-#: resources.h:940
+#: resources.h:941
 msgid "&Always use default editor"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgstr ""
 msgid "&Binary"
 msgstr ""
 
-#: resources.h:900
+#: resources.h:901
 msgid "&Binary prefixes using SI symbols. (e.g. 1 KB = 1024 bytes)"
 msgstr ""
 
@@ -282,7 +282,7 @@ msgid "&Bookmarks"
 msgstr ""
 
 #: resources.h:92 resources.h:366 resources.h:403 resources.h:409
-#: resources.h:426 resources.h:444 resources.h:937 resources.h:959
+#: resources.h:426 resources.h:444 resources.h:938 resources.h:960
 msgid "&Browse..."
 msgstr ""
 
@@ -348,11 +348,11 @@ msgstr ""
 msgid "&Debug"
 msgstr ""
 
-#: resources.h:967
+#: resources.h:968
 msgid "&Debug information in message log:"
 msgstr ""
 
-#: resources.h:933
+#: resources.h:934
 msgid "&Default editor:"
 msgstr ""
 
@@ -389,11 +389,11 @@ msgstr ""
 msgid "&Disconnect from server"
 msgstr ""
 
-#: resources.h:876
+#: resources.h:877
 msgid "&Display momentary transfer speed instead of average speed"
 msgstr ""
 
-#: resources.h:898
+#: resources.h:899
 msgid "&Display size in bytes"
 msgstr ""
 
@@ -405,7 +405,7 @@ msgstr ""
 msgid "&Don't use external IP address on local connections."
 msgstr ""
 
-#: resources.h:920
+#: resources.h:921
 msgid "&Double-click action on files:"
 msgstr ""
 
@@ -437,7 +437,7 @@ msgstr ""
 msgid "&Enable"
 msgstr ""
 
-#: resources.h:948
+#: resources.h:949
 msgid "&Enable automatic update check"
 msgstr ""
 
@@ -447,6 +447,10 @@ msgstr ""
 
 #: resources.h:111
 msgid "&Encoding:"
+msgstr ""
+
+#: resources.h:873
+msgid "&Encrypt passwords"
 msgstr ""
 
 #: resources.h:82
@@ -555,11 +559,11 @@ msgstr ""
 msgid "&Host:"
 msgstr ""
 
-#: resources.h:899
+#: resources.h:900
 msgid "&IEC binary prefixes (e.g. 1 KiB = 1024 bytes)"
 msgstr ""
 
-#: resources.h:887
+#: resources.h:888
 msgid "&ISO 8601 (example: 2007-09-15)"
 msgstr ""
 
@@ -567,7 +571,7 @@ msgstr ""
 msgid "&Import..."
 msgstr ""
 
-#: resources.h:942
+#: resources.h:943
 msgid "&Inherit system's filetype associations"
 msgstr ""
 
@@ -595,7 +599,7 @@ msgstr ""
 msgid "&Local directory:"
 msgstr ""
 
-#: resources.h:957
+#: resources.h:958
 msgid "&Log to file"
 msgstr ""
 
@@ -631,7 +635,7 @@ msgstr ""
 msgid "&Message log"
 msgstr ""
 
-#: resources.h:873
+#: resources.h:874
 msgid "&Minimize to tray"
 msgstr ""
 
@@ -671,7 +675,7 @@ msgstr ""
 msgid "&Normal"
 msgstr ""
 
-#: resources.h:949
+#: resources.h:950
 msgid "&Number of days between update checks:"
 msgstr ""
 
@@ -808,7 +812,7 @@ msgstr ""
 msgid "&Run configuration wizard now..."
 msgstr ""
 
-#: resources.h:951
+#: resources.h:952
 msgid "&Run update check now..."
 msgstr ""
 
@@ -836,7 +840,7 @@ msgstr ""
 msgid "&Select Entry:"
 msgstr ""
 
-#: resources.h:931
+#: resources.h:932
 msgid "&Select language:"
 msgstr ""
 
@@ -856,7 +860,7 @@ msgstr ""
 msgid "&Settings..."
 msgstr ""
 
-#: resources.h:966
+#: resources.h:967
 msgid "&Show debug menu"
 msgstr ""
 
@@ -864,7 +868,7 @@ msgstr ""
 msgid "&Show message"
 msgstr ""
 
-#: resources.h:956
+#: resources.h:957
 msgid "&Show timestamps in message log"
 msgstr ""
 
@@ -896,7 +900,7 @@ msgstr ""
 msgid "&Test"
 msgstr ""
 
-#: resources.h:879
+#: resources.h:880
 msgid "&Theme:"
 msgstr ""
 
@@ -940,7 +944,7 @@ msgstr ""
 msgid "&Use synchronized browsing"
 msgstr ""
 
-#: resources.h:935
+#: resources.h:936
 msgid "&Use system's default editor for text files"
 msgstr ""
 
@@ -952,7 +956,7 @@ msgstr ""
 msgid "&Use the server's external IP address instead"
 msgstr ""
 
-#: resources.h:902
+#: resources.h:903
 msgid "&Use thousands separator"
 msgstr ""
 
@@ -977,7 +981,7 @@ msgstr ""
 msgid "&View/Edit"
 msgstr ""
 
-#: resources.h:941
+#: resources.h:942
 msgid "&Watch locally edited files and prompt to upload modifications"
 msgstr ""
 
@@ -1040,15 +1044,15 @@ msgstr ""
 msgid "(5-9999, 0 to disable)"
 msgstr ""
 
-#: resources.h:950
+#: resources.h:951
 msgid "(At least 7 days)"
 msgstr ""
 
-#: resources.h:895
+#: resources.h:896
 msgid "(example: %H:%M)"
 msgstr ""
 
-#: resources.h:889
+#: resources.h:890
 msgid "(example: %Y-%m-%d)"
 msgstr ""
 
@@ -1101,19 +1105,19 @@ msgstr ""
 msgid "-s cannot be used together with an FTP URL."
 msgstr ""
 
-#: resources.h:968
+#: resources.h:969
 msgid "0 - None"
 msgstr ""
 
-#: resources.h:969
+#: resources.h:970
 msgid "1 - Warning"
 msgstr ""
 
-#: resources.h:970
+#: resources.h:971
 msgid "2 - Info"
 msgstr ""
 
-#: resources.h:971
+#: resources.h:972
 msgid "3 - Verbose"
 msgstr ""
 
@@ -1121,7 +1125,7 @@ msgstr ""
 msgid "32 bit system"
 msgstr ""
 
-#: resources.h:972
+#: resources.h:973
 msgid "4 - Debug"
 msgstr ""
 
@@ -1259,8 +1263,8 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1056
-#: ../src/engine/server.cpp:1075
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:1060
+#: ../src/engine/server.cpp:1079
 msgid "Account"
 msgstr ""
 
@@ -1319,7 +1323,7 @@ msgstr ""
 msgid "Add selected files and folders to the transfer queue"
 msgstr ""
 
-#: resources.h:922 resources.h:928
+#: resources.h:923 resources.h:929
 msgid "Add to queue"
 msgstr ""
 
@@ -1409,7 +1413,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1077
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:1081
 msgid "Anonymous"
 msgstr ""
 
@@ -1465,8 +1469,8 @@ msgstr ""
 msgid "Ask for action"
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1052
-#: ../src/engine/server.cpp:1071
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:1056
+#: ../src/engine/server.cpp:1075
 msgid "Ask for password"
 msgstr ""
 
@@ -1502,7 +1506,7 @@ msgstr ""
 msgid "Authentication failed."
 msgstr ""
 
-#: resources.h:880
+#: resources.h:881
 msgid "Author:"
 msgstr ""
 
@@ -1514,11 +1518,11 @@ msgstr ""
 msgid "Automatic file type classification"
 msgstr ""
 
-#: resources.h:947
+#: resources.h:948
 msgid "Automatic update check"
 msgstr ""
 
-#: resources.h:884
+#: resources.h:885
 msgid "Available sizes"
 msgstr ""
 
@@ -1607,11 +1611,11 @@ msgstr ""
 msgid "C&opy URL(s) to clipboard"
 msgstr ""
 
-#: resources.h:888
+#: resources.h:889
 msgid "C&ustom"
 msgstr ""
 
-#: resources.h:943
+#: resources.h:944
 msgid "C&ustom filetype associations:"
 msgstr ""
 
@@ -1641,11 +1645,11 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: resources.h:990
+#: resources.h:991
 msgid "Cancel current operation"
 msgstr ""
 
-#: resources.h:991
+#: resources.h:992
 msgid "Cancels the current operation"
 msgstr ""
 
@@ -1779,7 +1783,7 @@ msgstr ""
 msgid "Change the file permissions."
 msgstr ""
 
-#: resources.h:964
+#: resources.h:965
 msgid "Changing logfile settings requires restart of FileZilla."
 msgstr ""
 
@@ -1791,7 +1795,7 @@ msgstr ""
 msgid "Charset"
 msgstr ""
 
-#: resources.h:952
+#: resources.h:953
 msgid "Check for &beta versions and release candidates"
 msgstr ""
 
@@ -1934,7 +1938,7 @@ msgstr ""
 msgid "Column setup"
 msgstr ""
 
-#: resources.h:938
+#: resources.h:939
 msgid "Command and its arguments should be properly quoted."
 msgstr ""
 
@@ -1978,7 +1982,7 @@ msgstr ""
 msgid "Compare file&size"
 msgstr ""
 
-#: resources.h:918
+#: resources.h:919
 msgid "Comparison &threshold (in minutes):"
 msgstr ""
 
@@ -2494,7 +2498,7 @@ msgstr ""
 msgid "Current transfer type is set to binary."
 msgstr ""
 
-#: resources.h:773 resources.h:894
+#: resources.h:773 resources.h:895
 msgid "Cus&tom"
 msgstr ""
 
@@ -2510,7 +2514,7 @@ msgstr ""
 msgid "D&ata type"
 msgstr ""
 
-#: resources.h:901
+#: resources.h:902
 msgid "D&ecimal prefixes using SI symbols (e.g. 1 KB = 1000 bytes)"
 msgstr ""
 
@@ -2530,11 +2534,11 @@ msgstr ""
 msgid "D&o not save passwords"
 msgstr ""
 
-#: resources.h:925
+#: resources.h:926
 msgid "D&ouble-click action on directories:"
 msgstr ""
 
-#: ../src/engine/server.cpp:59
+#: ../src/engine/server.cpp:63
 msgid "DOS-like with virtual paths"
 msgstr ""
 
@@ -2556,7 +2560,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: resources.h:885
+#: resources.h:886
 msgid "Date formatting"
 msgstr ""
 
@@ -2575,7 +2579,7 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
-#: resources.h:965
+#: resources.h:966
 msgid "Debugging settings"
 msgstr ""
 
@@ -2583,7 +2587,7 @@ msgstr ""
 msgid "Default &local directory:"
 msgstr ""
 
-#: ../src/engine/server.cpp:51
+#: ../src/engine/server.cpp:55
 msgid "Default (Autodetect)"
 msgstr ""
 
@@ -2685,7 +2689,7 @@ msgstr ""
 msgid "Directory"
 msgstr ""
 
-#: resources.h:642 resources.h:916 resources.h:999
+#: resources.h:642 resources.h:917 resources.h:1000
 #: ../src/interface/filelistctrl.cpp:445 ../src/interface/Mainfrm.cpp:2343
 msgid "Directory comparison"
 msgstr ""
@@ -2731,7 +2735,7 @@ msgid ""
 "directory contents anymore."
 msgstr ""
 
-#: resources.h:992
+#: resources.h:993
 msgid "Disconnect from server"
 msgstr ""
 
@@ -2753,7 +2757,7 @@ msgstr ""
 msgid "Disconnecting from previous server"
 msgstr ""
 
-#: resources.h:993
+#: resources.h:994
 msgid "Disconnects from the currently visible server"
 msgstr ""
 
@@ -2761,7 +2765,7 @@ msgstr ""
 msgid "Display about dialog"
 msgstr ""
 
-#: resources.h:934
+#: resources.h:935
 msgid "Do &not use default editor"
 msgstr ""
 
@@ -2814,7 +2818,7 @@ msgstr ""
 msgid "Dotfiles are filenames starting with a dot, e.g. .htaccess"
 msgstr ""
 
-#: resources.h:919
+#: resources.h:920
 msgid "Double-click action"
 msgstr ""
 
@@ -2920,7 +2924,7 @@ msgstr ""
 msgid "Editing failed"
 msgstr ""
 
-#: resources.h:882
+#: resources.h:883
 msgid "Email:"
 msgstr ""
 
@@ -2997,7 +3001,7 @@ msgstr ""
 msgid "Enter custom command"
 msgstr ""
 
-#: resources.h:926
+#: resources.h:927
 msgid "Enter directory"
 msgstr ""
 
@@ -3115,11 +3119,11 @@ msgstr ""
 msgid "Establish connection in a new tab"
 msgstr ""
 
-#: resources.h:945
+#: resources.h:946
 msgid "Example: png \"c:\\program files\\viewer\\viewer.exe\" -open"
 msgstr ""
 
-#: resources.h:904
+#: resources.h:905
 msgid "Examples"
 msgstr ""
 
@@ -3163,11 +3167,11 @@ msgstr ""
 msgid "FTP - File Transfer Protocol"
 msgstr ""
 
-#: ../src/engine/server.cpp:40
+#: ../src/engine/server.cpp:44
 msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr ""
 
-#: ../src/engine/server.cpp:46
+#: ../src/engine/server.cpp:50
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr ""
 
@@ -3194,11 +3198,11 @@ msgid ""
 "connections can be established in two ways."
 msgstr ""
 
-#: ../src/engine/server.cpp:45
+#: ../src/engine/server.cpp:49
 msgid "FTPES - FTP over explicit TLS/SSL"
 msgstr ""
 
-#: ../src/engine/server.cpp:44
+#: ../src/engine/server.cpp:48
 msgid "FTPS - FTP over implicit TLS/SSL"
 msgstr ""
 
@@ -3436,7 +3440,7 @@ msgstr ""
 msgid "File not found"
 msgstr ""
 
-#: resources.h:1003
+#: resources.h:1004
 msgid "File search"
 msgstr ""
 
@@ -3540,7 +3544,7 @@ msgstr ""
 msgid "Filename unchanged"
 msgstr ""
 
-#: resources.h:307 resources.h:958
+#: resources.h:307 resources.h:959
 msgid "Filename:"
 msgstr ""
 
@@ -3574,7 +3578,7 @@ msgstr ""
 msgid "Filetype"
 msgstr ""
 
-#: resources.h:946 ../src/interface/settings/settingsdialog.cpp:133
+#: resources.h:947 ../src/interface/settings/settingsdialog.cpp:133
 msgid "Filetype associations"
 msgstr ""
 
@@ -3607,7 +3611,7 @@ msgstr ""
 msgid "Filter set already exists"
 msgstr ""
 
-#: resources.h:996
+#: resources.h:997
 msgid "Filter the directory listings"
 msgstr ""
 
@@ -3664,7 +3668,7 @@ msgstr ""
 msgid "Format specifications:"
 msgstr ""
 
-#: resources.h:944
+#: resources.h:945
 msgid "Format: Extension followed by properly quoted command and arguments."
 msgstr ""
 
@@ -3712,7 +3716,7 @@ msgstr ""
 msgid "H&igh"
 msgstr ""
 
-#: ../src/engine/server.cpp:43
+#: ../src/engine/server.cpp:47
 msgid "HTTPS - HTTP over TLS"
 msgstr ""
 
@@ -3754,7 +3758,7 @@ msgstr ""
 msgid "Host key mismatch"
 msgstr ""
 
-#: ../src/engine/server.cpp:191
+#: ../src/engine/server.cpp:195
 msgid "Host starts with '[' but no closing bracket found."
 msgstr ""
 
@@ -3771,7 +3775,7 @@ msgstr ""
 msgid "Hours,"
 msgstr ""
 
-#: resources.h:893
+#: resources.h:894
 msgid "I&SO 8601 (example: 15:47)"
 msgstr ""
 
@@ -3782,7 +3786,7 @@ msgid ""
 "reconnect."
 msgstr ""
 
-#: resources.h:974
+#: resources.h:975
 msgid "If reporting bugs, please provide logs with \"Verbose\" logging level."
 msgstr ""
 
@@ -3818,7 +3822,7 @@ msgid ""
 "connection."
 msgstr ""
 
-#: resources.h:963
+#: resources.h:964
 msgid ""
 "If the size of the logfile reaches the limit, it gets renamed by adding "
 "\".1\" to the end of the filename (possibly overwriting older logfiles) and "
@@ -3848,13 +3852,13 @@ msgid ""
 "timezone offset in the site manager."
 msgstr ""
 
-#: resources.h:917
+#: resources.h:918
 msgid ""
 "If using timestamp based comparison, consider two files equal if their "
 "timestamp difference does not exceed this threshold."
 msgstr ""
 
-#: resources.h:932
+#: resources.h:933
 msgid "If you change the language, you should restart FileZilla."
 msgstr ""
 
@@ -3981,8 +3985,8 @@ msgstr ""
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1054
-#: ../src/engine/server.cpp:1073
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:1058
+#: ../src/engine/server.cpp:1077
 msgid "Interactive"
 msgstr ""
 
@@ -4029,7 +4033,7 @@ msgstr ""
 msgid "Invalid filename"
 msgstr ""
 
-#: ../src/engine/server.cpp:198
+#: ../src/engine/server.cpp:202
 msgid "Invalid host, after closing bracket only colon and port may follow."
 msgstr ""
 
@@ -4037,12 +4041,12 @@ msgstr ""
 msgid "Invalid input"
 msgstr ""
 
-#: ../src/engine/server.cpp:86 ../src/engine/server.cpp:219
-#: ../src/engine/server.cpp:231
+#: ../src/engine/server.cpp:90 ../src/engine/server.cpp:223
+#: ../src/engine/server.cpp:235
 msgid "Invalid port given. The port has to be a value from 1 to 65535."
 msgstr ""
 
-#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:116
+#: ../src/interface/quickconnectbar.cpp:124 ../src/engine/server.cpp:120
 msgid ""
 "Invalid protocol specified. Valid protocols are:\n"
 "ftp:// for normal FTP,\n"
@@ -4082,7 +4086,7 @@ msgstr ""
 msgid "Invalid size in condition"
 msgstr ""
 
-#: ../src/engine/server.cpp:161
+#: ../src/engine/server.cpp:165
 msgid "Invalid username given."
 msgstr ""
 
@@ -4098,7 +4102,7 @@ msgstr ""
 msgid "Jurisdiction state or province:"
 msgstr ""
 
-#: resources.h:914
+#: resources.h:915
 msgid "Keep directories on top"
 msgstr ""
 
@@ -4117,7 +4121,7 @@ msgstr ""
 msgid "L&owest"
 msgstr ""
 
-#: resources.h:930 ../src/interface/settings/settingsdialog.cpp:131
+#: resources.h:931 ../src/interface/settings/settingsdialog.cpp:131
 msgid "Language"
 msgstr ""
 
@@ -4146,11 +4150,11 @@ msgstr ""
 msgid "Limit local ports"
 msgstr ""
 
-#: resources.h:960
+#: resources.h:961
 msgid "Limit size of logfile"
 msgstr ""
 
-#: resources.h:961
+#: resources.h:962
 msgid "Limit:"
 msgstr ""
 
@@ -4215,7 +4219,7 @@ msgstr ""
 msgid "Log of update check:"
 msgstr ""
 
-#: resources.h:955 ../src/interface/settings/settingsdialog.cpp:140
+#: resources.h:956 ../src/interface/settings/settingsdialog.cpp:140
 msgid "Logging"
 msgstr ""
 
@@ -4318,7 +4322,7 @@ msgstr ""
 msgid "Message log position"
 msgstr ""
 
-#: resources.h:962
+#: resources.h:963
 msgid "MiB"
 msgstr ""
 
@@ -4469,8 +4473,8 @@ msgstr ""
 msgid "No filter name given"
 msgstr ""
 
-#: ../src/engine/server.cpp:101 ../src/engine/server.cpp:212
-#: ../src/engine/server.cpp:241
+#: ../src/engine/server.cpp:105 ../src/engine/server.cpp:216
+#: ../src/engine/server.cpp:245
 msgid "No host given, please enter a host."
 msgstr ""
 
@@ -4512,7 +4516,7 @@ msgstr ""
 msgid "No username given."
 msgstr ""
 
-#: resources.h:924 resources.h:929 ../src/interface/verifycertdialog.cpp:54
+#: resources.h:925 resources.h:930 ../src/interface/verifycertdialog.cpp:54
 msgid "None"
 msgstr ""
 
@@ -4525,8 +4529,8 @@ msgstr ""
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1050
-#: ../src/engine/server.cpp:1069
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:1054
+#: ../src/engine/server.cpp:1073
 msgid "Normal"
 msgstr ""
 
@@ -4563,7 +4567,7 @@ msgstr ""
 msgid "Note: Using a generic proxy forces passive mode on FTP connections."
 msgstr ""
 
-#: resources.h:903
+#: resources.h:904
 msgid "Number of decimal places:"
 msgstr ""
 
@@ -4595,7 +4599,7 @@ msgstr ""
 msgid "Once"
 msgstr ""
 
-#: resources.h:954
+#: resources.h:955
 msgid ""
 "Only the versions of FileZilla and the operating system you are using will "
 "be submitted to the server."
@@ -4605,7 +4609,7 @@ msgstr ""
 msgid "Open directory in system's file manager"
 msgstr ""
 
-#: resources.h:976 resources.h:977
+#: resources.h:977 resources.h:978
 msgid "Open the Site Manager"
 msgstr ""
 
@@ -4637,7 +4641,7 @@ msgstr ""
 msgid "Opens the Site Manager"
 msgstr ""
 
-#: resources.h:997
+#: resources.h:998
 msgid ""
 "Opens the directory listing filter dialog. Right-click to toggle filters."
 msgstr ""
@@ -4698,7 +4702,7 @@ msgstr ""
 msgid "Owner/Group"
 msgstr ""
 
-#: resources.h:874
+#: resources.h:875
 msgid ""
 "P&revent system from entering idle sleep during transfers and other "
 "operations"
@@ -4981,7 +4985,7 @@ msgid ""
 "often or in too short intervals."
 msgstr ""
 
-#: resources.h:890 resources.h:896
+#: resources.h:891 resources.h:897
 #, no-c-format
 msgid ""
 "Please read http://wiki.filezilla-project.org/Date_and_Time_formatting for "
@@ -5084,7 +5088,7 @@ msgstr ""
 msgid "Print version information to stdout and exit"
 msgstr ""
 
-#: resources.h:913
+#: resources.h:914
 msgid "Prioritize directories (default)"
 msgstr ""
 
@@ -5092,7 +5096,7 @@ msgstr ""
 msgid "Priority"
 msgstr ""
 
-#: resources.h:953
+#: resources.h:954
 msgid "Privacy policy:"
 msgstr ""
 
@@ -5292,7 +5296,7 @@ msgstr ""
 msgid "Reconnection settings"
 msgstr ""
 
-#: resources.h:994 resources.h:995
+#: resources.h:995 resources.h:996
 msgid "Reconnects to the last used server"
 msgstr ""
 
@@ -5300,7 +5304,7 @@ msgstr ""
 msgid "Redirection to invalid address"
 msgstr ""
 
-#: resources.h:986 resources.h:987
+#: resources.h:987 resources.h:988
 msgid "Refresh the file and folder lists"
 msgstr ""
 
@@ -5458,7 +5462,7 @@ msgstr ""
 msgid "S&how files currently being edited..."
 msgstr ""
 
-#: resources.h:875
+#: resources.h:876
 msgid "S&how the Site Manager on startup"
 msgstr ""
 
@@ -5498,7 +5502,7 @@ msgstr ""
 msgid "Search &directory:"
 msgstr ""
 
-#: resources.h:1002
+#: resources.h:1003
 msgid "Search for files recursively."
 msgstr ""
 
@@ -5523,7 +5527,7 @@ msgstr ""
 msgid "Select &page:"
 msgstr ""
 
-#: resources.h:878
+#: resources.h:879
 msgid "Select Theme"
 msgstr ""
 
@@ -5822,7 +5826,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: resources.h:975
+#: resources.h:976
 msgid "Show &raw directory listing"
 msgstr ""
 
@@ -5901,7 +5905,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: resources.h:897
+#: resources.h:898
 msgid "Size formatting"
 msgstr ""
 
@@ -5935,7 +5939,7 @@ msgid ""
 "their local IP address."
 msgstr ""
 
-#: resources.h:915
+#: resources.h:916
 msgid "Sort directories inline"
 msgstr ""
 
@@ -5943,11 +5947,11 @@ msgstr ""
 msgid "Sort order cannot be changed if comparing directories."
 msgstr ""
 
-#: resources.h:911
+#: resources.h:912
 msgid "Sorting"
 msgstr ""
 
-#: resources.h:912
+#: resources.h:913
 msgid "Sorting &mode:"
 msgstr ""
 
@@ -6043,7 +6047,7 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: resources.h:1001 ../src/interface/state.cpp:249
+#: resources.h:1002 ../src/interface/state.cpp:249
 #: ../src/interface/state.cpp:278 ../src/interface/state.cpp:285
 #: ../src/interface/state.cpp:297 ../src/interface/state.cpp:373
 #: ../src/interface/state.cpp:383 ../src/interface/state.cpp:392
@@ -6284,7 +6288,7 @@ msgstr ""
 msgid "The global bookmarks could not be saved."
 msgstr ""
 
-#: resources.h:973
+#: resources.h:974
 msgid ""
 "The higher the debug level, the more information will be displayed in the "
 "message log. Displaying debug information has a negative impact on "
@@ -6446,7 +6450,7 @@ msgstr ""
 msgid "Time"
 msgstr ""
 
-#: resources.h:891
+#: resources.h:892
 msgid "Time formatting"
 msgstr ""
 
@@ -6485,7 +6489,7 @@ msgid ""
 "keys to use."
 msgstr ""
 
-#: resources.h:998
+#: resources.h:999
 msgid ""
 "Toggle directory comparison. Right-click to change comparison mode.\n"
 "\n"
@@ -6495,30 +6499,30 @@ msgid ""
 "Red: File sizes different"
 msgstr ""
 
-#: resources.h:1000
+#: resources.h:1001
 msgid ""
 "Toggle synchronized browsing.\n"
 "If enabled, navigating the local directory hierarchy will also change the "
 "directory on the server accordingly and vice versa."
 msgstr ""
 
-#: resources.h:988 resources.h:989
+#: resources.h:989 resources.h:990
 msgid "Toggles processing of the transfer queue"
 msgstr ""
 
-#: resources.h:980 resources.h:981
+#: resources.h:981 resources.h:982
 msgid "Toggles the display of the local directory tree"
 msgstr ""
 
-#: resources.h:978 resources.h:979
+#: resources.h:979 resources.h:980
 msgid "Toggles the display of the message log"
 msgstr ""
 
-#: resources.h:982 resources.h:983
+#: resources.h:983 resources.h:984
 msgid "Toggles the display of the remote directory tree"
 msgstr ""
 
-#: resources.h:984 resources.h:985
+#: resources.h:985 resources.h:986
 msgid "Toggles the display of the transfer queue"
 msgstr ""
 
@@ -6535,7 +6539,7 @@ msgstr ""
 msgid "Trace:"
 msgstr ""
 
-#: resources.h:921 resources.h:927
+#: resources.h:922 resources.h:928
 msgid "Transfer"
 msgstr ""
 
@@ -6551,7 +6555,7 @@ msgstr ""
 msgid "Transfer Mode"
 msgstr ""
 
-#: resources.h:877
+#: resources.h:878
 msgid "Transfer Queue"
 msgstr ""
 
@@ -6629,11 +6633,11 @@ msgstr ""
 msgid "U&pload limit:"
 msgstr ""
 
-#: resources.h:939
+#: resources.h:940
 msgid "U&se filetype associations if available"
 msgstr ""
 
-#: resources.h:892
+#: resources.h:893
 msgid "U&se system defaults"
 msgstr ""
 
@@ -6773,7 +6777,7 @@ msgstr ""
 msgid "Use &custom charset"
 msgstr ""
 
-#: resources.h:936
+#: resources.h:937
 msgid "Use &custom editor:"
 msgstr ""
 
@@ -6805,7 +6809,7 @@ msgstr ""
 msgid "Use server from site manager"
 msgstr ""
 
-#: resources.h:886
+#: resources.h:887
 msgid "Use system &defaults"
 msgstr ""
 
@@ -6884,7 +6888,7 @@ msgstr ""
 msgid "View hidden option set, but unsupported by server"
 msgstr ""
 
-#: resources.h:923
+#: resources.h:924
 msgid "View/Edit"
 msgstr ""
 
@@ -6999,7 +7003,7 @@ msgstr ""
 msgid "You can always open this dialog again through the help menu."
 msgstr ""
 
-#: ../src/engine/server.cpp:88
+#: ../src/engine/server.cpp:92
 msgid "You can leave the port field empty to use the default port."
 msgstr ""
 

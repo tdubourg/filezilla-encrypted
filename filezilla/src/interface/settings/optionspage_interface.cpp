@@ -8,6 +8,9 @@
 
 BEGIN_EVENT_TABLE(COptionsPageInterface, COptionsPage)
 EVT_CHECKBOX(XRCID("ID_FILEPANESWAP"), COptionsPageInterface::OnLayoutChange)
+// Start of @td
+EVT_CHECKBOX(XRCID("ID_ENCRYPT_PASSWORDS"), COptionsPageInterface::OnEncryptPasswordsChanged) 
+// End of @td
 EVT_CHOICE(XRCID("ID_FILEPANELAYOUT"), COptionsPageInterface::OnLayoutChange)
 EVT_CHOICE(XRCID("ID_MESSAGELOGPOS"), COptionsPageInterface::OnLayoutChange)
 END_EVENT_TABLE()
@@ -41,6 +44,16 @@ bool COptionsPageInterface::LoadPage()
 		SetCheckFromOption(XRCID("ID_DONT_SAVE_PASSWORDS"), OPTION_DEFAULT_KIOSKMODE, failure);
 
 	SetCheckFromOption(XRCID("ID_INTERFACE_SITEMANAGER_ON_STARTUP"), OPTION_INTERFACE_SITEMANAGER_ON_STARTUP, failure);
+	
+	// Start of @td
+	wxString stars = wxString("***********", wxConvUTF8);
+	SetText(XRCID("ID_MASTER_PASSWORD"), stars, failure); // @TODO : Better display...
+	// End of @td
+	
+	if (!failure)
+	{
+		SetCtrlState();
+	}
 
 	return !failure;
 }
@@ -59,6 +72,11 @@ bool COptionsPageInterface::SavePage()
 	SetOptionFromCheck(XRCID("ID_PREVENT_IDLESLEEP"), OPTION_PREVENT_IDLESLEEP);
 	
 	SetOptionFromCheck(XRCID("ID_SPEED_DISPLAY"), OPTION_SPEED_DISPLAY);
+	
+	// Start of @td
+	SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
+	SetOptionFromText(XRCID("ID_MASTER_PASSWORD"), OPTION_MASTER_PASSWORD);
+	// End of @td
 
 	if (!m_pOptions->OptionFromFzDefaultsXml(OPTION_DEFAULT_KIOSKMODE) && m_pOptions->GetOptionVal(OPTION_DEFAULT_KIOSKMODE) != 2)
 		SetOptionFromCheck(XRCID("ID_DONT_SAVE_PASSWORDS"), OPTION_DEFAULT_KIOSKMODE);
@@ -80,3 +98,19 @@ void COptionsPageInterface::OnLayoutChange(wxCommandEvent& event)
 
 	m_pOwner->m_pMainFrame->UpdateLayout(layout, swap, GetChoice(XRCID("ID_MESSAGELOGPOS")));
 }
+
+// Start of @td
+
+void COptionsPageInterface::SetCtrlState()
+{
+	bool enabled = XRCCTRL(*this, "ID_ENCRYPT_PASSWORDS", wxCheckBox)->GetValue() == 1;
+
+	XRCCTRL(*this, "ID_MASTER_PASSWORD", wxTextCtrl)->Enable(enabled);
+}
+
+void COptionsPageInterface::OnEncryptPasswordsChanged(wxCommandEvent& event)
+{
+	SetCtrlState();
+}
+
+// End of @td

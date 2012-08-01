@@ -9,6 +9,12 @@ public:
 	virtual bool SavePage();
 	virtual bool Validate();
 
+	// Start of  @td
+	void SetCtrlState();
+
+	void OnEncryptPasswordsChanged(wxCommandEvent& event);
+	// End of @td
+
 	DECLARE_EVENT_TABLE();
 	void OnLayoutChange(wxCommandEvent& event);
 };

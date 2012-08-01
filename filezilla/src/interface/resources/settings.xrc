@@ -1305,6 +1305,18 @@
                   <label>D&amp;o not save passwords</label>
                 </object>
               </object>
+              <!-- Start of @td -->
+              <object class="sizeritem">
+                <object class="wxCheckBox" name="ID_ENCRYPT_PASSWORDS">
+                  <label>&amp;Encrypt passwords</label>
+                </object>
+                <flag>wxALIGN_CENTRE_VERTICAL</flag>
+              </object>              
+              <object class="sizeritem">
+                <object class="wxTextCtrl" name="ID_MASTER_PASSWORD"/>
+                <flag>wxALIGN_CENTRE_VERTICAL|wxGROW</flag>
+              </object>
+              <!-- End of @td -->
               <object class="sizeritem">
                 <object class="wxCheckBox" name="ID_MINIMIZE_TRAY">
                   <label>&amp;Minimize to tray</label>
