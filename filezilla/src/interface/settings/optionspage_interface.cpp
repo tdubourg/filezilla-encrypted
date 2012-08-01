@@ -6,6 +6,10 @@
 #include "../Mainfrm.h"
 #include "../power_management.h"
 
+// Start of @td
+#define DEFAULTVALUE "***********"
+// End of @td
+
 BEGIN_EVENT_TABLE(COptionsPageInterface, COptionsPage)
 EVT_CHECKBOX(XRCID("ID_FILEPANESWAP"), COptionsPageInterface::OnLayoutChange)
 // Start of @td
@@ -46,7 +50,8 @@ bool COptionsPageInterface::LoadPage()
 	SetCheckFromOption(XRCID("ID_INTERFACE_SITEMANAGER_ON_STARTUP"), OPTION_INTERFACE_SITEMANAGER_ON_STARTUP, failure);
 	
 	// Start of @td
-	wxString stars = wxString("***********", wxConvUTF8);
+	SetCheckFromOption(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS, failure);
+	wxString stars = wxString(DEFAULTVALUE, wxConvUTF8);
 	SetText(XRCID("ID_MASTER_PASSWORD"), stars, failure); // @TODO : Better display...
 	// End of @td
 	
@@ -75,7 +80,11 @@ bool COptionsPageInterface::SavePage()
 	
 	// Start of @td
 	SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
-	SetOptionFromText(XRCID("ID_MASTER_PASSWORD"), OPTION_MASTER_PASSWORD);
+	if ( != DEFAULTVALUE)
+	{
+		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, CCryto::Encrypt(GetText(XRCID("ID_MASTER_PASSWORD")));
+	}
+	
 	// End of @td
 
 	if (!m_pOptions->OptionFromFzDefaultsXml(OPTION_DEFAULT_KIOSKMODE) && m_pOptions->GetOptionVal(OPTION_DEFAULT_KIOSKMODE) != 2)

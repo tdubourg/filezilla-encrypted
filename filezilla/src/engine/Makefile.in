@@ -84,7 +84,9 @@ am_libengine_a_OBJECTS = libengine_a-backend.$(OBJEXT) \
 	libengine_a-string_coalescer.$(OBJEXT) \
 	libengine_a-tlssocket.$(OBJEXT) libengine_a-threadex.$(OBJEXT) \
 	libengine_a-timeex.$(OBJEXT) \
+	libengine_a-transfersocket.$(OBJEXT) \
 	libengine_a-transfersocket.$(OBJEXT)
+
 libengine_a_OBJECTS = $(am_libengine_a_OBJECTS)
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/src/include
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
@@ -301,7 +303,8 @@ libengine_a_SOURCES = \
 		tlssocket.cpp \
 		threadex.cpp \
 		timeex.cpp \
-		transfersocket.cpp
+		transfersocket.cpp \
+		crypto.cpp
 
 noinst_HEADERS = backend.h \
 		ControlSocket.h \
@@ -317,7 +320,8 @@ noinst_HEADERS = backend.h \
 		servercapabilities.h \
 		sftpcontrolsocket.h \
 		tlssocket.h \
-		transfersocket.h
+		transfersocket.h \
+		crypto.h
 
 dist_noinst_DATA = engine.vcproj
 CLEANFILES = filezilla.h.gch
