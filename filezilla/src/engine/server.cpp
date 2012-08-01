@@ -233,7 +233,9 @@ bool CServer::ParseUrl(wxString host, unsigned int port, wxString user, wxString
 
 	m_port = port;
 	m_user = user;
-	m_pass = pass;
+	// Start of @td
+	SetPass(pass);
+	// End of @td
 	m_account = _T("");
 	if (m_logonType != ASK && m_logonType != INTERACTIVE)
 	{
@@ -288,9 +290,9 @@ wxString CServer::GetPass(bool decrypt/*=true*/) const
 		return _T("anon@localhost");
 
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
-		
+		LOG("GetPass(). Launching Decryption.");
 		wxString result = wxString(CCrypto::Decrypt(m_pass).c_str(), wxConvUTF8);
-		
+		LOG("GetPass(). Launching Decryption done, returning password=" << result);
 		return result;
 	}
 	return m_pass;
@@ -312,7 +314,9 @@ CServer& CServer::operator=(const CServer &op)
 	m_port = op.m_port;
 	m_logonType = op.m_logonType;
 	m_user = op.m_user;
-	m_pass = op.m_pass;
+	// Start of @td
+	SetPass(op.m_pass);
+	// End of @td
 	m_account = op.m_account;
 	m_timezoneOffset = op.m_timezoneOffset;
 	m_pasvMode = op.m_pasvMode;
@@ -525,7 +529,9 @@ CServer::CServer(enum ServerProtocol protocol, enum ServerType type, wxString ho
 	m_port = port;
 	m_logonType = NORMAL;
 	m_user = user;
-	m_pass = pass;
+	// Start of @td
+	SetPass(pass);
+	// End of @td
 	m_account = account;
 }
 
@@ -590,20 +596,27 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 	{
 		if (m_logonType != ASK && m_logonType != INTERACTIVE)
 			return false;
-		m_pass = _T("");
-	} else if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { // start of @td
-	
-		m_pass = wxString(CCrypto::Encrypt(pass).c_str(), wxConvUTF8);
-		
-		return true;
-	} else {// end of @td
-		m_pass = pass;
+		SetPass(_T(""), alreadyEncrypted);
+	} else {
+		SetPass(pass, alreadyEncrypted);
 	}
 	
 	m_user = user;
 	
 	return true;
 }
+// start of @td
+bool CServer::SetPass(const wxString& pass, bool alreadyEncrypted/* = false*/) {
+	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { 
+		LOG("SetPass(). Launching Encryption.");
+		m_pass = wxString(CCrypto::Encrypt(pass).c_str(), wxConvUTF8);
+		LOG("SetPass(). Encryption finished, m_pass=" << m_pass.mb_str());
+	} else {
+		m_pass = pass;
+	}
+	return true;
+}
+// end of @td
 
 bool CServer::SetAccount(const wxString& account)
 {
@@ -693,7 +706,9 @@ void CServer::Initialize()
 	m_port = 21;
 	m_logonType = ANONYMOUS;
 	m_user = _T("");
-	m_pass = _T("");
+	// Start of @td
+	SetPass(_T(""));
+	// End of @td
 	m_account = _T("");
 	m_timezoneOffset = 0;
 	m_pasvMode = MODE_DEFAULT;

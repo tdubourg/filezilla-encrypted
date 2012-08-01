@@ -1,6 +1,40 @@
 libengine_a-crypto.o: crypto.cpp crypto.h /usr/include/c++/4.6/string \
- ../interface/Options.h ../../../cryptopp/cryptlib.h \
- ../../../cryptopp/config.h ../../../cryptopp/stdcpp.h \
+ /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/c++config.h \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
+ /usr/include/c++/4.6/iosfwd /usr/include/c++/4.6/exception \
+ /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/c++/4.6/bits/localefwd.h \
+ /usr/include/c++/4.6/bits/ios_base.h \
+ /usr/include/c++/4.6/ext/atomicity.h \
+ /usr/include/c++/4.6/bits/locale_classes.h \
+ /usr/include/c++/4.6/bits/locale_classes.tcc \
+ /usr/include/c++/4.6/streambuf \
+ /usr/include/c++/4.6/bits/cpp_type_traits.h \
+ /usr/include/c++/4.6/ext/type_traits.h \
+ /usr/include/c++/4.6/bits/streambuf.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.h \
+ /usr/include/c++/4.6/bits/locale_facets.h /usr/include/c++/4.6/cwctype \
+ /usr/include/wctype.h /usr/include/c++/4.6/cctype /usr/include/ctype.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h \
+ /usr/include/c++/4.6/ext/numeric_traits.h \
+ /usr/include/c++/4.6/bits/streambuf_iterator.h \
+ /usr/include/c++/4.6/debug/debug.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h \
+ /usr/include/c++/4.6/bits/locale_facets.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.tcc \
+ /usr/include/c++/4.6/bits/ostream_insert.h \
+ /usr/include/c++/4.6/bits/ostream.tcc \
+ /usr/include/c++/4.6/bits/cxxabi_forced.h /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/bits/istream.tcc /usr/include/c++/4.6/fstream \
+ /usr/include/c++/4.6/bits/codecvt.h /usr/include/c++/4.6/cstdio \
+ /usr/include/stdio.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h \
+ /usr/include/c++/4.6/i686-linux-gnu/./bits/gthr.h \
+ /usr/include/c++/4.6/bits/fstream.tcc ../interface/Options.h \
+ ../../../cryptopp/cryptlib.h ../../../cryptopp/config.h \
+ ../../../cryptopp/stdcpp.h \
  /usr/lib/gcc/i686-linux-gnu/4.6.1/include/stddef.h /usr/include/assert.h \
  /usr/include/features.h \
  /usr/lib/gcc/i686-linux-gnu/4.6.1/include-fixed/limits.h \
@@ -11,23 +45,16 @@ libengine_a-crypto.o: crypto.cpp crypto.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/stl_uninitialized.h \
  /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
- /usr/include/c++/4.6/exception /usr/include/c++/4.6/typeinfo \
- /usr/include/c++/4.6/bits/hash_bytes.h /usr/include/c++/4.6/iosfwd \
- /usr/include/c++/4.6/ext/atomicity.h \
+ /usr/include/c++/4.6/typeinfo /usr/include/c++/4.6/bits/hash_bytes.h \
  /usr/include/c++/4.6/ext/concurrence.h \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/gthr.h \
  /usr/include/c++/4.6/bits/functexcept.h \
- /usr/include/c++/4.6/bits/cpp_type_traits.h \
- /usr/include/c++/4.6/ext/type_traits.h \
  /usr/include/c++/4.6/bits/stl_function.h \
  /usr/include/c++/4.6/type_traits /usr/include/c++/4.6/functional \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/c++config.h \
  /usr/include/c++/4.6/new /usr/include/c++/4.6/tuple \
  /usr/include/c++/4.6/utility /usr/include/c++/4.6/bits/stl_relops.h \
  /usr/include/c++/4.6/bits/stl_pair.h /usr/include/c++/4.6/bits/move.h \
  /usr/include/c++/4.6/initializer_list \
  /usr/include/c++/4.6/bits/functional_hash.h \
- /usr/include/c++/4.6/debug/debug.h \
  /usr/include/c++/4.6/backward/auto_ptr.h \
  /usr/include/c++/4.6/bits/unique_ptr.h \
  /usr/include/c++/4.6/bits/shared_ptr.h \
@@ -37,7 +64,6 @@ libengine_a-crypto.o: crypto.cpp crypto.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/stl_iterator_base_types.h \
  /usr/include/c++/4.6/bits/stl_heap.h /usr/include/c++/4.6/random \
  /usr/include/c++/4.6/cmath /usr/include/math.h \
- /usr/include/c++/4.6/cstdio /usr/include/stdio.h \
  /usr/include/c++/4.6/limits /usr/include/c++/4.6/cstdint \
  /usr/include/c++/4.6/bits/random.h /usr/include/c++/4.6/vector \
  /usr/include/c++/4.6/bits/random.tcc /usr/include/c++/4.6/numeric \
@@ -58,35 +84,95 @@ libengine_a-crypto.o: crypto.cpp crypto.h /usr/include/c++/4.6/string \
  ../../../cryptopp/integer.h ../../../cryptopp/pwdbased.h \
  ../../../cryptopp/hmac.h ../../../cryptopp/hrtimer.h \
  ../../../cryptopp/integer.h ../../../cryptopp/modes.h \
- ../../../cryptopp/strciphr.h /usr/include/c++/4.6/iostream \
- /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
- /usr/include/c++/4.6/bits/char_traits.h \
- /usr/include/c++/4.6/bits/localefwd.h \
- /usr/include/c++/4.6/bits/ios_base.h \
- /usr/include/c++/4.6/bits/locale_classes.h \
- /usr/include/c++/4.6/bits/locale_classes.tcc \
- /usr/include/c++/4.6/streambuf /usr/include/c++/4.6/bits/streambuf.tcc \
- /usr/include/c++/4.6/bits/basic_ios.h \
- /usr/include/c++/4.6/bits/locale_facets.h /usr/include/c++/4.6/cwctype \
- /usr/include/wctype.h /usr/include/c++/4.6/cctype /usr/include/ctype.h \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h \
- /usr/include/c++/4.6/ext/numeric_traits.h \
- /usr/include/c++/4.6/bits/streambuf_iterator.h \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h \
- /usr/include/c++/4.6/bits/locale_facets.tcc \
- /usr/include/c++/4.6/bits/basic_ios.tcc \
- /usr/include/c++/4.6/bits/ostream_insert.h \
- /usr/include/c++/4.6/bits/ostream.tcc \
- /usr/include/c++/4.6/bits/cxxabi_forced.h /usr/include/c++/4.6/istream \
- /usr/include/c++/4.6/bits/istream.tcc /usr/include/c++/4.6/fstream \
- /usr/include/c++/4.6/bits/codecvt.h \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h \
- /usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h \
- /usr/include/c++/4.6/bits/fstream.tcc
+ ../../../cryptopp/strciphr.h
 
 crypto.h:
 
 /usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/c++config.h:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/ios:
+
+/usr/include/c++/4.6/iosfwd:
+
+/usr/include/c++/4.6/exception:
+
+/usr/include/c++/4.6/bits/char_traits.h:
+
+/usr/include/c++/4.6/bits/localefwd.h:
+
+/usr/include/c++/4.6/bits/ios_base.h:
+
+/usr/include/c++/4.6/ext/atomicity.h:
+
+/usr/include/c++/4.6/bits/locale_classes.h:
+
+/usr/include/c++/4.6/bits/locale_classes.tcc:
+
+/usr/include/c++/4.6/streambuf:
+
+/usr/include/c++/4.6/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.6/ext/type_traits.h:
+
+/usr/include/c++/4.6/bits/streambuf.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.h:
+
+/usr/include/c++/4.6/bits/locale_facets.h:
+
+/usr/include/c++/4.6/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.6/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h:
+
+/usr/include/c++/4.6/ext/numeric_traits.h:
+
+/usr/include/c++/4.6/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.6/debug/debug.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h:
+
+/usr/include/c++/4.6/bits/locale_facets.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.tcc:
+
+/usr/include/c++/4.6/bits/ostream_insert.h:
+
+/usr/include/c++/4.6/bits/ostream.tcc:
+
+/usr/include/c++/4.6/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/bits/istream.tcc:
+
+/usr/include/c++/4.6/fstream:
+
+/usr/include/c++/4.6/bits/codecvt.h:
+
+/usr/include/c++/4.6/cstdio:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h:
+
+/usr/include/c++/4.6/i686-linux-gnu/./bits/gthr.h:
+
+/usr/include/c++/4.6/bits/fstream.tcc:
 
 ../interface/Options.h:
 
@@ -122,33 +208,19 @@ crypto.h:
 
 /usr/include/c++/4.6/bits/stl_raw_storage_iter.h:
 
-/usr/include/c++/4.6/exception:
-
 /usr/include/c++/4.6/typeinfo:
 
 /usr/include/c++/4.6/bits/hash_bytes.h:
 
-/usr/include/c++/4.6/iosfwd:
-
-/usr/include/c++/4.6/ext/atomicity.h:
-
 /usr/include/c++/4.6/ext/concurrence.h:
 
-/usr/include/c++/4.6/i686-linux-gnu/./bits/gthr.h:
-
 /usr/include/c++/4.6/bits/functexcept.h:
-
-/usr/include/c++/4.6/bits/cpp_type_traits.h:
-
-/usr/include/c++/4.6/ext/type_traits.h:
 
 /usr/include/c++/4.6/bits/stl_function.h:
 
 /usr/include/c++/4.6/type_traits:
 
 /usr/include/c++/4.6/functional:
-
-/usr/include/c++/4.6/i686-linux-gnu/./bits/c++config.h:
 
 /usr/include/c++/4.6/new:
 
@@ -165,8 +237,6 @@ crypto.h:
 /usr/include/c++/4.6/initializer_list:
 
 /usr/include/c++/4.6/bits/functional_hash.h:
-
-/usr/include/c++/4.6/debug/debug.h:
 
 /usr/include/c++/4.6/backward/auto_ptr.h:
 
@@ -193,10 +263,6 @@ crypto.h:
 /usr/include/c++/4.6/cmath:
 
 /usr/include/math.h:
-
-/usr/include/c++/4.6/cstdio:
-
-/usr/include/stdio.h:
 
 /usr/include/c++/4.6/limits:
 
@@ -279,67 +345,3 @@ crypto.h:
 ../../../cryptopp/modes.h:
 
 ../../../cryptopp/strciphr.h:
-
-/usr/include/c++/4.6/iostream:
-
-/usr/include/c++/4.6/ostream:
-
-/usr/include/c++/4.6/ios:
-
-/usr/include/c++/4.6/bits/char_traits.h:
-
-/usr/include/c++/4.6/bits/localefwd.h:
-
-/usr/include/c++/4.6/bits/ios_base.h:
-
-/usr/include/c++/4.6/bits/locale_classes.h:
-
-/usr/include/c++/4.6/bits/locale_classes.tcc:
-
-/usr/include/c++/4.6/streambuf:
-
-/usr/include/c++/4.6/bits/streambuf.tcc:
-
-/usr/include/c++/4.6/bits/basic_ios.h:
-
-/usr/include/c++/4.6/bits/locale_facets.h:
-
-/usr/include/c++/4.6/cwctype:
-
-/usr/include/wctype.h:
-
-/usr/include/c++/4.6/cctype:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_base.h:
-
-/usr/include/c++/4.6/ext/numeric_traits.h:
-
-/usr/include/c++/4.6/bits/streambuf_iterator.h:
-
-/usr/include/c++/4.6/i686-linux-gnu/./bits/ctype_inline.h:
-
-/usr/include/c++/4.6/bits/locale_facets.tcc:
-
-/usr/include/c++/4.6/bits/basic_ios.tcc:
-
-/usr/include/c++/4.6/bits/ostream_insert.h:
-
-/usr/include/c++/4.6/bits/ostream.tcc:
-
-/usr/include/c++/4.6/bits/cxxabi_forced.h:
-
-/usr/include/c++/4.6/istream:
-
-/usr/include/c++/4.6/bits/istream.tcc:
-
-/usr/include/c++/4.6/fstream:
-
-/usr/include/c++/4.6/bits/codecvt.h:
-
-/usr/include/c++/4.6/i686-linux-gnu/./bits/basic_file.h:
-
-/usr/include/c++/4.6/i686-linux-gnu/./bits/c++io.h:
-
-/usr/include/c++/4.6/bits/fstream.tcc:

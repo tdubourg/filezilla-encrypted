@@ -84,8 +84,10 @@ bool COptionsPageInterface::SavePage()
 	wxString defaultval = wxString(DEFAULTVALUE, wxConvUTF8);
 	if(GetText(XRCID("ID_MASTER_PASSWORD")) != defaultval)
 	{
-		wxString passwd = wxString(CCrypto::Encrypt(GetText(XRCID("ID_MASTER_PASSWORD"))).c_str(), wxConvUTF8);
-		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, passwd);
+		wxString passwdUnEncrypted = GetText(XRCID("ID_MASTER_PASSWORD"));
+		CCrypto::SetMasterPassword(passwdUnEncrypted);
+		wxString passwdEncrypted = wxString(CCrypto::Encrypt(passwdUnEncrypted).c_str(), wxConvUTF8);
+		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, passwdEncrypted);
 	}
 	
 	// End of @td

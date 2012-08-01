@@ -126,6 +126,10 @@ _("&Password:");
 _("&Remember password for this session");
 _("&OK");
 _("&Cancel");
+_("Enter master password");
+_("Please enter the FileZilla master password :");
+_("&OK");
+_("&Cancel");
 
 _("OK");
 _("&Cancel");

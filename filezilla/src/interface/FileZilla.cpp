@@ -70,6 +70,9 @@ IMPLEMENT_APP(CFileZillaApp);
 IMPLEMENT_APP_NO_MAIN(CFileZillaApp);
 #endif //__WXGTK__
 
+// Start of @td
+#include "../engine/crypto.h"
+// End of @td
 CFileZillaApp::CFileZillaApp()
 {
 	m_pWrapEngine = 0;
@@ -316,6 +319,38 @@ FileZilla will timeout on big transfers.\
 	CSessionManager::Init();
 #endif
 
+	// Start of @td
+	if (COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS))
+	{
+		wxDialog pwdDlg;
+		wxXmlResource::Get()->LoadDialog(&pwdDlg, wxGetApp().GetTopWindow(), _T("ID_ENTERMASTERPASSWORD"));
+		XRCCTRL(pwdDlg, "wxID_OK", wxButton)->SetId(wxID_OK);
+		XRCCTRL(pwdDlg, "wxID_CANCEL", wxButton)->SetId(wxID_CANCEL);
+		pwdDlg.GetSizer()->Fit(&pwdDlg);
+		pwdDlg.GetSizer()->SetSizeHints(&pwdDlg);
+
+		wxString passwd;
+		while (passwd == _T(""))
+		{
+			if (pwdDlg.ShowModal() != wxID_OK)
+				exit(0);
+			passwd = XRCCTRL(pwdDlg, "ID_PASSWD", wxTextCtrl)->GetValue();
+			if (passwd == _T(""))
+			{
+				wxMessageBox(_("No password provided provided."), _("Invalid input"), wxICON_EXCLAMATION);
+				continue;
+			} else if (!CCrypto::IsPassword(passwd))
+			{
+				wxMessageBox(_("Wrong master password."), _("Invalid input"), wxICON_EXCLAMATION);
+				passwd = _T("");
+				continue;
+			}
+			
+		}
+	}
+	// End of @td
+	
+	
 	// Load the text wrapping engine
 	m_pWrapEngine = new CWrapEngine();
 	m_pWrapEngine->LoadCache();

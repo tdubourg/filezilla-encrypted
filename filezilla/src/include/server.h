@@ -95,6 +95,7 @@ public:
 
 	void SetLogonType(enum LogonType logonType);
 	bool SetUser(const wxString& user, const wxString& pass = _T(""), bool alreadyEncrypted = false);// @td
+	bool SetPass(const wxString& pass, bool alreadyEncrypted = false);// @td
 	bool SetAccount(const wxString& account);
 
 	CServer& operator=(const CServer &op);

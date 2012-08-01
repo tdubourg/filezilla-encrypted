@@ -72,9 +72,7 @@ int main(int argc, char * argv[])
 	cout << "Done" << endl;
 
 
-	string message = "Enfin, il est nécessaire, vu les circonstances qui en commandent l’application,"
-	" que le système soit d’un usage facile, ne demandant ni tension d’esprit, ni la connaissance d’une"
-	" longue série de règles à observer.";
+	string message = "tralala";
 	string ciphertext;
 
 	CBC_Mode<AES>::Encryption aesencryption(derivedkey,derivedkey.size(), recoverediv);
@@ -100,7 +98,7 @@ int main(int argc, char * argv[])
 	
 	CBC_Mode<AES>::Decryption aesdecryption(recoveredkey, recoveredkey.size(), recoverediv);
 	string recoveredtext;
-	ciphertext = "135430577003B026274DC365426C9FBA";
+	ciphertext = "997DE8E6AD76399A1E5D47F5154A5D26";
 	try {
 		StringSource decryptor(ciphertext, true, new HexDecoder(
 			new StreamTransformationFilter(aesdecryption, new StringSink(recoveredtext))

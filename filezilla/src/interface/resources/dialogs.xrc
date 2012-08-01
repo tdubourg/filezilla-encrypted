@@ -1451,6 +1451,48 @@
       </object>
     </object>
   </object>
+  <!-- Start of @td -->
+  <object class="wxDialog" name="ID_ENTERMASTERPASSWORD">
+    <title>Enter master password</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxStaticText" name="ID_HEADER_PASS">
+          <label>Please enter the FileZilla master password :</label>
+        </object>
+        <flag>wxTOP|wxLEFT|wxRIGHT</flag>
+        <border>5</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl" name="ID_PASSWD">
+        </object>
+        <flag>wxALL|wxGROW</flag>
+        <border>5</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_OK">
+              <label>&amp;OK</label>
+              <default>1</default>
+            </object>
+            <flag>wxALL|wxGROW</flag>
+            <border>5</border>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;Cancel</label>
+            </object>
+            <flag>wxALL| wxGROW</flag>
+            <border>5</border>
+          </object>
+        </object>
+        <flag>wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+    </object>
+  </object>
+  <!-- End of @td -->
   <object class="wxDialog" name="ID_INPUTDIALOG">
     <object class="wxBoxSizer">
       <orient>wxVERTICAL</orient>
