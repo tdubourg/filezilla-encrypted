@@ -289,15 +289,18 @@ wxString CServer::GetUser() const
 // Start of @td
 wxString CServer::GetPass(bool decrypt/*=true*/) const
 {
+	LOG("GetPass(). Entered.");
 	if (m_logonType == ANONYMOUS)
 		return _T("anon@localhost");
 
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
-		LOG("GetPass(). Launching Decryption.");
+		LOG("\tGetPass(). Launching Decryption.");
 		wxString result = wxString(CCrypto::Decrypt(m_pass).c_str(), wxConvUTF8);
-		LOG("GetPass(). Launching Decryption done, returning password=" << result.mb_str());// 
+		LOG("\tGetPass(). Launching Decryption done, returning password=" << result.mb_str());// 
+		LOG("GetPass(). Exiting.");
 		return result;
 	}
+	LOG("GetPass(). Exiting.");
 	return m_pass;
 }
 // End of @td
@@ -319,7 +322,7 @@ CServer& CServer::operator=(const CServer &op)
 	m_logonType = op.m_logonType;
 	m_user = op.m_user;
 	// Start of @td
-	SetPass(op.m_pass);
+	SetPass(op.GetPass());
 	// End of @td
 	m_account = op.m_account;
 	m_timezoneOffset = op.m_timezoneOffset;
@@ -353,12 +356,12 @@ bool CServer::operator==(const CServer &op) const
 
 		if (m_logonType == NORMAL)
 		{
-			if (GetPass() != op.m_pass)
+			if (GetPass() != op.GetPass()) // @td
 				return false;
 		}
 		else if (m_logonType == ACCOUNT)
 		{
-			if (GetPass() != op.m_pass)
+			if (GetPass() != op.GetPass()) // @td
 				return false;
 			if (m_account != op.m_account)
 				return false;
@@ -423,7 +426,7 @@ bool CServer::operator<(const CServer &op) const
 
 		if (m_logonType == NORMAL)
 		{
-			cmp = GetPass().Cmp(op.m_pass);
+			cmp = GetPass().Cmp(op.GetPass()); // @td
 			if (cmp < 0)
 				return true;
 			else if (cmp > 0)
@@ -431,7 +434,7 @@ bool CServer::operator<(const CServer &op) const
 		}
 		else if (m_logonType == ACCOUNT)
 		{
-			cmp = GetPass().Cmp(op.m_pass);
+			cmp = GetPass().Cmp(op.GetPass()); // @td
 			if (cmp < 0)
 				return true;
 			else if (cmp > 0)
@@ -614,13 +617,15 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 }
 // start of @td
 bool CServer::SetPass(const wxString& pass, bool alreadyEncrypted/* = false*/) {
+	LOG("SetPass(). Entered.");
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && !alreadyEncrypted) { 
-		LOG("SetPass(). Launching Encryption.");
+		LOG("\tSetPass(). Launching Encryption.");
 		m_pass = wxString(CCrypto::Encrypt(pass).c_str(), wxConvUTF8);
-		LOG("SetPass(). Encryption finished, m_pass=" << m_pass.mb_str());
+		LOG("\tSetPass(). Encryption finished, m_pass=" << m_pass.mb_str());
 	} else {
 		m_pass = pass;
 	}
+	LOG("SetPass(). Exiting.");
 	return true;
 }
 // end of @td
