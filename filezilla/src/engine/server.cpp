@@ -239,15 +239,17 @@ bool CServer::ParseUrl(wxString host, unsigned int port, wxString user, wxString
 	m_account = _T("");
 	if (m_logonType != ASK && m_logonType != INTERACTIVE)
 	{
-		if (m_user == _T(""))
+		if (m_user == _T("")) {
 			m_logonType = ANONYMOUS;
-		else if (m_user == _T("anonymous"))
-			if (m_pass.IsEmpty() || m_pass == _T("anonymous@example.com"))
+		} else if (m_user == _T("anonymous")) {
+			wxString pwd = GetPass(); // @td
+			if (pwd.IsEmpty() || pwd == _T("anonymous@example.com")) // @td
 				m_logonType = ANONYMOUS;
 			else
 				m_logonType = NORMAL;
-		else
+		} else {
 			m_logonType = NORMAL;
+		}
 	}
 
 	if (m_protocol == UNKNOWN)
@@ -284,6 +286,7 @@ wxString CServer::GetUser() const
 	return m_user;
 }
 
+// Start of @td
 wxString CServer::GetPass(bool decrypt/*=true*/) const
 {
 	if (m_logonType == ANONYMOUS)
@@ -292,11 +295,12 @@ wxString CServer::GetPass(bool decrypt/*=true*/) const
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
 		LOG("GetPass(). Launching Decryption.");
 		wxString result = wxString(CCrypto::Decrypt(m_pass).c_str(), wxConvUTF8);
-		LOG("GetPass(). Launching Decryption done, returning password=" << result);
+		LOG("GetPass(). Launching Decryption done, returning password=" << result.mb_str());// 
 		return result;
 	}
 	return m_pass;
 }
+// End of @td
 
 wxString CServer::GetAccount() const
 {
@@ -349,12 +353,12 @@ bool CServer::operator==(const CServer &op) const
 
 		if (m_logonType == NORMAL)
 		{
-			if (m_pass != op.m_pass)
+			if (GetPass() != op.m_pass)
 				return false;
 		}
 		else if (m_logonType == ACCOUNT)
 		{
-			if (m_pass != op.m_pass)
+			if (GetPass() != op.m_pass)
 				return false;
 			if (m_account != op.m_account)
 				return false;
@@ -419,7 +423,7 @@ bool CServer::operator<(const CServer &op) const
 
 		if (m_logonType == NORMAL)
 		{
-			cmp = m_pass.Cmp(op.m_pass);
+			cmp = GetPass().Cmp(op.m_pass);
 			if (cmp < 0)
 				return true;
 			else if (cmp > 0)
@@ -427,7 +431,7 @@ bool CServer::operator<(const CServer &op) const
 		}
 		else if (m_logonType == ACCOUNT)
 		{
-			cmp = m_pass.Cmp(op.m_pass);
+			cmp = GetPass().Cmp(op.m_pass);
 			if (cmp < 0)
 				return true;
 			else if (cmp > 0)
@@ -589,6 +593,7 @@ bool CServer::SetHost(wxString host, unsigned int port)
 
 bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bool alreadyEncrypted/* = false*/) // @td
 {
+	LOG("SetUser() launched."); // @td
 	if (m_logonType == ANONYMOUS)
 		return true;
 
@@ -596,6 +601,7 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 	{
 		if (m_logonType != ASK && m_logonType != INTERACTIVE)
 			return false;
+		LOG("SetUser() launched.");
 		SetPass(_T(""), alreadyEncrypted);
 	} else {
 		SetPass(pass, alreadyEncrypted);
@@ -603,6 +609,7 @@ bool CServer::SetUser(const wxString& user, const wxString& pass /*=_T("")*/, bo
 	
 	m_user = user;
 	
+	LOG("SetUser() finished"); // @td
 	return true;
 }
 // start of @td

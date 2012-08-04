@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-02 00:31+0200\n"
+"POT-Creation-Date: 2012-08-04 21:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1263,8 +1263,8 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:161
 #: ../src/interface/manual_transfer.cpp:194
 #: ../src/interface/manual_transfer.cpp:560
-#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:890
-#: ../src/engine/server.cpp:909
+#: ../src/interface/manual_transfer.cpp:561 ../src/engine/server.cpp:897
+#: ../src/engine/server.cpp:916
 msgid "Account"
 msgstr ""
 
@@ -1413,7 +1413,7 @@ msgstr ""
 #: ../src/interface/manual_transfer.cpp:159
 #: ../src/interface/manual_transfer.cpp:197
 #: ../src/interface/manual_transfer.cpp:213
-#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:911
+#: ../src/interface/manual_transfer.cpp:559 ../src/engine/server.cpp:918
 msgid "Anonymous"
 msgstr ""
 
@@ -1469,8 +1469,8 @@ msgstr ""
 msgid "Ask for action"
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:886
-#: ../src/engine/server.cpp:905
+#: ../src/interface/manual_transfer.cpp:188 ../src/engine/server.cpp:893
+#: ../src/engine/server.cpp:912
 msgid "Ask for password"
 msgstr ""
 
@@ -3989,8 +3989,8 @@ msgstr ""
 msgid "Insecure server, it does not support FTP over TLS."
 msgstr ""
 
-#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:888
-#: ../src/engine/server.cpp:907
+#: ../src/interface/manual_transfer.cpp:191 ../src/engine/server.cpp:895
+#: ../src/engine/server.cpp:914
 msgid "Interactive"
 msgstr ""
 
@@ -4538,8 +4538,8 @@ msgstr ""
 #: ../src/interface/sitemanager_dialog.cpp:1288
 #: ../src/interface/manual_transfer.cpp:160
 #: ../src/interface/manual_transfer.cpp:185
-#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:884
-#: ../src/engine/server.cpp:903
+#: ../src/interface/manual_transfer.cpp:560 ../src/engine/server.cpp:891
+#: ../src/engine/server.cpp:910
 msgid "Normal"
 msgstr ""
 
