@@ -38,7 +38,8 @@ libengine_a_SOURCES = \
 		tlssocket.cpp \
 		threadex.cpp \
 		timeex.cpp \
-		transfersocket.cpp
+		transfersocket.cpp \
+		crypto.cpp # @td
 
 noinst_HEADERS = backend.h \
 		ControlSocket.h \
@@ -54,7 +55,8 @@ noinst_HEADERS = backend.h \
 		servercapabilities.h \
 		sftpcontrolsocket.h \
 		tlssocket.h \
-		transfersocket.h
+		transfersocket.h \
+		crypto.h # @td
 
 dist_noinst_DATA = engine.vcproj
 

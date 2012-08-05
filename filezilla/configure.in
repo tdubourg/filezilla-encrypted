@@ -159,6 +159,44 @@ if test "$buildmain" = "yes"; then
   #include <sys/types.h>
   #include <utmp.h>])
 
+  
+  # -------------- Start of @td ----------------
+
+  # AC_CHECK_HEADERS([cryptlib.h osrng.h sha.h aes.h hex.h integer.h pwdbased.h modes.h],
+  # [cryptopp_found_headers=yes; break;])
+  
+    
+  # Check for Crypto++
+  AM_OPTIONS_CRYPTO
+
+  CHECK_CRYPTO(5.1)
+
+  CXXFLAGS="$CXXFLAGS $CRYPTO_PP_CXXFLAGS"
+  LDFLAGS="$LDFLAGS $CRYPTO_PP_LDFLAGS"
+  CRYPTOLIBS="-l$CRYPTO_PP_LIB_NAME"
+  
+  case "$CRYPTO_PP_STYLE" in
+    gentoo_debian | installed | sources)
+      ;;
+    *) AC_MSG_ERROR([
+            WARNING: crypto++ >= $min_crypto_version is not found.
+            Please check that cryptopp-headers are in your default include path,
+      check out LD_LIBRARY_PATH or equivalent variable.
+            Or this might also be that your cryptopp is installed on other path.
+            Please try again with --with-crypto-prefix=/my_crypto_prefix
+            (replace /my_crypto_prefix with a valid path to your crypto directory).
+            To download the latest version check http://www.cryptopp.com for sources.
+      ])
+      ;;
+  esac
+
+  AC_SUBST(CRYPTOLIBS)
+  
+  # AS_IF([test "x$cryptopp_found_headers" != "xyes"],
+  # [AC_MSG_ERROR([Unable to find the Crypto++ library headers])])
+  
+  # ----------------- End of @td -----------------
+
   AC_SEARCH_LIBS([socket], [xnet])
   AC_SEARCH_LIBS([getaddrinfo], [xnet])
   AC_SEARCH_LIBS([in6addr_loopback], [socket])

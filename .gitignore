@@ -1,4 +1,4 @@
-*.~
+*~
 *.o
 *.exe
 test
@@ -7,3 +7,16 @@ test
 *.svn*
 filezilla/locales/*.mo
 filezilla/locales/*.po.new
+*Makefile.in
+*autom4te.cache*
+filezilla/libtool
+*/Makefile
+*/*/Makefile
+*/*/*/Makefile
+*/*/*/*/Makefile
+*/*/*/*/*/Makefile
+*/*/*/*/*/*/Makefile
+filezilla/config.log
+filezilla/config.status
+
+

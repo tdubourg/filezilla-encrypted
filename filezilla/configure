@@ -671,6 +671,15 @@ PACKAGE_VERSION_MINOR
 PACKAGE_VERSION_MAJOR
 WINDRESFLAGS
 WINDRES
+CRYPTOLIBS
+CRYPTO_PP_LDFLAGS
+CRYPTO_PP_CXXFLAGS
+CRYPTO_PP_INCLUDE_PREFIX
+CRYPTO_PP_LIB_NAME
+CRYPTO_PP_STYLE
+CRYPTO_PP_VERSION_NUMBER
+CRYPTO_PP_VERSION_STRING
+CRYPTO_PP_PREFIX
 WX_CONFIG_WITH_ARGS
 WX_RESCOMP
 WX_VERSION
@@ -815,6 +824,7 @@ with_wxdir
 with_wx_config
 with_wx_prefix
 with_wx_exec_prefix
+with_crypto_prefix
 with_idn_lib
 enable_precomp
 with_cppunit_prefix
@@ -1501,6 +1511,8 @@ Optional Packages:
   --with-wx-prefix=PREFIX Prefix where wxWidgets is installed (optional)
   --with-wx-exec-prefix=PREFIX
                           Exec prefix where wxWidgets is installed (optional)
+  --with-crypto-prefix=PREFIX
+                          prefix where crypto++ is installed
   --with-idn-lib=FILE     Use the given path to the idn library.
   --with-cppunit-prefix=PFX   Prefix where CppUnit is installed (optional)
   --with-cppunit-exec-prefix=PFX  Exec prefix where CppUnit is installed (optional)
@@ -8580,6 +8592,10 @@ _lt_linker_boilerplate=`cat conftest.err`
 $RM -r conftest*
 
 
+## CAVEAT EMPTOR:
+## There is no encapsulation within the following macros, do not change
+## the running order or otherwise move them around unless you know exactly
+## what you are doing...
 if test -n "$compiler"; then
 
 lt_prog_compiler_no_builtin_flag=
@@ -16182,6 +16198,171 @@ fi
 
 done
 
+
+
+  # -------------- Start of @td ----------------
+
+  # AC_CHECK_HEADERS([cryptlib.h osrng.h sha.h aes.h hex.h integer.h pwdbased.h modes.h],
+  # [cryptopp_found_headers=yes; break;])
+
+
+  # Check for Crypto++
+
+
+# Check whether --with-crypto-prefix was given.
+if test "${with_crypto_prefix+set}" = set; then :
+  withval=$with_crypto_prefix; CRYPTO_PP_PREFIX="$withval"
+else
+  CRYPTO_PP_PREFIX=""
+fi
+
+
+
+
+
+min_crypto_version=5.1
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for crypto++ version >= $min_crypto_version" >&5
+$as_echo_n "checking for crypto++ version >= $min_crypto_version... " >&6; }
+
+crypto_pp_file_with_version="cryptlib.h"
+
+CRYPTO_PP_STYLE="unknown"
+CRYPTO_PP_LIB_NAME="unknown"
+crypto_pp_include_i="unknown"
+CRYPTO_PP_INCLUDE_PREFIX="unknown"
+CRYPTO_PP_DEFINE="unknown"
+CRYPTO_PP_LIB="unknown"
+
+#
+# Set CRYPTO_PP_PREFIX if the user has not set it in the configure command line
+# We don't use AC_CHECK_FILE to avoid caching.
+#
+if test x$CRYPTO_PP_PREFIX = x ; then
+	CRYPTO_PP_PREFIX="/usr"
+fi
+
+#
+# Find the Cryptopp header
+#
+if test -f $CRYPTO_PP_PREFIX/$crypto_pp_file_with_version; then
+	CRYPTO_PP_STYLE="sources"
+	CRYPTO_PP_LIB_NAME="cryptopp"
+	crypto_pp_include_i="$CRYPTO_PP_PREFIX"
+	CRYPTO_PP_INCLUDE_PREFIX="."
+	CRYPTO_PP_DEFINE="__CRYPTO_SOURCE__"
+	CRYPTO_PP_LIB="$CRYPTO_PP_PREFIX"
+	as_fn_error $? "
+	Specifying the cryptopp source files directory for \"--with-crypto-prefix=\"
+	will not work because cryptopp uses headers with the same name of system
+	headers (e.g. zlib.h) and you must be able to distinguish the system
+	headers from cryptopp headers in an #include directive.
+	Please run \"PREFIX=/home/YourUserName/usr/cryptopp make install\" on
+	the cryptopp directory to properly install cryptopp in your system." "$LINENO" 5
+elif test -f $CRYPTO_PP_PREFIX/include/cryptopp/$crypto_pp_file_with_version; then
+	CRYPTO_PP_STYLE="installed"
+	CRYPTO_PP_LIB_NAME="cryptopp"
+	crypto_pp_include_i="$CRYPTO_PP_PREFIX/include"
+	CRYPTO_PP_INCLUDE_PREFIX="$CRYPTO_PP_LIB_NAME"
+	CRYPTO_PP_DEFINE="__CRYPTO_INSTALLED__"
+	CRYPTO_PP_LIB="$CRYPTO_PP_PREFIX/lib"
+elif test -f $CRYPTO_PP_PREFIX/include/crypto++/$crypto_pp_file_with_version; then
+       	# Debian uses libcrypto++5.1 - it's not my fault, please soda patch the package
+	CRYPTO_PP_STYLE="gentoo_debian"
+	CRYPTO_PP_LIB_NAME="crypto++"
+	crypto_pp_include_i="$CRYPTO_PP_PREFIX/include"
+	CRYPTO_PP_INCLUDE_PREFIX="$CRYPTO_PP_LIB_NAME"
+	CRYPTO_PP_DEFINE="__CRYPTO_SOURCE__"
+	CRYPTO_PP_LIB="$CRYPTO_PP_PREFIX/lib"
+fi
+
+#
+# Check for success in finding cryptopp
+#
+if test $CRYPTO_PP_STYLE = "unknown"; then
+	#
+	# If the execution reaches here, we have failed.
+	#
+	as_fn_error $? "
+	Could not find cryptopp header file \"$crypto_pp_file_with_version\".
+	Please check if the path \"$CRYPTO_PP_PREFIX\" is valid." "$LINENO" 5
+fi
+
+#
+# Find out the cryptopp version and check against the minimum required
+#
+crypto_pp_include_dir="$crypto_pp_include_i/$CRYPTO_PP_INCLUDE_PREFIX"
+crypto_pp_header_path="$crypto_pp_include_dir/$crypto_pp_file_with_version"
+
+CRYPTO_PP_VERSION_STRING=$(grep "API Reference" $crypto_pp_header_path | \
+	sed -e 's/[^0-9]*\([0-9.]*\).*/\1/')
+
+CRYPTO_PP_VERSION_NUMBER=$(echo $CRYPTO_PP_VERSION_STRING | \
+	$AWK 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}')
+
+minvers=$(echo $min_crypto_version | \
+	$AWK 'BEGIN { FS = "."; } { printf "%d", ($1 * 1000 + $2) * 1000 + $3;}')
+
+if test -n "$CRYPTO_PP_VERSION_NUMBER" && test "$CRYPTO_PP_VERSION_NUMBER" -ge $minvers; then
+	result="yes (version $CRYPTO_PP_VERSION_STRING, $CRYPTO_PP_STYLE)"
+else
+	result="no"
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $result" >&5
+$as_echo "$result" >&6; }
+
+#
+# FLAGS
+#
+CRYPTO_PP_CXXFLAGS="-I$crypto_pp_include_dir -D$CRYPTO_PP_DEFINE" # @td
+CRYPTO_PP_LDFLAGS="-lcryptopp -L$CRYPTO_PP_LIB"
+
+cat >>confdefs.h <<_ACEOF
+#define CRYPTOPP_INCLUDE_PREFIX $CRYPTO_PP_INCLUDE_PREFIX
+_ACEOF
+
+
+#
+# Exported symbols
+#
+
+
+
+
+
+
+
+
+
+
+{ $as_echo "$as_me:${as_lineno-$LINENO}: Crypto++ version number is $CRYPTO_PP_VERSION_NUMBER" >&5
+$as_echo "$as_me: Crypto++ version number is $CRYPTO_PP_VERSION_NUMBER" >&6;}
+
+
+  CXXFLAGS="$CXXFLAGS $CRYPTO_PP_CXXFLAGS"
+  LDFLAGS="$LDFLAGS $CRYPTO_PP_LDFLAGS"
+  CRYPTOLIBS="-l$CRYPTO_PP_LIB_NAME"
+
+  case "$CRYPTO_PP_STYLE" in
+    gentoo_debian | installed | sources)
+      ;;
+    *) as_fn_error $? "
+            WARNING: crypto++ >= $min_crypto_version is not found.
+            Please check that cryptopp-headers are in your default include path,
+      check out LD_LIBRARY_PATH or equivalent variable.
+            Or this might also be that your cryptopp is installed on other path.
+            Please try again with --with-crypto-prefix=/my_crypto_prefix
+            (replace /my_crypto_prefix with a valid path to your crypto directory).
+            To download the latest version check http://www.cryptopp.com for sources.
+      " "$LINENO" 5
+      ;;
+  esac
+
+
+
+  # AS_IF([test "x$cryptopp_found_headers" != "xyes"],
+  # [AC_MSG_ERROR([Unable to find the Crypto++ library headers])])
+
+  # ----------------- End of @td -----------------
 
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for library containing socket" >&5
 $as_echo_n "checking for library containing socket... " >&6; }

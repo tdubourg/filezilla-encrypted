@@ -4,6 +4,9 @@
 /* Buildtype, indicates official builds and nightly builds */
 /* #undef BUILDTYPE */
 
+/* Define this to the include prefix of crypto++ */
+#define CRYPTOPP_INCLUDE_PREFIX cryptopp
+
 /* Define ENABLE_BINRELOC on systems where the executable location can be
    obtained using /proc/self/maps */
 #define ENABLE_BINRELOC 1
