@@ -1313,7 +1313,9 @@
                 <flag>wxALIGN_CENTRE_VERTICAL</flag>
               </object>              
               <object class="sizeritem">
-                <object class="wxTextCtrl" name="ID_MASTER_PASSWORD"/>
+                <object class="wxTextCtrl" name="ID_MASTER_PASSWORD" >
+                  <style>wxTE_PASSWORD</style>
+                </object>
                 <flag>wxALIGN_CENTRE_VERTICAL|wxGROW</flag>
               </object>
               <!-- End of @td -->

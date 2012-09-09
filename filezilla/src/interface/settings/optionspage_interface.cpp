@@ -9,6 +9,12 @@
 // Start of @td
 #define DEFAULTVALUE "***********"
 #include "../engine/crypto.h"
+#include "xmlfunctions.h"
+#include "../interface/ipcmutex.h"
+#ifdef TD_DBG
+extern std::ofstream F_LOG;
+#endif
+
 // End of @td
 
 BEGIN_EVENT_TABLE(COptionsPageInterface, COptionsPage)
@@ -82,11 +88,52 @@ bool COptionsPageInterface::SavePage()
 	// Start of @td
 	SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
 	wxString defaultval = wxString(DEFAULTVALUE, wxConvUTF8);
-	if(GetText(XRCID("ID_MASTER_PASSWORD")) != defaultval)
+	wxString newPassword = GetText(XRCID("ID_MASTER_PASSWORD"));
+	if(newPassword != defaultval)
 	{
-		wxString passwdUnEncrypted = GetText(XRCID("ID_MASTER_PASSWORD"));
-		CCrypto::SetMasterPassword(passwdUnEncrypted);
-		wxString passwdEncrypted = wxString(CCrypto::Encrypt(passwdUnEncrypted).c_str(), wxConvUTF8);
+		LOG("SavePage(): The new password is not empty.");
+		wxString currentMPasswd = CCrypto::GetMasterPassword();
+		if (currentMPasswd != _T("") && newPassword != currentMPasswd) // We just changed the master password, so we have to "migrate" the existing encrypted password from former encryption to new one
+		{
+			LOG("SavePage(): The new password is different from the former one.");
+			CInterProcessMutex mutex(MUTEX_SITEMANAGER);
+			CXmlFile file(_T("sitemanager"));
+			TiXmlElement* pDocument = file.Load();
+			if (!pDocument)
+			{
+				LOG("SavePage(): Sitemanager.xml could not be loaded.");
+				wxMessageBox(file.GetError(), _("Error loading xml file"), wxICON_ERROR);
+			}
+
+			TiXmlElement* pElement = pDocument->FirstChildElement("Servers");
+			if (pElement)
+			{
+				LOG("SavePage(): Found \"Servers\" element. Beginning foreach....");
+				for (TiXmlElement* pServer = pElement->FirstChildElement("Server"); pServer; pServer = pServer->NextSiblingElement("Server")) 
+				{
+					LOG("SavePage(): Found a Server element.");
+					CServer s;
+					if (::GetServer(pServer, s))
+					{
+						LOG("SavePage(): Server element loaded up from XML. \"Converting\" it.");
+				 		wxString pass = s.GetPass(); // uses current master passwd
+				 		LOG("SavePage(): 1.");
+				 		CCrypto::SetMasterPassword(newPassword);
+				 		LOG("SavePage(): 2.");
+						s.SetPass(pass); // will encrypt using new master password
+						LOG("SavePage(): 3.");
+						CCrypto::SetMasterPassword(currentMPasswd); // back to former one for next loop
+						LOG("SavePage(): 4.");
+						::SetServer(pServer, s);
+						LOG("SavePage(): 5.");
+					}
+				}
+				file.Save();
+			}
+		}
+		LOG("SavePage(): Setting new master password...");
+		CCrypto::SetMasterPassword(newPassword);
+		wxString passwdEncrypted = wxString(CCrypto::Encrypt(newPassword).c_str(), wxConvUTF8);
 		m_pOptions->SetOption(OPTION_MASTER_PASSWORD, passwdEncrypted);
 	}
 	

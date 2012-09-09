@@ -4,7 +4,7 @@
 #include "string"
 
 // TODO : Really delete that from the header:
-// #define TD_DBG 1
+#define TD_DBG 1
 
 #ifdef TD_DBG
 #include <iostream>
