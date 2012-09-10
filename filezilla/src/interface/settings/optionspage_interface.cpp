@@ -7,7 +7,7 @@
 #include "../power_management.h"
 
 // Start of @td
-#define DEFAULTVALUE "***********"
+#define DEFAULTVALUE ""
 #include "../engine/crypto.h"
 #include "xmlfunctions.h"
 #include "../interface/ipcmutex.h"
@@ -86,16 +86,13 @@ bool COptionsPageInterface::SavePage()
 	SetOptionFromCheck(XRCID("ID_SPEED_DISPLAY"), OPTION_SPEED_DISPLAY);
 	
 	// Start of @td
-	SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
-	wxString defaultval = wxString(DEFAULTVALUE, wxConvUTF8);
-	wxString newPassword = GetText(XRCID("ID_MASTER_PASSWORD"));
-	if(newPassword != defaultval)
+	bool enablingEnc = false; // Tells us if we are "ENABLING" encryption (disabled before, enabled now)
+	if (GetCheck(XRCID("ID_ENCRYPT_PASSWORDS")) != m_pOptions->GetOptionVal(OPTION_ENCRYPT_PASSWORDS))
 	{
-		LOG("SavePage(): The new password is not empty.");
-		wxString currentMPasswd = CCrypto::GetMasterPassword();
-		if (currentMPasswd != _T("") && newPassword != currentMPasswd) // We just changed the master password, so we have to "migrate" the existing encrypted password from former encryption to new one
+		LOG("SavePage(): Option OPTION_ENCRYPT_PASSWORDS has switched value");
+		if (!GetCheck(XRCID("ID_ENCRYPT_PASSWORDS"))) // We are DISABLING encryption, let's decrypt everything already stored:m_pOptions->
 		{
-			LOG("SavePage(): The new password is different from the former one.");
+			LOG("SavePage(): Disabling encryption...");
 			CInterProcessMutex mutex(MUTEX_SITEMANAGER);
 			CXmlFile file(_T("sitemanager"));
 			TiXmlElement* pDocument = file.Load();
@@ -116,16 +113,76 @@ bool COptionsPageInterface::SavePage()
 					if (::GetServer(pServer, s))
 					{
 						LOG("SavePage(): Server element loaded up from XML. \"Converting\" it.");
+				 		wxString pass = s.GetPass(); // decrypts before returning
+				 		LOG("SavePage(): 1.");
+				 		m_pOptions->SetOption(OPTION_ENCRYPT_PASSWORDS, 0); //* Disabling encryption so that SetPass() does not encrypt the passwd
+				 		LOG("SavePage(): 2.");
+						s.SetPass(pass); // will not encrypt
+						LOG("SavePage(): 3.");
+						::SetServer(pServer, s);
+						LOG("SavePage(): 5.");
+						m_pOptions->SetOption(OPTION_ENCRYPT_PASSWORDS, 1); //* Enabling encryption so that next GetPass() does decrypt the pass before returning it
+						LOG("SavePage(): 6.");
+					}
+				}
+				file.Save();
+			}
+			m_pOptions->SetOption(OPTION_MASTER_PASSWORD, _T(""));// Resetting the master password when encryption is disabled
+			CCrypto::SetMasterPassword(_T(""));
+		} else {
+			enablingEnc = true;
+		}
+		SetOptionFromCheck(XRCID("ID_ENCRYPT_PASSWORDS"), OPTION_ENCRYPT_PASSWORDS);
+	}
+
+	
+	wxString defaultval = wxString(DEFAULTVALUE, wxConvUTF8);
+	wxString newPassword = GetText(XRCID("ID_MASTER_PASSWORD"));
+	if(GetCheck(XRCID("ID_ENCRYPT_PASSWORDS")) && newPassword != defaultval)
+	{
+		LOG("SavePage(): The new password is not empty.");
+		wxString currentMPasswd = CCrypto::GetMasterPassword();
+		if (newPassword != _T("") && newPassword != currentMPasswd) // We just changed the master password (and it is not empty), so we have to "migrate" the existing encrypted password from former encryption to new one
+		{
+			LOG("SavePage(): The new password is different from the former one.");
+			CInterProcessMutex mutex(MUTEX_SITEMANAGER);
+			CXmlFile file(_T("sitemanager"));
+			TiXmlElement* pDocument = file.Load();
+			if (!pDocument)
+			{
+				LOG("SavePage(): Sitemanager.xml could not be loaded.");
+				wxMessageBox(file.GetError(), _("Error loading xml file"), wxICON_ERROR);
+			}
+
+			TiXmlElement* pElement = pDocument->FirstChildElement("Servers");
+			if (pElement)
+			{
+				LOG("SavePage(): Found \"Servers\" element. Beginning foreach....");
+				for (TiXmlElement* pServer = pElement->FirstChildElement("Server"); pServer; pServer = pServer->NextSiblingElement("Server")) 
+				{
+					LOG("SavePage(): Found a Server element.");
+					CServer s;
+					if (enablingEnc)
+					{
+						//* Encryption was previously disabled, so, disable it just the time to LOAD up the data
+						m_pOptions->SetOption(OPTION_ENCRYPT_PASSWORDS, 0);
+					}
+					if (::GetServer(pServer, s))
+					{
+						LOG("SavePage(): Server element loaded up from XML. \"Converting\" it.");
 				 		wxString pass = s.GetPass(); // uses current master passwd
 				 		LOG("SavePage(): 1.");
 				 		CCrypto::SetMasterPassword(newPassword);
 				 		LOG("SavePage(): 2.");
+						//* Ensure encryption is enabled when we SAVE
+				 		m_pOptions->SetOption(OPTION_ENCRYPT_PASSWORDS, 1);
+				 		LOG("SavePage(): 3.");
 						s.SetPass(pass); // will encrypt using new master password
-						LOG("SavePage(): 3.");
+						LOG("SavePage(): 4.");	
 						CCrypto::SetMasterPassword(currentMPasswd); // back to former one for next loop
-						LOG("SavePage(): 4.");
-						::SetServer(pServer, s);
 						LOG("SavePage(): 5.");
+						::SetServer(pServer, s);
+						LOG("SavePage(): 6.");
 					}
 				}
 				file.Save();
