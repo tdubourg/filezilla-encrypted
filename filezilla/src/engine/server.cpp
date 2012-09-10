@@ -290,8 +290,10 @@ wxString CServer::GetUser() const
 wxString CServer::GetPass(bool decrypt/*=true*/) const
 {
 	LOG("GetPass(). Entered.");
-	if (m_logonType == ANONYMOUS)
+	if (m_logonType == ANONYMOUS) {
+		LOG("GetPass(). Anonymous")
 		return _T("anon@localhost");
+	}
 
 	if(COptions::Get()->GetOptionVal(OPTION_ENCRYPT_PASSWORDS) && decrypt) { // @td
 		LOG("\tGetPass(). Launching Decryption.");

@@ -63,7 +63,7 @@ string CCrypto::Decrypt(wxString m_pass) {
 	
 	string password = string(GetMasterPassword().mb_str());
 	
-	LOG("\tMaster password=" << password);
+	LOG("\tMaster password=\"" << password << "\"");
 	
 	int iterations = COptions::Get()->GetOptionVal(OPTION_ENCRYPT_ITERATIONS);
 	
@@ -122,7 +122,7 @@ string CCrypto::Decrypt(wxString m_pass) {
 		recoveredtext = "";
 	}
 	
-	LOG("\tRecovered text=" << recoveredtext);
+	LOG("\tRecovered text=\"" << recoveredtext << "\"");
 	LOG("CCrypto::Decrypt() exiting.");
 	return recoveredtext;
 }
@@ -139,7 +139,7 @@ string CCrypto::Encrypt(wxString pass) {
 	// LOG("Tralala3");
 	string password = string(GetMasterPassword().mb_str());
 	
-	LOG("\tMaster password=" << password);
+	LOG("\tMaster password=\"" << password << "\"");
 	string message = string(pass.mb_str());
 	
 	LOG("\tMessage=" << message);
@@ -208,15 +208,14 @@ string CCrypto::Encrypt(wxString pass) {
 	}
 
 	// LOG("Tralala17.5");
-	LOG("CCrypto::Encrypt() exiting (ret val=" << ciphertext << ").");
+	LOG("CCrypto::Encrypt() exiting (ret val=\"" << ciphertext << "\").");
 	return ciphertext;
 }
 
 void CCrypto::SetMasterPassword(wxString pass) {
 	LOG("CCrypto::SetMasterPassword() entered.");
 	masterPassword = pass;
-	LOG("Setting masterPassword=")
-	LOG(pass.mb_str());
+	LOG("Setting masterPassword=\"" << pass.mb_str() << "\"")
 	LOG("CCrypto::SetMasterPassword() exiting.");
 }
 
