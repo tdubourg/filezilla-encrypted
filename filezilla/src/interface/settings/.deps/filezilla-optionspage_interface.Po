@@ -246,7 +246,9 @@ settings/filezilla-optionspage_interface.o: \
  settings/optionspage_interface.h settings/../Mainfrm.h \
  /usr/include/wx-2.8/wx/taskbar.h \
  /usr/include/wx-2.8/wx/unix/taskbarx11.h settings/../power_management.h \
- settings/../state.h ../../src/include/local_path.h ../engine/crypto.h
+ settings/../state.h ../../src/include/local_path.h ../engine/crypto.h \
+ xmlfunctions.h ../tinyxml/tinyxml.h /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/bits/sstream.tcc ../interface/ipcmutex.h
 
 filezilla.h:
 
@@ -1023,3 +1025,13 @@ settings/../state.h:
 ../../src/include/local_path.h:
 
 ../engine/crypto.h:
+
+xmlfunctions.h:
+
+../tinyxml/tinyxml.h:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+../interface/ipcmutex.h:

@@ -16314,7 +16314,7 @@ $as_echo "$result" >&6; }
 # FLAGS
 #
 CRYPTO_PP_CXXFLAGS="-I$crypto_pp_include_dir -D$CRYPTO_PP_DEFINE" # @td
-CRYPTO_PP_LDFLAGS="-lcryptopp -L$CRYPTO_PP_LIB"
+CRYPTO_PP_LDFLAGS="-lcryptopp -L$CRYPTO_PP_LIB" # @td
 
 cat >>confdefs.h <<_ACEOF
 #define CRYPTOPP_INCLUDE_PREFIX $CRYPTO_PP_INCLUDE_PREFIX
